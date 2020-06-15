@@ -12,6 +12,7 @@
  local gsadb
  local soundz,sourcetype,sourceuid,desttype,destuid = {},{},{},{},{}
  local CombatLogGetCurrentEventInfo = CombatLogGetCurrentEventInfo
+ local canSpeakHere = false
 
  local LSM_GSA_SOUNDFILES = {
 	["GSA-Demo"] = "Interface\\AddOns\\GladiatorlosSA2\\Voice_Custom\\Will-Demo.ogg",
@@ -65,9 +66,6 @@
  }
  self.GSA_TYPE = GSA_TYPE
 
---local sourcetype,sourceuid,desttype,destuid = {},{},{},{}
---local gsadb
---local PlaySoundFile = PlaySoundFile
  local dbDefaults = {
 	profile = {
 		all = false,
@@ -76,8 +74,8 @@
 		epicbattleground = false,
 		field = false,
 		path = GSA_LOCALEPATH[GetLocale()] or "GladiatorlosSA2\\Voice_enUS",
-		path_male = GSA_LOCALEPATH[GetLocale()] or "GladiatorlosSA2\\Voice_enUS",
-		path_neutral = GSA_LOCALEPATH[GetLocale()] or "GladiatorlosSA2\\Voice_enUS",
+		--path_male = GSA_LOCALEPATH[GetLocale()] or "GladiatorlosSA2\\Voice_enUS",
+		--path_neutral = GSA_LOCALEPATH[GetLocale()] or "GladiatorlosSA2\\Voice_enUS",
 		path_menu = GSA_LOCALEPATH[GetLocale()] or "GladiatorlosSA2\\Voice_enUS",
 		throttle = 0,
 		smartDisable = false,
@@ -195,18 +193,10 @@
 
  end
 
---local GSA_GENDER = {"gsadb.path_neutral","gsadb.path_male","gsadb.path"}
-
- function GSA:GetGenderPath(genderZ)
-	if genderZ == 1 then return gsadb.path_neutral
-	elseif genderZ == 2 then return gsadb.path_male
-	else return gsadb.path
-	end
- end
-
 -- play sound by file name
- function GSA:PlaySound(fileName, extend)
-	PlaySoundFile("Interface\\Addons\\" ..gsadb.path.. "\\"..fileName .. "." .. (extend or "ogg"), gsadb.output_menu)
+ function GSA:PlaySound(fileName)
+	--PlaySoundFile("Interface\\Addons\\" ..gsadb.path.. "\\"..fileName .. "." .. (extend or "ogg"), gsadb.output_menu)
+	 PlaySoundFile("Interface\\Addons\\" ..gsadb.path.. "\\"..fileName .. ".ogg", gsadb.output_menu)
  end
 
  function GladiatorlosSA:ArenaClass(id)
@@ -221,7 +211,7 @@
 	--CombatLogClearEntries()
  end
 
--- play sound by spell id and spell type AND gender
+-- play sound by spell id and spell type
  function GladiatorlosSA:PlaySpell(listName, spellID, sourceGUID, destGUID, ...)
 	local list = self.spellList[listName]
 	if not list[spellID] then return end
@@ -236,24 +226,8 @@
 			self.smarter = 0
 		end
 	end
-	
-	local genderZ
-	if gsadb.genderVoice then
-		if (sourceGUID ~= nil or destGUID ~= nil) then
-			if (sourceGUID == ('') or sourceGUID == nil ) then
-				local _, _, _, _, sex, _, _ = GetPlayerInfoByGUID(destGUID)
-				genderZ = sex
-			else
-				local _, _, _, _, sex, _, _ = GetPlayerInfoByGUID(sourceGUID)
-				genderZ = sex
-			end
-		else
-			GSA.log ("sourceGUID or destGUID error")
-			print("--",sourceGUID,destGUID,listName,spellID)
-		end
-	end
 
-		self:PlaySound(list[spellID],extend,genderZ)
+		self:PlaySound(list[spellID])
 
  end
  
@@ -302,9 +276,11 @@ function GSA:CanTalkHere()
 		(currentZoneType == "arena" and gsadb.arena) or 													-- Arena
 		(currentZoneType == "scenario" and gsadb.arena) or 													-- Scenario
 		gsadb.all)) then																					-- Anywhere
-		return false
+		--return false
+		canSpeakHere = false
+	else
+		canSpeakHere = true
 	end
-	return true
 end
 	
 
@@ -403,27 +379,6 @@ end
 		self:PlaySpell ("friendlyInterrupted", spellID, sourceGUID, destGUID)
 	end
 
-	--[[ Test lines ]]
-	--if (event == "SPELL_AURA_APPLIED" and desttype[COMBATLOG_FILTER_EVERYTHING] and (not gsadb.aonlyTF or destuid.target or destuid.focus) and not gsadb.aruaApplied) then
-		--self:PlaySpell("auraApplied", spellID, sourceGUID, destGUID);
-	--elseif (event == "SPELL_AURA_REMOVED" and desttype[COMBATLOG_FILTER_EVERYTHING] and (not gsadb.ronlyTF or destuid.target or destuid.focus) and not gsadb.auraRemoved) then
-		--self:PlaySpell("auraRemoved", spellID, sourceGUID, destGUID)
-	--elseif (event == "SPELL_CAST_START" and sourcetype[COMBATLOG_FILTER_EVERYTHING] and (not gsadb.conlyTF or sourceuid.target or sourceuid.focus) and not gsadb.castStart) then
-		--self:PlaySpell("castStart", spellID, sourceGUID, destGUID)
-	--elseif ((event == "SPELL_CAST_SUCCESS" or event == "SPELL_SUMMON") and sourcetype[COMBATLOG_FILTER_EVERYTHING] and (not gsadb.sonlyTF or sourceuid.target or sourceuid.focus) and not gsadb.castSuccess) then
-		--if self:Throttle(tostring(spellID).."default", 0.05) then return end
-		--if (spellID == 42292 or spellID == 59752) and gsadb.class then
-			--local _,c,_ = UnitClass("player"); -- localizedClass, englishClass, classIndex = 
-			--if c then 
-				--self:PlaySound(c);
-			--end
-		--else	
-			--self:PlaySpell("castSuccess", spellID, sourceGUID, destGUID)
-		--end
-	--elseif (event == "SPELL_INTERRUPT" and desttype[COMBATLOG_FILTER_EVERYTHING] and not gsadb.interrupt) then 
-		--self:PlaySpell ("friendlyInterrupt", spellID, sourceGUID, destGUID)
-	--end
-
 
 	-- play custom spells
 	for k, css in pairs (gsadb.custom) do
@@ -464,7 +419,7 @@ end
 		if gsadb.drinking then
 			if (AuraUtil.FindAuraByName("Drinking",uid) or AuraUtil.FindAuraByName("Food",uid) or AuraUtil.FindAuraByName("Refreshment",uid) or AuraUtil.FindAuraByName("Drink",uid)) and currentZoneType == "arena" then
 				if self:Throttle(tostring(104270) .. uid, 4) then return end
-			self:PlaySound("drinking",extend)
+			self:PlaySound("drinking")
 			end
 		end
 	--end
