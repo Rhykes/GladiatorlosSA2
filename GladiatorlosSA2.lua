@@ -7,6 +7,7 @@
  local self, GSA, PlaySoundFile = GladiatorlosSA, GladiatorlosSA, PlaySoundFile
  local GSA_TEXT = "|cff69CCF0GladiatorlosSA2|r (|cffFFF569/gsa|r)"
  local GSA_VERSION = "|cffFF7D0A 2.2.1|r(|cFF00FF968.3 Battle for Azeroth|r)"
+ local GSA_TEST_BRANCH = "[removegender]"
  local GSA_AUTHOR = " "
  local gsadb
  local soundz,sourcetype,sourceuid,desttype,destuid = {},{},{},{},{}
@@ -15,8 +16,6 @@
  local LSM_GSA_SOUNDFILES = {
 	["GSA-Demo"] = "Interface\\AddOns\\GladiatorlosSA2\\Voice_Custom\\Will-Demo.ogg",
  }
-
- --TESTTEST
 
  local GSA_LOCALEPATH = {
 	enUS = "GladiatorlosSA2\\Voice_enUS",
@@ -136,7 +135,7 @@
 	end
 	
 	self.db1 = LibStub("AceDB-3.0"):New("GladiatorlosSADB",dbDefaults, "Default");
-	DEFAULT_CHAT_FRAME:AddMessage(GSA_TEXT .. GSA_VERSION .. GSA_AUTHOR .." ");
+	DEFAULT_CHAT_FRAME:AddMessage(GSA_TEXT .. GSA_VERSION .. GSA_AUTHOR .." "..GSA_TEST_BRANCH);
 	self:RegisterChatCommand("GladiatorlosSA", "ShowConfig")
 	self:RegisterChatCommand("gsa", "ShowConfig")
 	self:RegisterChatCommand("gsaz", "ShowConfig") -- ***** @
@@ -206,9 +205,8 @@
  end
 
 -- play sound by file name
- function GSA:PlaySound(fileName, extend, genderZ)
-	local gender_path = self:GetGenderPath(genderZ)
-	PlaySoundFile("Interface\\Addons\\" ..gender_path.. "\\"..fileName .. "." .. (extend or "ogg"), gsadb.output_menu)
+ function GSA:PlaySound(fileName, extend)
+	PlaySoundFile("Interface\\Addons\\" ..gsadb.path.. "\\"..fileName .. "." .. (extend or "ogg"), gsadb.output_menu)
  end
 
  function GladiatorlosSA:ArenaClass(id)
@@ -466,7 +464,7 @@ end
 		if gsadb.drinking then
 			if (AuraUtil.FindAuraByName("Drinking",uid) or AuraUtil.FindAuraByName("Food",uid) or AuraUtil.FindAuraByName("Refreshment",uid) or AuraUtil.FindAuraByName("Drink",uid)) and currentZoneType == "arena" then
 				if self:Throttle(tostring(104270) .. uid, 4) then return end
-			self:PlaySound("drinking",extend,genderZ)
+			self:PlaySound("drinking",extend)
 			end
 		end
 	--end
