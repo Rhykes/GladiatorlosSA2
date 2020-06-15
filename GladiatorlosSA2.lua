@@ -16,6 +16,8 @@
 	["GSA-Demo"] = "Interface\\AddOns\\GladiatorlosSA2\\Voice_Custom\\Will-Demo.ogg",
  }
 
+ --TESTTEST
+
  local GSA_LOCALEPATH = {
 	enUS = "GladiatorlosSA2\\Voice_enUS",
  }
