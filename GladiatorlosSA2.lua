@@ -74,8 +74,6 @@
 		epicbattleground = false,
 		field = false,
 		path = GSA_LOCALEPATH[GetLocale()] or "GladiatorlosSA2\\Voice_enUS",
-		--path_male = GSA_LOCALEPATH[GetLocale()] or "GladiatorlosSA2\\Voice_enUS",
-		--path_neutral = GSA_LOCALEPATH[GetLocale()] or "GladiatorlosSA2\\Voice_enUS",
 		path_menu = GSA_LOCALEPATH[GetLocale()] or "GladiatorlosSA2\\Voice_enUS",
 		throttle = 0,
 		smartDisable = false,
