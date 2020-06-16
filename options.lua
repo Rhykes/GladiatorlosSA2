@@ -10,6 +10,7 @@ local GSA_OUTPUT = {["MASTER"] = L["Master"],["SFX"] = L["SFX"],["AMBIENCE"] = L
 
 function GSA:ShowConfig()
 	for i=1,2 do InterfaceOptionsFrame_OpenToCategory(GetAddOnMetadata("GladiatorlosSA2", "Title")) end -- ugly fix
+
 end
 
 function GSA:ShowConfig2() -- ***** @
@@ -38,6 +39,7 @@ local function setOption(info, value)
 	if value then
 		PlaySoundFile("Interface\\Addons\\"..gsadb.path_menu.."\\"..name..".ogg",gsadb.output_menu);
 	end
+	GSA:CanTalkHere()
 end
 
 local function getOption(info)

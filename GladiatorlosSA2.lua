@@ -134,7 +134,7 @@
 	DEFAULT_CHAT_FRAME:AddMessage(GSA_TEXT .. GSA_VERSION .. GSA_AUTHOR .." "..GSA_TEST_BRANCH);
 	self:RegisterChatCommand("GladiatorlosSA", "ShowConfig")
 	self:RegisterChatCommand("gsa", "ShowConfig")
-	self:RegisterChatCommand("gsaz", "ShowConfig") -- ***** @
+	self:RegisterChatCommand("gsa2", "ShowConfig")
 	self.db1.RegisterCallback(self, "OnProfileChanged", "ChangeProfile")
 	self.db1.RegisterCallback(self, "OnProfileCopied", "ChangeProfile")
 	self.db1.RegisterCallback(self, "OnProfileReset", "ChangeProfile")
@@ -163,13 +163,13 @@
 		name = L["Load Configuration"],
 		desc = L["Load Configuration Options"],
 		type = 'execute',
-		func = function() 
-		self:OnOptionCreate() 
+		func = function()
+		self:OnOptionCreate()
 			bliz_options.args.load.disabled = true
-			GameTooltip:Hide() 
+			GameTooltip:Hide()
 			--fix for in 5.3 BLZOptionsFrame can't refresh on load
-			InterfaceOptionsFrame:Hide() 
-			InterfaceOptionsFrame:Show() 
+			InterfaceOptionsFrame:Hide()
+			InterfaceOptionsFrame:Show()
 		end,
 		handler = GladiatorlosSA,
 	}
@@ -188,12 +188,11 @@
  end
 
  function GladiatorlosSA:OnDisable()
-
+	-- why is this here
  end
 
 -- play sound by file name
  function GSA:PlaySound(fileName)
-	--PlaySoundFile("Interface\\Addons\\" ..gsadb.path.. "\\"..fileName .. "." .. (extend or "ogg"), gsadb.output_menu)
 	 PlaySoundFile("Interface\\Addons\\" ..gsadb.path.. "\\"..fileName .. ".ogg", gsadb.output_menu)
  end
 
@@ -207,6 +206,7 @@
 
  function GladiatorlosSA:PLAYER_ENTERING_WORLD()
 	--CombatLogClearEntries()
+	 self:CanTalkHere()
  end
 
 -- play sound by spell id and spell type
@@ -279,15 +279,13 @@ function GSA:CanTalkHere()
 	else
 		canSpeakHere = true
 	end
+	print("CanTalkHere() = " .. tostring(canSpeakHere))
 end
 	
 
  function GladiatorlosSA:COMBAT_LOG_EVENT_UNFILTERED(event , ...)
- 	local _,currentZoneType = IsInInstance()
 	-- Checks if alerts should occur here.
-	if (not self:CanTalkHere()) then
-		return
-	end
+	if (not canSpeakHere) then return end
 
 	
 	local timestamp,event,hideCaster,sourceGUID,sourceName,sourceFlags,sourceFlags2,destGUID,destName,destFlags,destFlags2,spellID = CombatLogGetCurrentEventInfo()

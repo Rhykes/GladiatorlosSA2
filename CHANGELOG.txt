@@ -1,3 +1,20 @@
+- version 2.3 (8.3)
+
+General
+* (Partially) fixed ability tooltips in options. I'm not sure why it isn't working correctly, just mouseover anything
+    else to hide it again when you're done.
+
+Optimization
+* Miscellaneous coding improvements in hopes of reducing the likelihood of Script Ran Too long errors, and general
+        tidying up.
+    + Removed many chunks of commented (unused) code.
+    + Removed all active code related to selecting voices based on gender (feature has not been supported in years)
+    + .ogg is now the only file format supported for sounds.
+    + Instead of running the full list of API calls needed to verify if an alert should play in a given location, the
+        sound alert function now checks a simple boolean value that is updated whenever a GSA option is changed, or
+        you change instance maps.
+
+===========================================
 - version 2.2.1 (8.3)
 
 General
