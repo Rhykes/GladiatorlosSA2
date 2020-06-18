@@ -13,6 +13,7 @@
  local soundz,sourcetype,sourceuid,desttype,destuid = {},{},{},{},{}
  local CombatLogGetCurrentEventInfo = CombatLogGetCurrentEventInfo
  local canSpeakHere = false
+ local playerCurrentZone = ""
 
  local LSM_GSA_SOUNDFILES = {
 	["GSA-Demo"] = "Interface\\AddOns\\GladiatorlosSA2\\Voice_Custom\\Will-Demo.ogg",
@@ -228,7 +229,8 @@
 		self:PlaySound(list[spellID])
 
  end
- 
+
+ -- Because arrays are for nerds
  function GSA:CheckFriendlyDebuffs(spellID)
 	if spellID == 87204 or			-- Vampiric Touch Horrify
 		spellID == 196364 or 		-- Unstable Affliction Silence
@@ -250,6 +252,7 @@
 	end
 end
 
+ -- Because arrays are for nerds
 function GSA:CheckForEpicBG(instanceMapID)	-- Determines if battleground is in list of epic bgs.
 	if instanceMapID == 2118 or		-- Wintergrasp [Epic]
 		instanceMapID == 30 or		-- Alterac Valley
@@ -262,11 +265,14 @@ function GSA:CheckForEpicBG(instanceMapID)	-- Determines if battleground is in l
 end
 
 -- Checks settings and world location to determine if alerts should occur.
+ 		-- I can probably use this to fix the weird problem with PvP flag checking that seemed blizzard-sided
+ 		-- but I am lazy and that will come later.
 function GSA:CanTalkHere()
 	--Disable By Location
 	local _,currentZoneType = IsInInstance()
 	local _,_,_,_,_,_,_,instanceMapID = GetInstanceInfo()
 	local isPvP = UnitIsWarModeDesired("player")
+	playerCurrentZone = currentZoneType
 	if (not ((currentZoneType == "none" and gsadb.field and not gsadb.onlyFlagged) or 												-- World
 		--(currentZoneType == "none" and gsadb.field and (gsadb.onlyFlagged and UnitIsWarModeDesired("player"))) or
 		(currentZoneType == "pvp" and gsadb.battleground and not self:CheckForEpicBG(instanceMapID)) or 	-- Battleground
@@ -279,7 +285,7 @@ function GSA:CanTalkHere()
 	else
 		canSpeakHere = true
 	end
-	print("CanTalkHere() = " .. tostring(canSpeakHere))
+	--print("CanTalkHere() = " .. tostring(canSpeakHere))
 end
 	
 
@@ -357,7 +363,7 @@ end
 			self:PlaySpell("castStart", spellID, sourceGUID, destGUID)
 	elseif (event == "SPELL_CAST_SUCCESS" and sourcetype[COMBATLOG_FILTER_HOSTILE_PLAYERS] and (not gsadb.sonlyTF or sourceuid.target or sourceuid.focus) and not gsadb.castSuccess) then
 		if self:Throttle(tostring(spellID).."default", 0.05) then return end
-		if gsadb.class and currentZoneType == "arena" then
+		if gsadb.class and playerCurrentZone == "arena" then
 			if spellID == 42292 or spellID == 208683 or spellID == 195710 then
 				local c = self:ArenaClass(sourceGUID) -- PvP Trinket Class Callout
 					if c then 

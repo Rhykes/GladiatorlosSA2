@@ -58,6 +58,7 @@ local function spellOption(order, spellID, ...)
 				GameTooltip:SetHyperlink(GetSpellLink(spellID))			
 				GameTooltip:Show()  
 			end, -- https://i.imgur.com/ChzUb.jpg
+			-- why are you reading this disaster, go away this is embarrassing
 			descStyle = "custom",
 					order = order,
 		}
