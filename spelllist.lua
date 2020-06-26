@@ -590,6 +590,7 @@
 			[152280] = "Defile",
 			[207167] = "blindingSleet",
 			[204160] = "chillStreak",
+			[305392] = "chillStreak",
 			[279302] = "sindragosaFury", -- Frostwyrm's Fury
 			[130736] = "soulReaper",
 			[275699] = "apocalypse",

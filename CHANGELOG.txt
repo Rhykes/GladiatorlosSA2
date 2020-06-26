@@ -1,3 +1,9 @@
+- version 2.3.1 (8.3)
+
+Death Knight
+* Fixed Chill Streak's spell ID.
+
+===========================================
 - version 2.3 (8.3)
 
 General
