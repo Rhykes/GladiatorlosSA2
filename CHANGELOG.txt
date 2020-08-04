@@ -1,3 +1,9 @@
+- version 2.3.2 (8.3)
+
+Priest
+* Fixed missing Premonition option (sorry!).
+
+===========================================
 - version 2.3.1 (8.3)
 
 Death Knight
