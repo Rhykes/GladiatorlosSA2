@@ -1,3 +1,11 @@
+- version SLB 1 (9.0)
+***THIS IS A WORLD IN PROGRESS BETA BUILD. EXPECT PROBLEMS***
+
+General
+* Updated Ace3 to fix SetBackdrop problems.
+* Removed invalid spell IDs.
+
+===========================================
 - version 2.3.2 (8.3)
 
 Priest
