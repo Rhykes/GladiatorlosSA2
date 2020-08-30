@@ -174,3 +174,5 @@ L["TankTauntsON_Desc"] = true
 
 L["Connected"] = true
 L["Connected_Desc"] = true
+
+L["CovenantAbilities"] = true

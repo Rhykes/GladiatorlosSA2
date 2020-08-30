@@ -1,131 +1,31 @@
+- version SLB 2 (9.0)
+***THIS IS A WORK IN PROGRESS BETA BUILD. EXPECT (BUT PLEASE REPORT) PROBLEMS***
+
+NOTE: This version is a spell library update, and does not yet include sounds for the new abilities listed below.
+
+General
+* Added a Covenant ability section to all ability types.
+* Added all Covenant Signature abilities to their relevant sections.
+
+
+Death Knight
+* Added Abomination's Limb (Necrolord) to Buff Applied/Down.
+* Added Lichborne to Buff Applied/Down.
+* Added Sacrificial Pact to Cast Success.
+* Added Transfusion to Buff Applied/Down.
+* Added Raise Abomination to Cast Success.
+
+* Added missing option for Anti-Magic Zone.
+
+
+Localization
+* New strings:
+    L["CovenantAbilities"]
+
+===========================================
 - version SLB 1 (9.0)
-***THIS IS A WORLD IN PROGRESS BETA BUILD. EXPECT PROBLEMS***
+***THIS IS A WORK IN PROGRESS BETA BUILD. EXPECT (BUT PLEASE REPORT) PROBLEMS***
 
 General
 * Updated Ace3 to fix SetBackdrop problems.
 * Removed invalid spell IDs.
-
-===========================================
-- version 2.3.2 (8.3)
-
-Priest
-* Fixed missing Premonition option (sorry!).
-
-===========================================
-- version 2.3.1 (8.3)
-
-Death Knight
-* Fixed Chill Streak's spell ID.
-
-===========================================
-- version 2.3 (8.3)
-
-General
-* (Partially) fixed ability tooltips in options. I'm not sure why it isn't working correctly, just mouseover anything
-    else to hide it again when you're done.
-
-Optimization
-* Miscellaneous coding improvements in hopes of reducing the likelihood of Script Ran Too long errors, and general
-        tidying up.
-    + Removed many chunks of commented (unused) code.
-    + Removed all active code related to selecting voices based on gender (feature has not been supported in years)
-    + .ogg is now the only file format supported for sounds.
-    + Instead of running the full list of API calls needed to verify if an alert should play in a given location, the
-        sound alert function now checks a simple boolean value that is updated whenever a GSA option is changed, or
-        you change instance maps.
-
-===========================================
-- version 2.2.1 (8.3)
-
-General
-* Class trinket alert in arenas should work again.
-* Connected alert should now be off by default.
-* Class Trinket, Success, and Connected alerts are no longer locked out from being toggled under certain circumstances.
-
-===========================================
-- version 2.2 (8.3)
-
-General
-* Renamed Gladiator's Maledict file (thisGameSucks.ogg -> maledict) and it now plays a voiced alert instead of an annoying sound.
-* Added Haymaker (Kul Tiran racial) to Cast Success.
-* Added Regeneratin' (Zandalari racial) to Cast Success.
-* Added a new option in Cast Success called Connected. It is a generic alert that plays when very powerful abilities (currently Greater Pyro and Chaos Bolt) successfully complete their cast.
-* Honorable Medallion (yikes) and Gladiator's Medallion now use the generic "Trinketed" alert.
-
-Mage
-* Moved Combustion from Cast Success to Aura Applied, and it now has a Down alert.
-* Arcane Power now has a Down alert.
-* Icy Veins now has a Down alert.
-
-Paladin
-* Added Down alert for Blessing of Sacrifice and Ultimate Sacrifice.
-
-Priest
-* Added Holy Word: Concentration to Cast Success.
-* Added Greater Heal to Cast Start.
-* Removed Inner Focus (no longer exists).
-
-Shaman
-* Added Living Honey hex varient.
-
-Warlock
-* Added Down alert for Dark Soul variants.
-
-Localization
-* New Strings:
-L["Connected"]
-L["Connected_Desc"]
-
-===========================================
-- version 2.1.1 (8.2.5)
-
-General
-* Added Korrak's Revenge to Epic Battleground toggle.
-
-Warlock
-* Added :) more :) :) Spell Lock :) :) :) SpellIDS :) :) :) :)
-* It just wouldn't be a GSA update without more Spell Lock IDs!
-* M O R E   S P E L L   L O C K    S P E L L I D S ! ! !
-
-===========================================
-- version 2.1 (8.2)
-
-Rogue
-* Added in options for Feint and Feint Down in Buff Applied/Removed. Sorry about that.
-
-Warlock
-* Added Havoc to cast success.
-===========================================
-- version 2.0 (8.2)
-
-THIS IS NOT A CLASSIC BUILD.
-
-**ALL ABILITIES ARE DEFAULT TO ON WITH THIS BUILD. GSA MAY BE UNUSUALLY CHATTY AFTER UPDATING. Toggle what you want.**
-
-General
-* All tracked spells should now have an alert associated with them.
-* Placeholder voice alerts have been replaced with the usual voice.
-* Removed Tank Taunt debuff alerts.
-* Note: I do not intend to add Azerite Essences due to their likely short lifespan. If we find out they somehow follow us into 9.0, I'll look into it. Extremely impactful ones might be added anyway.
-
-Druid
-* Fixed Thorns falloff.
-
-Paladin
-* Added Divine Favor falloff to Aura Removed.
-
-Warlock
-* Added Create Healthstone (and Soulwell) to Spell Casting.
-* Added Unending Resolve falloff to Aura Removed.
-
-KNOWN ISSUES
-* Spells do not display information on mouseover.
-* Non-spell options cause an error on toggle. This is completely harmless and can be ignored, it's the result of a new type of error Blizzard added to help debugging not playing nice with old code.
-* There appears to be slight lag when changing settings. Just deal with it for now, I don't know what the problem is and it's not my first priority.
-
-My current focus for GSA2 is cleaning up the codebase so I can actually figure out how and where everything is. It was organized chaos when I first picked up support, and my contributions have made it even messier.
-Bug fixes will come later. None of the current issues are disruptive in actual game-play, and are only oddities when working with settings.
-
-Classic support is still not a priority by any means, but is on my radar. At least one person that I know of has been making progress on GSA2 for Classic. Will try to check-in with them and go from there.
-
-Thank all of you for your patience throughout this expansion's very rough development. :)

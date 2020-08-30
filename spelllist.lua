@@ -19,6 +19,9 @@
 			[272819] = "drinking",
 			[279739] = "drinking",
 			--Was I drunk when I did this??
+
+			-- Covenant Abilities
+			[310143] = "soulshape", -- Nightfae Signature
 			
 			-- Backlash (Aura Applied)
 			[87204] = "backlashFear", -- Vampiric Touch Dispel (Priest)
@@ -42,6 +45,9 @@
 			[91800] = "smash",
 			[91797] = "smash",
 			[116888] = "Purgatory", -- Purgatory
+			[49039] = "lichborne", -- Lichborne
+			[288977] = "transfusion",
+			[315443] = "abominationLimb",
 			
 			-- Demon Hunter (Aura Applied)
 			[198589] = "blur",
@@ -189,7 +195,7 @@
 			--[204293] = "spiritLink",
 			
 			-- Warlock (Aura Applied)
-			[108416] = "sacrificialPact",
+			[108416] = "darkPact",
 			[104773] = "unendingResolve",
 			[196098] = "darkSoul", -- Soul Harvest (Legion's Version)
 			[113860] = "darkSoul", -- Dark Soul: Misery (Affliction)
@@ -313,6 +319,13 @@
 			[196098] = "darkSoulDown", -- Dark Soul
 			[113860] = "darkSoulDown", -- Dark Soul
 			[113858] = "darkSoulDown", -- Dark Soul
+			[49039] = "lichborneDown", -- Lichborne
+			[288977] = "transfusionDown", -- Transfusion
+			[315443] = "abominationLimbDown", -- Abomination's Limb
+
+			-- COVENANTS
+			[310143] = "soulshapeDown", -- Nightfae Signature
+			[324867] = "fleshcraftDown", -- Necrolord Signature
 		--TANK TAUNTS
 			--[206891] = "tankTauntsOFF", 			-- Tank Taunts Down
 			},
@@ -345,6 +358,9 @@
 			[212036] = "resurrection", -- Mass Resurrection (Priest Mass Rez)
 			[212056] = "resurrection", -- Absolution (Paladin Mass Rez)
 			[212048] = "resurrection", -- Ancestral Vision (Shaman Mass Rez)
+
+			-- Covenants
+			[300728] = "doorOfShadows", -- Venthyr signature
 			
 			-- Death Knight (Spell Casting)
 				--None! :D
@@ -572,14 +588,18 @@
 			[255654] = "BullRush", -- Bull Rush (Highmountain Racial)
 			-- Gladiator's Maledict :^)
 			--[302144] = "maledict",
-			[305252] = "maledict", -- 8.2 
+			[305252] = "maledict", -- 8.2
+
+			-- Covenant (Cast Success)
+			[324631] = "fleshcraft", -- Necrolord signature
+			[323436] = "purifyPotion", -- Kyrian signature
 			
 			-- Death Knight (Cast Success)
 			[47528] = "mindFreeze",
 			[47476] = "strangulate",
 			[47568] = "runeWeapon", -- Empowered Rune Weapon
 			[207127] = "runeWeapon", -- Hungering Rune Weapon
-			[207289] = "runeWeapon", -- Unholy Frenzy (Unholy)
+			[207289] = "runeWeapon", -- Unholy Assault (Unholy)
 			[49206] = "gargoyle", 			-- Summon Gargoyle
 			[207349] = "gargoyle",			-- Dark Arbiter
 			[77606] = "darkSimulacrum",
@@ -592,7 +612,7 @@
 			[204160] = "chillStreak",
 			[305392] = "chillStreak",
 			[279302] = "sindragosaFury", -- Frostwyrm's Fury
-			--[130736] = "soulReaper",
+			[343294] = "soulReaper",
 			[275699] = "apocalypse",
 			[212468] = "hook",
 			[49576] = "deathGrip",
@@ -602,6 +622,9 @@
 			[203173] = "DeathChain", -- Death Chain
 			[48743] = "DeathPact", -- Death Pact
 			[46584] = "RaiseDead", -- Raise Dead
+			[46585] = "RaiseDead", -- Raise Dead
+			[327574] = "sacrificialPact",
+			[288853] = "raiseAbomination", -- Raise Abomination
 			
 			-- Demon Hunter (Cast Success)
 			[183752] = "disrupt",
@@ -894,3 +917,21 @@
 		},
 	}
 end
+
+--[[@TODO
+Record sound:
+- fleshcraft
+- fleshcraftDown
+- doorOfShadows
+- soulshape
+- soulshapeDown
+- purifyPotion
+- licheborne
+- lichborneDown
+- darkPact
+- transfusion
+- transfusionDown
+- raiseAbomination
+- abominationLimb     (Grabby hands?!)
+- abominationLimbDown
+]]

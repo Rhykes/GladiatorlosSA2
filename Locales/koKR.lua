@@ -176,3 +176,4 @@ L["TankTauntsON_Desc"] = "탱커 특성의 PVP 도발 효과 발생시 알림"
 L["Connected"] = true
 L["Connected_Desc"] = true
 
+L["CovenantAbilities"] = true
