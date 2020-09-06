@@ -6,6 +6,7 @@ NOTE: This version is a spell library update, and does not yet include sounds fo
 General
 * Added a Covenant ability section to all ability types.
 * Added all Covenant Signature abilities to their relevant sections.
+* Fixed several outdated spellIDs for existing spells. I'm sure there's more.
 
 
 Death Knight
@@ -14,8 +15,21 @@ Death Knight
 * Added Sacrificial Pact to Cast Success.
 * Added Transfusion to Buff Applied/Down.
 * Added Raise Abomination to Cast Success.
-
 * Added missing option for Anti-Magic Zone.
+
+
+Demon Hunter
+* Added Sinful Brand (Venthyr) to Cast Success.
+* Added Elysian Decree (Kyrian) to Cast Success.
+* Added The Hunt to (Nightfae) to Cast Success.
+* LOL y'all getting screwed this expansion, aren't you?
+
+
+Druid
+* Added Convoke the Spirits (Nightfae) to Cast Success.
+* Added Ravenous Frenzy (Venthyr) to Aura Applied/Down.
+* Added Adaptive Swarm (Necrolord) to Cast Success.
+* Added Heart of the Wild to Buff Applied/Down.
 
 
 Localization

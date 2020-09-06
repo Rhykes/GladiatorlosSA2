@@ -80,6 +80,11 @@
 			[236696] = "thorns", -- (Feral/Balance)
 			[305497] = "thorns", -- Resto/Feral/Balance 8.2
 			[163505] = "rakeStun",
+			[323557] = "ravenousFrenzy", -- Venthyr
+			[108291] = "heartOfTheWild", -- Heart of the Wild
+			[108292] = "heartOfTheWild", -- Heart of the Wild
+			[108293] = "heartOfTheWild", -- Heart of the Wild
+			[108294] = "heartOfTheWild", -- Heart of the Wild
 
 			-- Hunter (Aura Applied)
 			[19263] = "deterrence",
@@ -322,6 +327,11 @@
 			[49039] = "lichborneDown", -- Lichborne
 			[288977] = "transfusionDown", -- Transfusion
 			[315443] = "abominationLimbDown", -- Abomination's Limb
+			[323557] = "ravenousFrenzyDown", -- Ravenous Frenzy
+			[108291] = "heartOfTheWildDown", -- Heart of the Wild
+			[108292] = "heartOfTheWildDown", -- Heart of the Wild
+			[108293] = "heartOfTheWildDown", -- Heart of the Wild
+			[108294] = "heartOfTheWildDown", -- Heart of the Wild
 
 			-- COVENANTS
 			[310143] = "soulshapeDown", -- Nightfae Signature
@@ -578,6 +588,7 @@
 --			[195845] = "trinket1", -- Adaptation Legion
 			[208683] = "trinket", -- Gladiator's Medallion Legion
 			[195710] = "trinket", -- Honorable Medallion Legion
+			[336126] = "trinket", -- Gladiator's Medallion Shadowlands
 			[23035] = "battleStandard",
 			[23034] = "battleStandard",
 			[213664] = "NimbleBrew", -- Nimble Brew consumable
@@ -646,6 +657,9 @@
 			[198013] = "eyeBeam",
 			--[201467] = "furyOfTheIllidari",
 			[235903] = "manaRift",
+			[317009] = "sinfulBrand",	-- Venthyr
+			[306830] = "elysianDecree", -- Kyrian
+			[323639] = "theHunt",		-- Nightfae
 
 			-- Druid (Cast Success)
 			[740] = "tranquility",
@@ -666,6 +680,7 @@
 			[201664] = "demoRoar",
 			--[208253] = "essenceOfGhanir",
 			[61391] = "typhoon",
+			[132469] = "typhoon",
 			[5215] = "prowl",
 			[22570] = "maim",
 			[236026] = "maim",
@@ -675,6 +690,8 @@
 			[202246] = "Overrun", -- Overrun Guardian Druid Honor Talent
 			[102793] = "UrsolsVortex", -- Ursol's Vortex
 			[197721] = "Flourish", -- Flourish
+			[325727] = "adaptiveSwarm", -- Necrolord
+			[323764] = "convokeTheSpirits", -- Nightfae
 			
 			-- Hunter (Cast Success)
 			[147362] = "counterShot",
@@ -934,4 +951,13 @@ Record sound:
 - raiseAbomination
 - abominationLimb     (Grabby hands?!)
 - abominationLimbDown
+- sinfulBrand
+- elysianDecree
+- theHunt
+- adaptiveSwarm
+- ravenousFrenzy
+- ravenousFrenzyDown
+- convokeTheSpirits
+- heartOfTheWild
+- heartOfTheWildDown
 ]]

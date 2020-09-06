@@ -500,7 +500,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cffFF7D0ADruid|r"],
 								order = 70,
-								args = listOption({102560,102543,102558,33891,61336,22812,252216,1850,69369,102342,102351,155835,29166,194223,236696,305497,163505,106951},"auraApplied"),
+								args = listOption({102560,102543,102558,33891,61336,22812,252216,1850,69369,102342,102351,155835,29166,194223,236696,305497,163505,106951,323557,108291,108292.108293,108294},"auraApplied"),
 							},
 							hunter = { -- AuraApplied
 								type = 'group',
@@ -620,7 +620,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cffFF7D0ADruid|r"],
 								order = 60,
-								args = listOption({102560,102543,102558,33891,117679,236696,29166},"auraRemoved"), 
+								args = listOption({102560,102543,102558,33891,117679,236696,29166,323557,108291,108292.108293,108294},"auraRemoved"),
 							},
 							hunter = { -- AuraRemoved
 								type = 'group',
@@ -890,14 +890,14 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cffA330C9Demon Hunter|r"],
 								order = 50,
-								args = listOption({202138,202140,207684,207682,202137,179057,206649,205604,205629,205630,211881,203704,221527,217832,196718,198013,235903},"castSuccess"),
+								args = listOption({202138,202140,207684,207682,202137,179057,206649,205604,205629,205630,211881,203704,221527,217832,196718,198013,235903,317009,306830,323639},"castSuccess"),
 							},
 							druid = { -- CastSuccess
 								type = 'group',
 								inline = true,
 								name = L["|cffFF7D0ADruid|r"],
 								order = 70,
-								args = listOption({740,108238,99,5211,102359,102417,102383,49376,16979,102416,102401,203651,201664,61391,5215,236026,22570,209749,2908,202246,102793,197721},"castSuccess"),
+								args = listOption({740,108238,99,5211,102359,102417,102383,49376,16979,102416,102401,203651,201664,61391,132469,5215,236026,22570,209749,2908,202246,102793,197721,325727},"castSuccess"),
 							},
 							hunter = { -- CastSuccess
 								type = 'group',
