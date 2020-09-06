@@ -246,7 +246,6 @@
 		spellID == 199086 or 		-- Warpath Stun
 		spellID == 202335 or 		-- Double Barrel Stun
 		spellID == 215652 or 		-- Shield of Virtue silence
-		spellID == 19577 or 		-- Intimidation (pet stun)
 		spellID == 302144 then 		-- Gladiator's Maledict
 		return true
 	end

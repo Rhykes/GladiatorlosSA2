@@ -32,6 +32,21 @@ Druid
 * Added Heart of the Wild to Buff Applied/Down.
 
 
+Hunter
+* Added Death Chakram (Necrolord) to Cast Success.
+* Added Resonating Shot (Kyrian) to Cast Success.
+* Added Tranquilizing Shot to the Purge alert.
+* Added Hunter's Mark to Cast Success.
+* Added Scare Beast to Spell Casting & "Success" alerts.
+* Moved Intimidation from Aura Applied to Cast Success.
+
+
+Mage
+* Added Alter Time to Buff Applied/Down.
+* Added Mirror Images to Cast Success.
+* Added Mirrors of Torment (Venthyr) to Spell Casting.
+* Added Deathborne (Necrolord) to Aura Applied/Down.
+
 Localization
 * New strings:
     L["CovenantAbilities"]

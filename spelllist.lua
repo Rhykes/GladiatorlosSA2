@@ -1,8 +1,8 @@
 ﻿function GladiatorlosSA:GetSpellList ()
 	return {
 		auraApplied ={					-- aura applied [spellid] = ".mp3 file name",
-		-- GENERAL
-		
+			-- GENERAL
+
 			-- General (Aura Applied)
 			[195901] = "trinket1",
 			[214027] = "trinket1",
@@ -22,11 +22,11 @@
 
 			-- Covenant Abilities
 			[310143] = "soulshape", -- Nightfae Signature
-			
+
 			-- Backlash (Aura Applied)
 			[87204] = "backlashFear", -- Vampiric Touch Dispel (Priest)
 			[196364] = "backlashSilence", -- Unstable Affliction Dispel (Warlock)
-			
+
 			-- Death Knight (Aura Applied)
 			[48792] = "iceboundFortitude",
 			[55233] = "vampiricBlood",
@@ -48,7 +48,7 @@
 			[49039] = "lichborne", -- Lichborne
 			[288977] = "transfusion",
 			[315443] = "abominationLimb",
-			
+
 			-- Demon Hunter (Aura Applied)
 			[198589] = "blur",
 			[212800] = "blur",
@@ -57,7 +57,7 @@
 			[188501] = "spectralSight",
 			[196555] = "netherwalk",
 			[207810] = "netherBond",
-			
+
 			-- Druid (Aura Applied)
 			[102560] = "incarnationElune",
 			[102543] = "incarnationKitty",
@@ -98,10 +98,9 @@
 			[266779] = "trueShot",	-- Coordinated Assault
 			--[186289] = "eagle",
 			[3355] = "trapped", -- Freezing Trap Success
-			[19577] = "intimidation", -- Intimidation
 			[202748] = "survivalTactics", -- Survival Tactics (Honor Talent Feign Death Passive)
 			[212704] = "beastWithin", -- The Beast Within; Beastial Wrath Fear/Horror Immunity Honor Talent
-			
+
 			-- Mage (Aura Applied)
 			[45438] = "iceBlock",
 			[12042] = "arcanePower",
@@ -111,6 +110,9 @@
 			[86949] = "cauterize",
 			[87024] = "cauterize",
 			[190319] = "Combustion",
+			[110909] = "alterTime",
+			[342246] = "alterTime",
+			[324220] = "deathborne", -- Necrolord
 
 			-- Monk (Aura Applied)
 			[122278] = "dampenHarm",
@@ -332,6 +334,9 @@
 			[108292] = "heartOfTheWildDown", -- Heart of the Wild
 			[108293] = "heartOfTheWildDown", -- Heart of the Wild
 			[108294] = "heartOfTheWildDown", -- Heart of the Wild
+			[110909] = "alterTimeDown", -- Alter Time
+			[342246] = "alterTimeDown", -- Alter Time again I guess
+			[324220] = "deathborneDown",
 
 			-- COVENANTS
 			[310143] = "soulshapeDown", -- Nightfae Signature
@@ -396,6 +401,7 @@
 			[982] = "revivePet",
 			[19434] = "aimedShot",
 			--[19386] = "wyvernSting",
+			[1513] = "scareBeast",
 			
 			-- Mage (Spell Casting)
 			[118] = "polymorph", -- Sheep
@@ -418,6 +424,7 @@
 			[113724] = "ringOfFrost",
 			--[224968] = "_PHmarkOfAluneth",
 			[257537] = "ebonbolt",
+			[314793] = "mirrorsOfTorment",
 			
 			-- Monk (Spell Casting)
 			--[205406] = "sheilunsGift",
@@ -542,6 +549,7 @@
 			[20066] = "success", -- Repentence (Paladin)
 			[605] = "success", -- Mind Control (Priest)
 			[2637] = "success", -- Hibernate (Druid)/leave/lea
+			[1513] = "success", -- Scare Beast (Hunter)
 			
 			-- Connected (Big Beefy cast-time abilities that successfully connect.)
 			[203286] = "connected", -- Greater Pyro
@@ -552,6 +560,7 @@
 			[370] = "purge", 		-- Purge (Shaman)
 			[19505] = "purge",		-- Devour Magic (Warlock :|)
 			[278326] = "purge",		-- Consume Magic (Demon Hunter apparently????)
+			[19801] = "purge",		-- Tranquilizing Shot (Hunter)
 		
 			--GENERAL
 			[2825] = "bloodLust",
@@ -715,6 +724,10 @@
 			[199483] = "camouflage",
 			[236776] = "boomTrap", -- Hi-Explosive Trap
 			[248518] = "Interlope", -- Interlope
+			[325028] = "deathChakram", -- Necrolord
+			[308491] = "resonatingArrow", -- Kyrian
+			[257284] = "huntersMark",
+			[19577] = "intimidation", -- Intimidation
 			
 			-- Mage (Cast Success)
 			[2139] = "counterspell", 
@@ -733,6 +746,7 @@
 			[205025] = "presenceOfMind",
 			[108839] = "iceFloes",
 			[31661] = "DragonBreath", -- Dragon's Breath
+			[55342] = "mirrorImage",
 			
 			-- Monk (Cast Success)
 			[116841] = "tigersLust",
@@ -960,4 +974,14 @@ Record sound:
 - convokeTheSpirits
 - heartOfTheWild
 - heartOfTheWildDown
+- deathChakram
+- resonatingArrow
+- huntersMark
+- scareBeast
+- alterTime
+- alterTimeDown
+- mirrorImage
+- mirrorsOfTorment
+- deathborne
+- deathborneDown
 ]]
