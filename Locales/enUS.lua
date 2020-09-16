@@ -176,3 +176,51 @@ L["Connected"] = "Connected Alerts"
 L["Connected_Desc"] = "Plays a simple 'Connected' alert when certain very powerful cast-time abilities successfully complete their cast.|n|nGreater Pyroblast (|cff69CCF0Mage|r)|nChaos Bolt (|cff9482C9Warlock|r)"
 
 L["CovenantAbilities"] = "Covenant Abilities"
+
+L["FrostDK"] = "Frost"
+L["BloodDK"] = "Blood"
+L["UnholyDK"] = "Unholy"
+
+L["HavocDH"] = "Havoc"
+L["VengeanceDH"] = "Vengeance"
+
+L["FeralDR"] = "Feral"
+L["BalanceDR"] = "Balance"
+L["RestorationDR"] = "Restoration"
+L["GuardianDR"] = "Guardian"
+
+L["MarksmanshipHN"] = "Marksmanship"
+L["SurvivalHN"] = "Survival"
+L["BeastMasteryHN"] = "Beast Mastery"
+
+L["FrostMG"] = "Frost"
+L["FireMG"] = "Fire"
+L["ArcaneMG"] = "Arcane"
+
+L["MistweaverMN"] = "Mistweaver"
+L["WindwalkerMN"] = "Windwalker"
+L["BrewmasterMN"] = "Brewmaster"
+
+L["HolyPD"] = "Holy"
+L["RetributionPD"] = "Retribution"
+L["ProtectionPD"] = "Protection"
+
+L["HolyPR"] = "Holy"
+L["DisciplinePR"] = "Discipline"
+L["ShadowPR"] = "Shadow"
+
+L["OutlawRG"] = "Outlaw"
+L["AssassinationRG"] = "Assassination"
+L["SubtletyRG"] = "Subtlety"
+
+L["RestorationSH"] = "Restoration"
+L["EnhancementSH"] = "Enhancement"
+L["ElementalSH"] = "Elemental"
+
+L["DestructionWL"] = "Destruction"
+L["DemonologyWL"] = "Demonology"
+L["AfflictionWL"] = "Affliction"
+
+L["ArmsWR"] = "Arms"
+L["FuryWR"] = "Fury"
+L["ProtectionWR"] = "Protection"

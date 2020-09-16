@@ -126,7 +126,7 @@
 			--[122470] = "touchOfKarma",
 			--[125174] = "touchOfKarma", --Test
 			[152173] = "Serenity",
-			[216113] = "fistweaving", --Way of the Crane
+			--[216113] = "fistweaving", --Way of the Crane
 			[197908] = "manaTea",
 			[209584] = "zenFocusTea",
 			[202335] = "doubleBarrel", -- Double Barrel (Brewmaster Honor Talent that stuns)
@@ -158,14 +158,16 @@
 			[33206] = "painSuppression",
 			[47585] = "dispersion",
 			[47788] = "guardianSpirit",
-			--[10060] = "powerInfusion",
+			[10060] = "powerInfusion",
 			[197862] = "archangelHealing",
 			[197871] = "archangelDamage",
 			[200183] = "apotheosis",
 			[213610] = "holyWard",
 			[197268] = "rayOfHope",
 			[193223] = "surrenderToMadness",
+			[319952] = "surrenderToMadness",
 			[47536] = "rapture",
+			[109964] = "rapture",
 			[194249] = "voidForm",
 			[218413] = "voidForm",
 			[15286] = "vampiricEmbrace",
@@ -183,7 +185,7 @@
 			[199754] = "riposte",
 			[31230] = "cheatDeath",
 			[45182] = "cheatDeath",
-			--[202665] = "dreadblades",
+			[343142] = "dreadblades",
 			[1833] = "cheapShot",
 			[1330] = "garrote",
 			[6770] = "sap",
@@ -269,13 +271,14 @@
 			[207810] = "bondageDown",			--Nether Bond
 			[198111] = "temporalDown",			--Temporal Shield
 			[198144] = "iceFormDown",			--Ice Form
-			[216113] = "fistingDown",			--Way of the Crane
+			--[216113] = "fistingDown",			--Way of the Crane
 			[31850] = "defenderDown",			--Ardent Defender
 			[205191] = "eyeDown",				--Eye for an Eye
 			[184662] = "vengeanceShieldDown",	--Vengeance Shield
 			[213610] = "wardDown",				--Holy Ward
 			[197268] = "hopeDown",				--Ray of Hope
-			[193223] = "madnessDown",			--Surreder to Madness
+			[193223] = "madnessDown",			--Surrender to Madness
+			[319952] = "madnessDown",			-- It's baaaack
 			[210918] = "etherealDown",			--Ethereal Form
 			[212295] = "netherWardDown",		--Nether Ward
 			[86659] = "kingsDown",				--Guardian of Ancient Kings
@@ -292,7 +295,7 @@
 			[199754] = "riposteDown",			--Riposte
 			--[204293] = "spiritLinkDown",		--Spirit Link
 			--[200851] = "rageOfSleeperDown",		--Rage of the Sleeper
-			--[202665] = "dreadbladesDown",		--Curse of the Dreadblades
+			[343142] = "dreadbladesDown",		--Curse of the Dreadblades
 			[194249] = "voidFormDown",			--Voidform
 			[218413] = "voidFormDown",			--Voidform
 			[15286] = "vampiricEmbraceDown",	--Vampiric Embrace
@@ -323,6 +326,7 @@
 			[29166] = "innervateDown", -- Innervate
 			[6940] = "sacrificeDown", -- Blessing of Sacrifice
 			[199448] = "sacrificeDown", -- Ultimate Sacrifice
+			[199452] = "sacrificeDown", -- Placeholder for Ultimate Sacrifice
 			[196098] = "darkSoulDown", -- Dark Soul
 			[113860] = "darkSoulDown", -- Dark Soul
 			[113858] = "darkSoulDown", -- Dark Soul
@@ -432,6 +436,7 @@
 
 			-- Paladin (Spell Casting)
 			[20066] = "repentance",
+			[10326] = "turnEvil",
 			--[200652] = "tyrsDeliverance",
 			
 			-- Priest (Spell Casting)
@@ -441,6 +446,7 @@
 			--[207946] = "lightsWrath",
 			[265202] = "holyWordSalvation", -- Holy Word Salvation
 			[289666] = "greaterHeal", -- >:(
+			[325013] = "boonOfTheAscended",
 
 			-- Rogue (Spell Casting)
 				--None! :D
@@ -758,9 +764,12 @@
 			[137639] = "stormEarthFire",
 			[115310] = "revival",
 			[132578] = "invokeOx",
-			[198664] = "invokeCrane",
+			--[198664] = "invokeCrane",
+			[325197] = "fistweaving",
+			[322118] = "invokeSerpent",
 			--[214326] = "explodingKeg",
 			[115080] = "touchOfDeath",
+			[322109] = "touchOfDeath",
 			[233759] = "grappleWeapon",
 			[122470] = "touchOfKarma",
 			--[209525] = "soothingMist",
@@ -774,12 +783,16 @@
 			[31821] = "auraMastery", 
 			[190784] = "pony",				-- Divine Steed (Was Holy/Ret, now all specs)
 			[115750] = "blindingLight",
-			[210220] = "holyWrath",
+			--[210220] = "holyWrath",
 			[210256] = "sanctuary",
 			[633] = "layOnHands",
 			[6940] = "sacrifice",				-- Blessing of Sacrifice
 			[199448] = "UltimateSacrifice",		-- Blessing of Sacrifice (Ultimate Sacrifice PvP Talent)
+			[199452] = "UltimateSacrifice",		-- Placeholder for Ultimate Sacrifice
 			--[267798] = "ExecutionSentence",  -- Execution Sentence
+			[343527] = "ExecutionSentence",
+			[152262] = "Seraphim",
+			[343721] = "finalReckoning",
 			
 			-- Priest (Cast Success)
 			[8122] = "fear4", 		-- Psychic Scream
@@ -801,8 +814,12 @@
 			[263165] = "voidTorrent",
 			[73325] = "leapOfFaith",
 			[215769] = "redeemer",
-			[305498] = "Premonition", -- Premonition
+			--[305498] = "Premonition", -- Premonition
+			[32379] = "Premonition", -- Shadow Word: Death
 			[289657] = "holywordconcentration",
+			[316262] = "thoughtsteal",
+			[327661] = "faeGuardians",
+			[313347] = "mindGames",
 
 			-- Rogue (Cast Success)
 			[2094] = "blind",
@@ -823,7 +840,9 @@
 			[13750] = "adrenalineRush",
 			[1784] = "stealth",
 			[206328] = "Neurotoxin", -- Neurotoxin Honor Talent
-			
+			[328305] = "Sepsis", -- wow really blizzard
+			[185311] = "crimsonVial",
+
 			-- Shaman (Cast Success)
 			[108281] = "ancestralGuidance",
 			[118345] = "pulverize",
@@ -984,4 +1003,13 @@ Record sound:
 - mirrorsOfTorment
 - deathborne
 - deathborneDown
+- invokeSerpent
+- turnEvil
+- finalReckoning
+- thoughtsteal
+- faeGuardians
+- boonOfTheAscended
+- mindGames
+- sepsis
+- crimsonVial
 ]]

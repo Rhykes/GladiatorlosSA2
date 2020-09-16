@@ -6,7 +6,8 @@ NOTE: This version is a spell library update, and does not yet include sounds fo
 General
 * Added a Covenant ability section to all ability types.
 * Added all Covenant Signature abilities to their relevant sections.
-* Fixed several outdated spellIDs for existing spells. I'm sure there's more.
+* Fixed several outdated spellIDs for existing spells. I'm sure there's more. Let me know. :)
+* Removed more invalid spellIDs.
 
 
 Death Knight
@@ -47,9 +48,74 @@ Mage
 * Added Mirrors of Torment (Venthyr) to Spell Casting.
 * Added Deathborne (Necrolord) to Aura Applied/Down.
 
+
+Monk
+* Added Invoke Yu'lon, the Jade Serpent to Cast Success.
+* "Fistweaving" alert now applies to Invoke Chi-Ji, the Red Crane.
+
+
+Paladin
+* Added Turn Evil to Spell Casting.
+* Added Execution Sentence to Cast Success.
+* Added Seraphim to Cast Success.
+* Removed Holy Wrath (been gone for a while, lol).
+* (Paladin Covenant abilities did not seem like they had enough reactive gameplay involved to justify alerts. Might add them in the future.)
+
+
+Priest
+* Added Fae Guardians to Cast Success.
+* Added Mind Games to Cast Success.
+* Added Boon of the Ascended to Cast Start.
+* Added Power Infusion to Buff Applied.
+* Added Spirit Shell to the Rapture alert.
+* Added Thoughtsteal to Cast Success.
+* Shadow Word: Death now uses the Premonition alert since its CC break effect is preserved. Might change later.
+
+
+Rogue
+* Added Sepsis to Cast Success.
+* Added Dreadblades to Aura Applied/Down.
+* Added Crimson Vial to Cast Success.
+
 Localization
 * New strings:
     L["CovenantAbilities"]
+    L["FrostDK"]
+    L["BloodDK"]
+    L["UnholyDK"]
+    L["HavocDH"]
+    L["VengeanceDH"]
+    L["FeralDR"]
+    L["BalanceDR"]
+    L["RestorationDR"]
+    L["GuardianDR"]
+    L["MarksmanshipHN"]
+    L["SurvivalHN"]
+    L["BeastMasteryHN"]
+    L["FrostMG"]
+    L["FireMG"]
+    L["ArcaneMG"]
+    L["MistweaverMN"]
+    L["WindwalkerMN"]
+    L["BrewmasterMN"]
+    L["HolyPD"]
+    L["RetributionPD"]
+    L["ProtectionPD"]
+    L["HolyPR"]
+    L["DisciplinePR"]
+    L["ShadowPR"]
+    L["OutlawRG"]
+    L["AssassinationRG"]
+    L["SubtletyRG"]
+    L["RestorationSH"]
+    L["EnhancementSH"]
+    L["ElementalSH"]
+    L["DestructionWL"]
+    L["DemonologyWL"]
+    L["AfflictionWL"]
+    L["ArmsWR"]
+    L["FuryWR"]
+    L["ProtectionWR"]
 
 ===========================================
 - version SLB 1 (9.0)

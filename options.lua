@@ -54,9 +54,10 @@ local function spellOption(order, spellID, ...)
 			type = 'toggle',
 			name = "\124T" .. icon .. ":24\124t" .. spellname,			
 			desc = function ()
-				GameTooltip:SetOwner(UIParent, "ANCHOR_CURSOR")				
-				GameTooltip:SetHyperlink(GetSpellLink(spellID))			
-				GameTooltip:Show()  
+				GameTooltip:SetOwner(UIParent, "ANCHOR_CURSOR")
+				GameTooltip:SetHyperlink(GetSpellLink(spellID))
+				GameTooltip:Show()
+				--print(GetSpellInfo((spellID)))
 			end, -- https://i.imgur.com/ChzUb.jpg
 			-- why are you reading this disaster, go away this is embarrassing
 			descStyle = "custom",
@@ -521,7 +522,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cFF00FF96Monk|r"],
 								order = 100,
-								args = listOption({243435,201318,115203,122278,122783,115176,201325,116849,152173,216113,197908,209584,202335},"auraApplied"),
+								args = listOption({243435,201318,115203,122278,122783,115176,201325,116849,152173,197908,209584,202335},"auraApplied"),
 							},
 							paladin = { -- AuraApplied
 								type = 'group',
@@ -535,14 +536,14 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cffFFFFFFPriest|r"],
 								order = 120,
-								args = listOption({33206,47585,47788,197862,197871,200183,197268,193223,47536,194249,218413,15286,213610,213602},"auraApplied"),
+								args = listOption({33206,47585,47788,197862,197871,200183,197268,193223,109964,47536,194249,218413,15286,213610,213602,10060},"auraApplied"),
 							},
 							rogue = { -- AuraApplied
 								type = 'group',
 								inline = true,
 								name = L["|cffFFF569Rogue|r"],
 								order = 130,
-								args = listOption({2983,31224,5277,51690,121471,185313,185422,199754,31230,45182,1833,1330,6770,207736,1966},"auraApplied"), 
+								args = listOption({2983,31224,5277,51690,121471,185313,185422,199754,31230,45182,1833,1330,6770,207736,1966,343142},"auraApplied"),
 							},
 							shaman	= { -- AuraApplied
 								type = 'group',
@@ -641,7 +642,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cFF00FF96Monk|r"],
 								order = 90,
-								args = listOption({243435,201318,115203,115176,122470,216113,116849,209584},"auraRemoved"),
+								args = listOption({243435,201318,115203,115176,122470,116849,209584},"auraRemoved"),
 							},
 							paladin = { -- AuraRemoved
 								type = 'group',
@@ -662,7 +663,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cffFFF569Rogue|r"],
 								order = 120,
-								args = listOption({31224,5277,74001,51690,199754,1966},"auraRemoved"),
+								args = listOption({31224,5277,74001,51690,199754,1966,343142},"auraRemoved"),
 							},
 							shaman	= { -- AuraRemoved
 								type = 'group',
@@ -766,14 +767,14 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cffF58CBAPaladin|r"],
 								order = 100,
-								args = listOption({20066},"castStart"),
+								args = listOption({20066,10326},"castStart"),
 							},
 							priest	= { -- CastStart
 								type = 'group',
 								inline = true,
 								name = L["|cffFFFFFFPriest|r"],
 								order = 110,
-								args = listOption({9484,605,32375,265202,289666},"castStart"),
+								args = listOption({9484,605,32375,265202,289666,325013},"castStart"),
 							},
 							--rogue = { -- CastStart
 							--	type = 'group',
@@ -892,6 +893,22 @@ function GSA:OnOptionCreate()
 								order = 50,
 								args = listOption({202138,202140,207684,207682,202137,179057,206649,205604,205629,205630,211881,203704,221527,217832,196718,198013,235903,317009,306830,323639},"castSuccess"),
 							},
+							-- I was testing something. Ignore this lol.
+							--[[testType = { -- CastSuccess
+								type = 'group',
+								inline = true,
+								name = L["epicBattleground"],
+								order = 60,
+								args = {
+									testType2 = {
+										type = 'group',
+										inline = true,
+										name = L["epicBattlegroundDesc"],
+										order = 50,
+										args = listOption({202138,202140,207684,207682,202137,179057,206649,205604,205629,205630,211881,203704,221527,217832,196718,198013,235903,317009,306830,323639},"castSuccess"),
+									}
+								}
+							},]]
 							druid = { -- CastSuccess
 								type = 'group',
 								inline = true,
@@ -918,28 +935,28 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cFF00FF96Monk|r"],
 								order = 100,
-								args = listOption({116841,119381,123904,115078,119996,137639,115310,132578,198664,115080,233759,122470,116844,233759,202370},"castSuccess"),
+								args = listOption({116841,119381,123904,115078,119996,137639,115310,132578,115080,233759,122470,116844,233759,202370,325197,322118},"castSuccess"),
 							},
 							paladin = { -- CastSuccess
 								type = 'group',
 								inline = true,
 								name = L["|cffF58CBAPaladin|r"],
 								order = 110,
-								args = listOption({6940,199448,31821,853,190784,115750,210220,210256,633},"castSuccess"),
+								args = listOption({6940,199448,199452,31821,853,190784,115750,210256,633,343527,152262,343721},"castSuccess"),
 							},
 							priest	= { -- CastSuccess
 								type = 'group',
 								inline = true,
 								name = L["|cffFFFFFFPriest|r"],
 								order = 120,
-								args = listOption({8122,34433,64044,15487,64843,19236,123040,204263,2050,88625,205369,211522,108968,271466,62618,263165,73325,215769,209780,289657,305498},"castSuccess"),
+								args = listOption({8122,34433,64044,15487,64843,19236,123040,204263,2050,88625,205369,211522,108968,271466,62618,263165,73325,215769,209780,289657,32379,316262,327661,313347},"castSuccess"),
 							},
 							rogue = { -- CastSuccess
 								type = 'group',
 								inline = true,
 								name = L["|cffFFF569Rogue|r"],
 								order = 130,
-								args = listOption({2094,1856,212182,79140,207777,200806,198529,199804,408,193316,1776,13750,1784,206328},"castSuccess"),
+								args = listOption({2094,1856,212182,79140,207777,200806,198529,199804,408,193316,1776,13750,1784,206328,328305,185311},"castSuccess"),
 							},
 							shaman	= { -- CastSuccess
 								type = 'group',
