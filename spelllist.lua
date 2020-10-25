@@ -974,10 +974,7 @@ end
 
 --[[@TODO
 Record sound:
-- fleshcraft
 - fleshcraftDown
-- doorOfShadows
-- soulshape
 - soulshapeDown
 - purifyPotion
 - licheborne
