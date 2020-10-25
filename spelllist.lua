@@ -463,6 +463,7 @@
 			[309328] = "hex", -- Living Honey
 			--[207778] = "giftOfTheQueen",
 			[191634] = "stormkeeper",
+			[320137] = "stormkeeper",
 			[210714] = "Icefury", -- Icefury
 			
 			-- Warlock (Spell Casting)
@@ -871,6 +872,8 @@
 			[198838] = "protectionTotem",
 			[204336] = "grounding", -- Updated for Legion
 			[8143] = "TremorTotem", -- Tremor Totem!
+			[16191] = "manaTideTotem",
+			[324386] = "vesperTotem",
 			
 			-- Warlock (Cast Success)
 			[6789] = "mortalCoil",
@@ -904,6 +907,7 @@
 			[199892] = "CurseOfWeakness", -- Curse of Weakness
 			[199890] = "CurseOfTongues", -- Curse of Tongues
 			[80240] = "havoc",
+			[312321] = "scouringTithe",
 
 			-- Warrior (Cast Success)
 			[97462] = "commandingShout",
@@ -1012,4 +1016,7 @@ Record sound:
 - mindGames
 - sepsis
 - crimsonVial
+- manaTideTotem
+- vesperTotem
+- scouringTithe
 ]]

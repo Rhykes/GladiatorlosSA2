@@ -788,7 +788,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cff0070daShaman|r"],
 								order = 130,
-								args = listOption({210873,211004,211015,211010,51514,191634,210714},"castStart"),
+								args = listOption({210873,211004,211015,211010,51514,191634,320137,210714},"castStart"),
 							},
 							warlock	= { -- CastStart
 								type = 'group',
@@ -956,7 +956,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cffFFF569Rogue|r"],
 								order = 130,
-								args = listOption({2094,1856,212182,79140,207777,200806,198529,199804,408,193316,1776,13750,1784,206328,328305,185311},"castSuccess"),
+								args = listOption({2094,1856,212182,79140,207777,200806,198529,199804,408,193316,1776,13750,1784,206328,328305,185311320137},"castSuccess"),
 							},
 							shaman	= { -- CastSuccess
 								type = 'group',
@@ -970,14 +970,14 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cff0070daShaman (Totems)|r"],
 								order = 141,
-								args = listOption({204330,204331,98008,51485,108280,192058,192077,192222,207399,198838,204336,8143},"castSuccess"),
+								args = listOption({204330,204331,98008,51485,108280,192058,192077,192222,207399,198838,204336,8143,16191,324386},"castSuccess"),
 							},
 							warlock = { -- CastSuccess
 								type = 'group',
 								inline = true,
 								name = L["|cff9482C9Warlock|r"],
 								order = 150,
-								args = listOption({6789,48020,111859,111895,111896,111897,111898,1122,205180,201996,199954,199892,199890,80240},"castSuccess"),
+								args = listOption({6789,48020,111859,111895,111896,111897,111898,1122,205180,201996,199954,199892,199890,80240,5484,312321},"castSuccess"),
 							},
 							warrior	= { -- CastSuccess
 								type = 'group',

@@ -63,9 +63,9 @@ Paladin
 
 
 Priest
-* Added Fae Guardians to Cast Success.
-* Added Mind Games to Cast Success.
-* Added Boon of the Ascended to Cast Start.
+* Added Fae Guardians (Nightfae) to Cast Success.
+* Added Mind Games (Venthyr) to Cast Success.
+* Added Boon of the Ascended (Kyrian) to Cast Start.
 * Added Power Infusion to Buff Applied.
 * Added Spirit Shell to the Rapture alert.
 * Added Thoughtsteal to Cast Success.
@@ -73,9 +73,20 @@ Priest
 
 
 Rogue
-* Added Sepsis to Cast Success.
+* Added Sepsis (Nightfae) to Cast Success.
 * Added Dreadblades to Aura Applied/Down.
 * Added Crimson Vial to Cast Success.
+
+
+Shaman
+* Added Mana Tide Totem to Cast Success.
+* Added Vesper Totem (Kyrian) to Cast Success.
+
+
+Warlock
+* Added Howl of Terror to Cast Success.
+* Added Scouring Tithe (Kyrian) to Cast Success.
+
 
 Localization
 * New strings:
