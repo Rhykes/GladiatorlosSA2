@@ -3,7 +3,20 @@
 
 General
 * Some changes documented in SLB 2 are actually in SLB 3. Weird things happened.
-* Imported many alert sounds given to me (thanks n30exca_ !) though they may not all be properly hooked up yet.
+* Imported many alert sounds given to me (thanks n30exca_ !) though they may not all be properly hooked up yet. Some are subject to change.
+
+Monk
+* Added Bonedust Brew (Necrolord) to Cast Success.
+
+Paladin
+* Added Ashen Hallow (Venthyr) to Cast Success.
+* Added all four Seasonal Blessings (Night Fae) to Cast Success.
+
+Priest
+* Added Boon of the Ascended (Kyrian) to Cast Success.
+
+Warrior
+* Added Ancient Aftershock (Night Fae) to Cast Success.
 
 ===========================================
 

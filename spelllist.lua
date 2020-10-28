@@ -776,7 +776,8 @@
 			--[209525] = "soothingMist",
 			--[205320] = "strikeOfTheWindlord",
 			[116844] = "ringOfPeace",
-			[202370] = "MightyOxKick", 
+			[202370] = "MightyOxKick",
+			[325216] = "bonedustbrew",
 			
 			-- Paladin (Cast Success)
 			[96231] = "rebuke",
@@ -794,6 +795,11 @@
 			[343527] = "ExecutionSentence",
 			[152262] = "Seraphim",
 			[343721] = "finalReckoning",
+			[316958] = "ashenhallow",
+			[328282] = "blessingofspring",
+			[328620] = "blessingofsummer",
+			[328622] = "blessingofautumn",
+			[328281] = "blessingofwinter",
 			
 			-- Priest (Cast Success)
 			[8122] = "fear4", 		-- Psychic Scream
@@ -821,6 +827,7 @@
 			[316262] = "thoughtsteal",
 			[327661] = "faeGuardians",
 			[313347] = "mindGames",
+			[325013] = "boonoftheascended",
 
 			-- Rogue (Cast Success)
 			[2094] = "blind",
@@ -926,6 +933,7 @@
 			[236320] = "warBanner",
 			[6544] = "heroicLeap",
 			[206572] = "DragonCharge", -- Dragon Charge
+			[325886] = "ancientAftershock",
 		},
 		friendlyInterrupt = {			--friendly interrupt [spellid] = ".mp3 file name",
 			[19647] = "lockout", -- Spell Lock
@@ -983,18 +991,13 @@ Record sound:
 - transfusion
 - transfusionDown
 - raiseAbomination
-- abominationLimb     (Grabby hands?!)
+- abominationLimb     (Should really change this to grabbyhands lol)
 - abominationLimbDown
 - sinfulBrand
-- elysianDecree
-- theHunt
-- adaptiveSwarm
 - ravenousFrenzy
 - ravenousFrenzyDown
-- convokeTheSpirits
 - heartOfTheWild
 - heartOfTheWildDown
-- deathChakram
 - resonatingArrow
 - huntersMark
 - scareBeast
@@ -1005,13 +1008,9 @@ Record sound:
 - deathborne
 - deathborneDown
 - invokeSerpent
-- turnEvil
-- finalReckoning
-- thoughtsteal
 - faeGuardians
 - boonOfTheAscended
 - mindGames
-- sepsis
 - crimsonVial
 - manaTideTotem
 - vesperTotem
