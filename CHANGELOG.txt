@@ -5,6 +5,9 @@ General
 * Some changes documented in SLB 2 are actually in SLB 3. Weird things happened.
 * Imported many alert sounds given to me (thanks n30exca_ !) though they may not all be properly hooked up yet. Some are subject to change.
 
+Death Knight
+* Fixed missing option for Frostwyrm's Fury in Cast Success.
+
 Monk
 * Added Bonedust Brew (Necrolord) to Cast Success.
 
