@@ -1,3 +1,64 @@
+- version 3.0 (9.0)
+
+General
+* Fixed Purify Soul alert (Kyrian signature).
+* Removed Gladiator's Maledict (no longer seems to exist).
+
+Death Knight
+* Added Death's Due (Night Fae) to Cast Success.
+* Added Shackle the Unworthy (Kyrian) to Cast Success.
+* Added Swarming Mist (Venthyr) to Aura Applied.
+
+Demon Hunter
+* Added Fodder to the Flame (Necrolord) to Cast Success.
+
+Druid
+* Added the 3 Kindred buffs (Kyrian) to Cast Success.
+* Added Ravenous Frenzy (Venthyr) to Aura Applied.
+
+Hunter
+* Added Flayed Shot (Venthyr) to Cast Success.
+* Added Wild Spirits (Nightfae) to Cast Success.
+
+Mage
+* Added Radiant Spark (Kyrian) to Spell Casting.
+* Added Shifting Power (Nightfae) to Spell Casting).
+
+Monk
+* Added Faeline Stomp (Nightfae) to Cast Success.
+* Added Fallen Order (Venthyr) to Cast Success.
+
+Paladin
+* Added Divine Toll (Kyrian) to Cast Success.
+
+Priest
+* Added Mindgames (Venthyr) to Spell Casting.
+* Added Unholy Nova (Necrolord) to Cast Success.
+
+Rogue
+* Added Echoing Reprimand (Kyriand) to Cast Success.
+* Added Flagellation (Venthyr) to Cast Success.
+* Added Serrated Bone Spike (Necrolord) to Cast Success.
+* Fixed a missing comma that broke a few spells.
+* Removed Stormkeeper from rogues, apparently.
+* Don't drink and code, kids.
+
+Shaman
+* Added Chain Harvest (Venthyr) to Spell Casting.
+* Added Echoing Shock to Cast Success.
+* Added Fae Transfusion (Nightfae) to Spell Casting.
+* Added Primordial Wave (Necrolord) to Cast Success.
+
+Warlock
+* Added Impending Catastrophe (Venthyr) to Cast Success.
+* Added Phantom Singularity to Cast Success.
+
+Warrior
+* Added Conqueror Banner (Necrolord) to Cast Success.
+* Added Shattering Throw to Spell Casting.
+* Added Spear of Bastion (Kyrian) to Cast Success.
+
+===========================================
 - version SLB 3 (9.0)
 ***THIS IS A WORK IN PROGRESS BETA BUILD. EXPECT (BUT PLEASE REPORT) PROBLEMS***
 
@@ -22,7 +83,6 @@ Warrior
 * Added Ancient Aftershock (Night Fae) to Cast Success.
 
 ===========================================
-
 - version SLB 2 (9.0)
 ***THIS IS A WORK IN PROGRESS BETA BUILD. EXPECT (BUT PLEASE REPORT) PROBLEMS***
 
