@@ -291,7 +291,8 @@ end
  function GladiatorlosSA:COMBAT_LOG_EVENT_UNFILTERED(event , ...)
 	-- Checks if alerts should occur here.
 	if (not canSpeakHere) then return end
-
+	 local isSanctuary = GetZonePVPInfo()
+	 if (isSanctuary == "sanctuary") then return end
 	
 	local timestamp,event,hideCaster,sourceGUID,sourceName,sourceFlags,sourceFlags2,destGUID,destName,destFlags,destFlags2,spellID = CombatLogGetCurrentEventInfo()
 	--select ( 1 , ... );
