@@ -366,7 +366,7 @@ end
 	elseif (event == "SPELL_CAST_SUCCESS" and sourcetype[COMBATLOG_FILTER_HOSTILE_PLAYERS] and (not gsadb.sonlyTF or sourceuid.target or sourceuid.focus) and not gsadb.castSuccess) then
 		if self:Throttle(tostring(spellID).."default", 0.05) then return end
 		if gsadb.class and playerCurrentZone == "arena" then
-			if spellID == 42292 or spellID == 208683 or spellID == 195710 or spellID == 42292 or spellID == 336126 then
+			if spellID == 42292 or spellID == 208683 or spellID == 195710 or spellID == 336126 then
 				local c = self:ArenaClass(sourceGUID) -- PvP Trinket Class Callout
 					if c then 
 					self:PlaySound(c);

@@ -607,11 +607,7 @@
 			[59752] = "everyMan", 
 			[287712] = "haymaker",
 			[295707] = "regeneratin",
---			[214027] = "trinket1", -- Adaptation Legion
---			[195756] = "trinket1", -- Adaptation Legion
---			[195885] = "trinket1", -- Adaptation Legion
---			[195895] = "trinket1", -- Adaptation Legion
---			[195845] = "trinket1", -- Adaptation Legion
+
 			[208683] = "trinket", -- Gladiator's Medallion Legion
 			[195710] = "trinket", -- Honorable Medallion Legion
 			[336126] = "trinket", -- Gladiator's Medallion Shadowlands

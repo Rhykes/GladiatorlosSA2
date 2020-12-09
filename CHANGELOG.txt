@@ -2,7 +2,6 @@
 
 General
 * Alerts are now disabled completely in Sanctuary zones. No more Soul Shape! Soul Shape! Soul Shape! Soul Shape!
-* Heirloom PvP trinkets should now function properly with the Class Alert feature in Arenas. Talk about an edge case.
 * Shadowlands Medallion trinkets should now function properly with the Class Alert feature for arenas.
 * Adaptation alerts have been fixed.
 
