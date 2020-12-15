@@ -1,3 +1,62 @@
+https://www.curseforge.com/wow/addons/gladiatorlossa2
+===========================================
+- version 3.1 (9.0)
+
+I wanted to take a quick moment to thank you all for your support since I took over GSA way back at the beginning
+of Legion! Your continued feedback, bug reports, and use of the mod has kept me motivated to keep up with it through
+WoW's ups and downs. I sincerely hope that this mod has provided an accessibility boost to capable players who just
+needed a little more to keep up with the ebb and flow of PvP combat, and that your ratings continue to climb.
+
+Per the request of some users, I have added a completely optional donation button on the project's CurseForge page.
+Please feel no pressure to chip in; and don't worry, no mention of it will ever be found in-game.
+
+General
+* Added sound for Fleshcraft (Down).
+* Updated the Purge description to include Tranquilizing Shot.
+* Removed Gladiator's Maledict.
+
+Death Knight
+* Changed alert for Abomination Limb.
+* Added sound for Abomination Limb (Down).
+* Added sound for Lichborne (+Down).
+* Added sound for Raise Abomination.
+* Added sound for Transfusion (+Down).
+
+Druid
+* Added sound for Heart of the Wild (+Down)
+* Removed Ravenous Frenzy from Buff Down.
+
+Hunter
+* Added sound for Hunter's Mark.
+* Added sound for Scare Beast.
+
+Mage
+* Added Frost Nova to Cast Success.
+* Added sound for Alter Time (+Down).
+* Added sound for Mirror Image.
+
+Monk
+* Added sound for Invoke Yu'lon, the Jade Serpent.
+
+Paladin
+* Changed Ultimate Sacrifice alert from "Divine Sacrifice" to "Ultimate Sacrifice".
+
+Priest
+* Changed Shadow Word: Death alert from "Premonition" to "Death".
+
+Rogue
+* Added sound for Crimson Vial.
+
+Shaman
+* Added sound for Mana Tide Totem.
+
+Warlock
+* Added sound for Dark Pact.
+
+Warrior
+* Added Shattering Throw's completion to Cast Success (off by default).
+
+===========================================
 - version 3.0.1 (9.0)
 
 General
