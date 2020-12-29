@@ -1,5 +1,21 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 ===========================================
+- version 3.1.1 (9.0.2)
+
+General
+* Updated Target/Focus tooltip to make it less misleading.
+
+Mage
+* Fixed Alter Time for Frost and Fire mages.
+
+Warlock
+* Added Deathbolt to Spell Casting.
+* Added Rapid Contagion to Cast Success.
+
+Warrior
+* Added Overwatch (PvP talent that grants Intervene targets Spell Reflection) to the Spell Reflection alert.
+
+===========================================
 - version 3.1 (9.0)
 
 I wanted to take a quick moment to thank you all for your support since I took over GSA way back at the beginning
