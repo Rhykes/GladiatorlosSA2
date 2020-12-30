@@ -1,6 +1,6 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 ===========================================
-- version 3.1.1 (9.0.2)
+- version 3.1.2 (9.0.2)
 
 General
 * Updated Target/Focus tooltip to make it less misleading.
