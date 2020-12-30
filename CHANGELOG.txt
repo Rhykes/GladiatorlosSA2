@@ -5,6 +5,9 @@ https://www.curseforge.com/wow/addons/gladiatorlossa2
 General
 * Updated Target/Focus tooltip to make it less misleading.
 
+Druid
+* Fixed missing Convoke the Spirits option (Cast Success).
+
 Mage
 * Fixed Alter Time for Frost and Fire mages.
 
