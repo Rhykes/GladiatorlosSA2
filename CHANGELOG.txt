@@ -6,7 +6,7 @@ General
 * Added Forgeborne Reveries (Necrolord Cheat Death) to Buff Applied.
 
 Hunter
-* Added Aimed Shot to Buff Applied.
+* Added Double Tap to Buff Applied.
 * Fixed actual Marksman Trueshot not alerting with the hunter "Trueshot" alerts. The irony!
 
 Shaman
