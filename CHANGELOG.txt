@@ -1,5 +1,35 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 ===========================================
+- version 3.3 (9.0.2)
+
+General
+* Added Forgeborne Reveries (Necrolord Cheat Death) to Buff Applied.
+
+Hunter
+* Added Aimed Shot to Buff Applied.
+* Fixed actual Marksman Trueshot not alerting with the hunter "Trueshot" alerts. The irony!
+
+Shaman
+* Added missing option for Primordial Wave.
+
+Warlock
+* Dark Souls' setting is no longer incorrectly is displayed as Soul Harvest in Buff Applied.
+
+===========================================
+- version 3.2 (9.0.2)
+
+General
+* Fleshcraft Down removed to prevent spam while damaging the casting target.
+
+Demon Hunter
+* Moved The Hunt from Cast Success to Cast Start.
+
+Shaman
+* Added Windfury Totem to Cast Success.
+
+Warrior
+* Added Colossus Smash and Warbreaker (Colossus Smash replacement talent) to Cast Success.
+===========================================
 - version 3.1.2 (9.0.2)
 
 General
