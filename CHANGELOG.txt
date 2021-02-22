@@ -1,5 +1,11 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 ===========================================
+- version 3.3.1 (9.0.2)
+
+General
+* Fixed category-wide "Buff Down" toggle.
+
+===========================================
 - version 3.3 (9.0.2)
 
 General
