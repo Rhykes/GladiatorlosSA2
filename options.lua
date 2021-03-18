@@ -473,7 +473,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["CovenantAbilities"],
 								order = 32,
-								args = listOption({310143,327676}, "auraApplied"),
+								args = listOption({310143,327676,323095,323524}, "auraApplied"),
 							},
 							dispelkickback = { -- AuraApplied
 								type = 'group',
@@ -600,7 +600,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["CovenantAbilities"],
 								order = 32,
-								args = listOption({310143}, "auraRemoved"),
+								args = listOption({310143,323095,323524}, "auraRemoved"),
 							},
 							dk = { -- AuraRemoved
 								type = 'group',

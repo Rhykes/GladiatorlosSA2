@@ -26,6 +26,8 @@
 			[319217] = "podtender", -- Nightfae Cheat Death
 			[320224] = "podtender", -- Nightfae Cheat Death
 			[327676] = "forgeborne", -- Forgeborne (Necrolord Soulbind)
+			[323095] = "UltimateForm", -- Necro
+			[323524] = "UltimateForm", -- Necro
 
 			-- Backlash (Aura Applied)
 			[87204] = "backlashFear", -- Vampiric Touch Dispel (Priest)
@@ -355,6 +357,8 @@
 			[342246] = "alterTimeDown", -- Alter Time again I guess
 			[108978] = "alterTimeDown", -- Alter Time again I guess again I guess
 			[147833] = "interveneDown",
+			[323095] = "UltimateFormDown", -- Necrolord
+			[323524] = "UltimateFormDown",
 
 			-- COVENANTS
 			[310143] = "soulshapeDown", -- Nightfae Signature
