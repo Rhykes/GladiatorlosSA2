@@ -243,6 +243,7 @@
 			[12975] = "lastStand", -- Last Stand
 			[223658] = "safeguard", -- Safeguard
 			[199086] = "warpath", -- Warpath
+			[147833] = "Intervene",
 			
 			-- Tank Taunts (Aura Applied)
 			--[206891] = "tankTauntsON", -- Tank Taunts On
@@ -353,6 +354,7 @@
 			[110909] = "alterTimeDown", -- Alter Time
 			[342246] = "alterTimeDown", -- Alter Time again I guess
 			[108978] = "alterTimeDown", -- Alter Time again I guess again I guess
+			[147833] = "interveneDown",
 
 			-- COVENANTS
 			[310143] = "soulshapeDown", -- Nightfae Signature
@@ -857,6 +859,7 @@
 			[327661] = "faeGuardians", -- Night Fae
 			[325013] = "boonoftheascended", -- Kyrian
 			[324724] = "unholynova", -- Necrolord
+			[109964] = "spiritShell",
 
 			-- Rogue (Cast Success)
 			[2094] = "blind",

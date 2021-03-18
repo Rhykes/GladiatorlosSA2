@@ -1,9 +1,12 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 ===========================================
-- version 3.3.1 (9.0.2)
+- version 3.4 (9.0.5)
 
-General
-* Fixed category-wide "Buff Down" toggle.
+Priest
+* Added Spirit Shell to Cast Success.
+
+Warrior
+* Added Intervene to Buff Applied/Removed.
 
 ===========================================
 - version 3.3 (9.0.2)
