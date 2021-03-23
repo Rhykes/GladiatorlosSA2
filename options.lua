@@ -466,7 +466,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["General Abilities"],
 								order = 30,					      		
-								args = listOption({195901,214027,34709},"auraApplied"),
+								args = listOption({195901,214027,34709,345231},"auraApplied"),
 							},
 							covenants = { -- AuraApplied
 								type = 'group',
@@ -593,7 +593,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["General Abilities"],
 								order = 30,
-								args = listOption({34709},"auraRemoved"),
+								args = listOption({34709,345231},"auraRemoved"),
 							},
 							covenants = { -- AuraRemoved
 								type = 'group',

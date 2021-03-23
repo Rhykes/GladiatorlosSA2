@@ -1,5 +1,11 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 ===========================================
+- version 3.6 (9.0.5)
+
+General
+* Added Gladiator's Emblem (Battlemaster) to Buff Applied/Down
+
+===========================================
 - version 3.5 (9.0.5)
 
 General
