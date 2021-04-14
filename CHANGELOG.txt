@@ -1,5 +1,39 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 ===========================================
+- version 3.7 (9.0.5)
+
+General
+* Added Ascendant Phial (Kleia Soulbind Bleed/Poison/Curse/whatever else immunity) to Buff Applied/Down.
+* Removed unused option for Soulshape Down in Buff Down.
+
+Death Knight
+* Added the stun from Dead of Winter to Buff Applied.
+
+Druid
+* Added Frenzied Regeneration to Buff Applied.
+
+Mage
+* Moved Shifting Power (Night Fae) from Cast Start to Cast Success (it should work now).
+
+Monk
+* Added Transcendence to Cast Success, so you can be more aware of when and where they replace their transfer location.
+
+Priest
+* Added Mind Games to "Connected!" alert.
+* Added Symbol of Hope to Cast Success.
+
+Shaman
+* Added Elemental Blast to Cast Start, in case you REALLY wanted to punish someone playing it.
+
+Warlock
+* Added Demonic Circle to Cast Success, so you can be more aware of when and where they replace their teleport location.
+* Added Drain Life to Cast Success.
+* Fixed Unstable Affliction's spell ID.
+
+Localization
+* Corrected many English strings to reflect recent changes.
+
+===========================================
 - version 3.6 (9.0.5)
 
 General

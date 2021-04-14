@@ -6,7 +6,7 @@
  local LSM = LibStub("LibSharedMedia-3.0")
  local self, GSA, PlaySoundFile = GladiatorlosSA, GladiatorlosSA, PlaySoundFile
  local GSA_TEXT = "|cff69CCF0GladiatorlosSA2|r (|cffFFF569/gsa|r)"
- local GSA_VERSION = "|cffFF7D0A 3.6 |r(|cff9482C99.0.5 Shadowlands|r)"
+ local GSA_VERSION = "|cffFF7D0A 3.7 |r(|cff9482C99.0.5 Shadowlands|r)"
  local GSA_TEST_BRANCH = ""
  local GSA_AUTHOR = " "
  local gsadb
@@ -248,7 +248,7 @@
 		spellID == 199086 or 		-- Warpath Stun
 		spellID == 202335 or 		-- Double Barrel Stun
 		spellID == 215652 or 		-- Shield of Virtue silence
-		spellID == 302144 then 		-- Gladiator's Maledict
+		spellID == 287254 then
 		return true
 	end
 end
