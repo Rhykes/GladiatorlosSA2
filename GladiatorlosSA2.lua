@@ -15,6 +15,9 @@
  local canSpeakHere = false
  local playerCurrentZone = ""
  local debugMode = 0
+ local opponentName = ""
+ local duelingOn = false
+
 
  local LSM_GSA_SOUNDFILES = {
 	["GSA-Demo"] = "Interface\\AddOns\\GladiatorlosSA2\\Voice_Custom\\Will-Demo.ogg",
@@ -185,6 +188,9 @@
 	GladiatorlosSA:RegisterEvent("PLAYER_ENTERING_WORLD")
 	GladiatorlosSA:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 	GladiatorlosSA:RegisterEvent("UNIT_AURA")
+	GladiatorlosSA:RegisterEvent("DUEL_REQUESTED")
+	GladiatorlosSA:RegisterEvent("DUEL_FINISHED")
+	GladiatorlosSA:RegisterEvent("CHAT_MSG_SYSTEM")
 	if not GSA_LANGUAGE[gsadb.path] then gsadb.path = GSA_LOCALEPATH[GetLocale()] end
 	self.throttled = {}
 	self.smarter = 0
@@ -303,8 +309,14 @@ end
 	--select ( 1 , ... );
 	if not GSA_EVENT[event] then return end
 
-		--print(sourceName,sourceGUID,destName,destGUID,destFlags,"|cffFF7D0A" .. event.. "|r",spellName,"|cffFF7D0A" .. spellID.. "|r")
-		--print("|cffff0000timestamp|r",timestamp,"|cffff0000event|r",event,"|cffff0000hideCaster|r",hideCaster,"|cffff0000sourceGUID|r",sourceGUID,"|cffff0000sourceName|r",sourceName,"|cffff0000sourceFlags|r",sourceFlags,"|cffff0000sourceFlags2|r",sourceFlags2,"|cffff0000destGUID|r",destGUID,"|cffff0000destName|r",destName,"|cffff0000destFlags|r",destFlags,"|cffff0000destFlags2|r",destFlags2,"|cffff0000spellID|r",spellID,"|cffff0000spellName|r",spellName)
+
+  --print(sourceName,sourceGUID,destName,destGUID,destFlags,"|cffFF7D0A" .. event.. "|r",spellName,"|cffFF7D0A" .. spellID.. "|r")
+	--print("|cffff0000timestamp|r",timestamp,"|cffff0000event|r",event,"|cffff0000hideCaster|r",hideCaster,"|cffff0000sourceGUID|r",sourceGUID,"|cffff0000sourceName|r",sourceName,"|cffff0000sourceFlags|r",sourceFlags,"|cffff0000sourceFlags2|r",sourceFlags2,"|cffff0000destGUID|r",destGUID,"|cffff0000destName|r",destName,"|cffff0000destFlags|r",destFlags,"|cffff0000destFlags2|r",destFlags2,"|cffff0000spellID|r",spellID,"|cffff0000spellName|r",spellName)
+
+  -- If the source is different from the dueling opponent the event gets ignored
+	if (duelingOn and not string.find(sourceName, opponentName)) then
+		return
+	end	
 
 	if (destFlags) then
 		for k in pairs(GSA_TYPE) do
@@ -446,4 +458,26 @@ end
 	else
 		return true
 	end
- end 
+ end
+
+ -- A player has requested to duel me
+function GladiatorlosSA:DUEL_REQUESTED(event, playerName)
+	opponentName = playerName
+	duelingOn = true
+ end
+ 
+ --I requested a duel to my target
+ function GladiatorlosSA:CHAT_MSG_SYSTEM(event, text)
+	if string.find(text, _G.ERR_DUEL_REQUESTED ) then
+		if (UnitExists("target")) then
+			duelingOn = true
+			opponentName = UnitName("target")
+		end
+	end
+ end
+ 
+  -- The duel finished or was canceled
+  function GladiatorlosSA:DUEL_FINISHED(event)
+	opponentName = ""
+	duelingOn = false
+  end
