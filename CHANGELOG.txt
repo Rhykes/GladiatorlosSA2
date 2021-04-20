@@ -1,5 +1,14 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 ===========================================
+- version 3.7.1 (9.0.5)
+
+General
+* Alerts from all other targets are filtered out during Duels. (Thanks, Gnulkion-Illidan!)
+
+Paladin
+* Fixed talented Hand of Freedom for ret paladins.
+
+===========================================
 - version 3.7 (9.0.5)
 
 General

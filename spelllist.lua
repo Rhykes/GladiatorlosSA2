@@ -149,6 +149,7 @@
 			-- Paladin (Aura Applied)
 			[1022] = "handOfProtection", 
 			[1044] = "handOfFreedom",
+			[305395] = "handOfFreedom", -- PvP talent
 			[642] = "divineShield", 
 			[31884] = "avengingWrath", -- Protection/Retribution
 			--[31842] = "avengingWrath", -- Holy
