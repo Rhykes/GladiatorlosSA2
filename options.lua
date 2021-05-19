@@ -56,6 +56,7 @@ local function spellOption(order, spellID, ...)
 			desc = function ()
 				GameTooltip:SetOwner(UIParent, "ANCHOR_CURSOR")
 				GameTooltip:SetHyperlink(GetSpellLink(spellID))
+				--GameTooltip:SetSpellByID(spellID)
 				GameTooltip:Show()
 				--print(GetSpellInfo((spellID)))
 			end, -- https://i.imgur.com/ChzUb.jpg
