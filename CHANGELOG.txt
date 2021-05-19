@@ -35,6 +35,12 @@ Rogue
 
 Shaman
 * Completed spell library update.
+
+Warlock
+* Completed spell library update.
+
+Warrior
+* Completed spell library update.
 ===========================================
 - version TBC-B1 (2.5.1)
 

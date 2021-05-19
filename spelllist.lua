@@ -186,11 +186,30 @@
 			[26839] = "garrote", -- Rank 7 (7+ silence)
 			[26884] = "garrote", -- Rank 8
 
-
 			-- Shaman (Aura Applied)
 			[16166] = "elementalMastery",
 			[30823] = "shamanisticRage",
 			[16188] = "naturesSwiftness",
+
+			-- Warlock (Aura Applied)
+			[132] = "detectInvis",
+			[6229] = "shadowWard", -- Rank 1
+			[11739] = "shadowWard", -- Rank 2
+			[11740] = "shadowWard", -- Rank 3
+			[28610] = "shadowWard", -- Rank 4
+			[18288] = "amplifyCurse",
+
+			-- Warrior (Buff Applied)
+			[2457] = "battleStance",
+			[71] = "defensiveStance",
+			[2458] = "berserkerStance",
+			[2687] = "bloodRage",
+			[871] = "shieldWall",
+			[18499] = "berserkerRage",
+			[1719] = "recklessness",
+			[23920] = "spellReflection",
+			[12292] = "deathwish",
+			[12975] = "lastStand",
 
 
 		},
@@ -243,6 +262,15 @@
 			-- Shaman (Aura Removed)
 			[30823] = "shamanisticRageDown",
 
+			-- Warlock (Aura Removed)
+			-- nope
+
+			-- Warrior (Aura Removed)
+			[871] = "shieldWallDown",
+			[1719] = "recklessnessDown",
+			[23920] = "spellReflectionDown",
+			[12292] = "deathwishDown",
+			[12975] = "lastStandDown",
 		},
 		castStart = {					-- cast start [spellid] = ".mp3 file name",
 		
@@ -273,8 +301,6 @@
 			[212036] = "resurrection", -- Mass Resurrection (Priest Mass Rez)
 			[212056] = "resurrection", -- Absolution (Paladin Mass Rez)
 			[212048] = "resurrection", -- Ancestral Vision (Shaman Mass Rez)
-
-
 
 			-- Druid (Spell Casting)
 			[2637] = "hibernate", -- Rank 1
@@ -334,6 +360,55 @@
 			-- Shaman (Spell Casting)
 			-- ...also lol apparently
 
+			-- Warlock (Spell Casting)
+			[688] = "summonDemon", -- Imp
+			[697] = "summonDemon", -- Voidwalker
+			[712] = "summonDemon", -- Succubus
+			[691] = "summonDemon", -- Felhunter
+			[30146] = "summonDemon", -- Felguard
+			[1122] = "infernal", -- O THIS WAS SCARY HUH
+			[5782] = "fear", -- Rank 1
+			[6213] = "fear", -- Rank 2
+			[6215] = "fear", -- Rank 3
+			[5484] = "howlOfTerror", -- Rank 1
+			[17928] = "howlOfTerror", -- Rank 2
+			[30108] = "unstableAffliction", -- Rank 1
+			[30404] = "umstableAffliction", -- Rank 2
+			[30405] = "unstableAffliction", -- Rank 3
+			[710] = "banish", -- Rank 1
+			[18647] = "banish", -- Rank 2
+			[30283] = "shadowfury", -- Rank 1
+			[30413] = "shadowfury", -- Rank 2
+			[30414] = "shadowfury", -- Rank 3
+			[29893] = "createHealthstone", -- Ritual of Souls Rank 1
+			[6201] = "createHealthstone", -- Create Healthstone Rank 1
+			[6202] = "createHealthstone", -- Create Healthstone Rank 2
+			[5699] = "createHealthstone", -- Create Healthstone Rank 3
+			[11729] = "createHealthstone", -- Create Healthstone Rank 4
+			[11730] = "createHealthstone", -- Create Healthstone Rank 5
+			[27230] = "createHealthstone", -- Create Healthstone Rank 6
+			[689] = "drainLife", -- Rank 1
+			[699] = "drainLife", -- Rank 2
+			[709] = "drainLife", -- Rank 3
+			[7651] = "drainLife", -- Rank 4
+			[11699] = "drainLife", -- Rank 5
+			[11700] = "drainLife", -- Rank 6
+			[27219] = "drainLife", -- Rank 7
+			[27220] = "drainLife", -- Rank 8
+			[5138] = "drainMana", -- Rank 1
+			[6226] = "drainMana", -- Rank 2
+			[11703] = "drainMana", -- Rank 3
+			[11704] = "drainMana", -- Rank 4
+			[27221] = "drainMana", -- Rank 5
+			[30908] = "drainMana", -- Rank 6
+			[6353] = "soulFire", -- Rank 1
+			[17924] = "soulFire", -- Rank 2
+			[27211] = "soulFire", -- Rank 3
+			[30545] = "soulFire", -- Rank 4
+
+			-- Warrior (Cast Start)
+			-- smack smack smack
+
 		},
 		castSuccess = {					--cast success [spellid] = ".mp3 file name",
 			-- Cure (DPS Dispel)
@@ -380,6 +455,10 @@
 			[605] = "success", -- Mind Control Rank 1
 			[10911] = "success", -- Mind Control Rank 2
 			[10912] = "success", -- Mind Control Rank 3
+			-- WARLOCK
+			[5782] = "success", -- Fear Rank 1
+			[6213] = "success", -- Fear Rank 2
+			[6215] = "success", -- Fear Rank 3
 
 			-- CastSuccess (Major non-CC spells that connect)
 			[8129] = "connected", -- Mana Burn Rank 1
@@ -389,6 +468,11 @@
 			[10876] = "connected", -- Mana Burn Rank 5
 			[25379] = "connected", -- Mana Burn Rank 6
 			[25380] = "connected", -- Mana Burn Rank 7
+
+			[6353] = "connected", -- Soul Fire Rank 1
+			[17924] = "connected", -- Soul Fire Rank 2
+			[27211] = "connected", -- Soul Fire Rank 3
+			[30545] = "connected", -- Soul Fire Rank 4
 			
 			-- Purges
 			[528] = "purge",		-- Dispel Magic (Priest)
@@ -596,6 +680,33 @@
 			[32182] = "bloodlust", -- Heroism
 			[16190] = "manaTideTotem",
 
+			-- Warlock (Cast Success)
+			[6789] = "mortalCoil", -- Rank 1
+			[17925] = "mortalCoil", -- Rank 2
+			[17926] = "mortalCoil", -- Rank 3
+			[27223] = "mortalCoil", -- Rank 4
+
+
+			-- Warrior (Cast Success)
+			[676] = "disarm",
+			[5246] = "intimidatingShout",
+			[6552] = "pummel", -- Rank 1
+			[6554] = "pummel", -- Rank 2
+			[72] = "shieldBash", -- Rank 1
+			[1671] = "shieldBash", -- Rank 2
+			[1672] = "shieldBash", -- Rank 3
+			[29704] = "shieldBash", -- Rank 4
+			[100] = "charge", -- Rank 1
+			[6178] = "charge", -- Rank 2
+			[11578] = "charge", -- Rank 3
+			[20252] = "intercept", -- Rank 1
+			[20616] = "intercept", -- Rank 2
+			[20617] = "intercept", -- Rank 3
+			[25272] = "intercept", -- Rank 4
+			[25275] = "intercept", -- Rank 5
+			[3411] = "intervene",
+			[12328] = "sweepingStrikes",
+			[12809] = "concussionBlow",
 		},
 		friendlyInterrupt = {			--friendly interrupt [spellid] = ".mp3 file name",
 			[19647] = "lockout", -- Spell Locks begin
