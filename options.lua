@@ -490,7 +490,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cff69CCF0Mage|r"],
 								order = 90,
-								args = listOption({},"auraApplied"),
+								args = listOption({33946,33944,27128,32796,27131,12043,12042,11129,12472,33405,12355},"auraApplied"),
 							},
 							paladin = { -- AuraApplied
 								type = 'group',
@@ -575,7 +575,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cff69CCF0Mage|r"],
 								order = 80,
-								args = listOption({},"auraRemoved"),
+								args = listOption({12042,11129,12472},"auraRemoved"),
 							},
 							paladin = { -- AuraRemoved
 								type = 'group',
@@ -665,7 +665,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cff69CCF0Mage|r"],
 								order = 80,
-								args = listOption({},"castStart"),
+								args = listOption({12826,31687,12051},"castStart"),
 							},
 							paladin = { -- CastStart
 								type = 'group',
@@ -796,7 +796,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cff69CCF0Mage|r"],
 								order = 90,
-								args = listOption({},"castSuccess"),
+								args = listOption({475,1953,2139,45438,27088,66,30449,11113,11958},"castSuccess"),
 							},
 							paladin = { -- CastSuccess
 								type = 'group',

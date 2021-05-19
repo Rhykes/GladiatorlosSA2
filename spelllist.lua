@@ -59,6 +59,52 @@
 			[14311] = "trapped", -- Freezing Trap Rank 3
 
 
+			-- Mage (Aura Applied)
+			[1008] = "amplifyMagic", -- Rank 1
+			[8455] = "amplifyMagic", -- Rank 2
+			[10169] = "amplifyMagic", -- Rank 3
+			[10170] = "amplifyMagic", -- Rank 4
+			[27130] = "amplifyMagic", -- Rank 5
+			[33946] = "amplifyMagic", -- Rank 6
+			[604] = "dampenMagic", -- Rank 1
+			[8450] = "dampenMagic", -- Rank 2
+			[8451] = "dampenMagic", -- Rank 3
+			[10173] = "dampenMagic", -- Rank 4
+			[10174] = "dampenMagic", -- Rank 5
+			[33944] = "dampenMagic", -- Rank 6
+			[543] = "fireWard", -- Rank 1
+			[8457] = "fireWard", -- Rank 2
+			[8458] = "fireWard", -- Rank 3
+			[10223] = "fireWard", -- Rank 4
+			[10225] = "fireWard", -- Rank 5
+			[27128] = "fireWard", -- Rank 6
+			[6143] = "frostWard", -- Rank 1
+			[8461] = "frostWard", -- Rank 2
+			[8462] = "frostWard", -- Rank 3
+			[10177] = "frostWard", -- Rank 4
+			[28609] = "frostWard", -- Rank 5
+			[32796] = "frostWard", -- Rank 6
+			[1463] = "manaShield", -- Rank 1
+			[8494] = "manaShield", -- Rank 2
+			[8495] = "manaShield", -- Rank 3
+			[10191] = "manaShield", -- Rank 4
+			[10192] = "manaShield", -- Rank 5
+			[10193] = "manaShield", -- Rank 6
+			[27131] = "manaShield", -- Rank 7
+			[12043] = "presenceOfMind",
+			[12042] = "arcanePower",
+			[11129] = "combustion",
+			[12472] = "icyVeins",
+			[11426] = "iceBarrier", -- Rank 1
+			[13031] = "iceBarrier", -- Rank 2
+			[13032] = "iceBarrier", -- Rank 3
+			[13033] = "iceBarrier", -- Rank 4
+			[27134] = "iceBarrier", -- Rank 5
+			[33405] = "iceBarrier", -- Rank 6
+			-- Check on friendly
+			[12355] = "impact", -- Actual debuff
+
+
 		},
 		auraRemoved = {					-- aura removed [spellid] = ".mp3 file name",
 			-- Druid (Aura Removed)
@@ -66,6 +112,11 @@
 
 			-- Hunter (Aura Removed)
 			[19263] = "deterrenceDown",
+
+			-- Mage (Aura Removed)
+			[12042] = "arcanePowerDown",
+			[11129] = "combustionDown",
+			[12472] = "icyVeinsDown",
 		},
 		castStart = {					-- cast start [spellid] = ".mp3 file name",
 		
@@ -124,7 +175,15 @@
 			[14326] = "scareBeast", -- Rank 2
 			[14327] = "scareBeast", -- Rank 3
 
-
+			-- Mage (Spell Casting)
+			[118] = "polymorph", -- Rank 1 (Sheep)
+			[12824] = "polymorph", -- Rank 2 (Sheep)
+			[12825] = "polymorph", -- Rank 3 (Sheep)
+			[12826] = "polymorph", -- Rank 4 (Sheep)
+			[28271] = "polymorph", -- Rank 1 (Turtle)
+			[28272] = "polymorph", -- Rank 1 (Pig)
+			[31687] = "waterElemental",
+			[12051] = "evocation",
 		},
 		castSuccess = {					--cast success [spellid] = ".mp3 file name",
 			-- Cure (DPS Dispel)
@@ -160,7 +219,13 @@
 			[1513] = "success", -- Scare Beast Rank 1
 			[14326] = "success", -- Scare Beast Rank 2
 			[14327] = "success", -- Scare Beast Rank 3
-
+			-- MAGE
+			[118] = "success", -- Rank 1 (Sheep)
+			[12824] = "success", -- Rank 2 (Sheep)
+			[12825] = "success", -- Rank 3 (Sheep)
+			[12826] = "success", -- Rank 4 (Sheep)
+			[28271] = "success", -- Rank 1 (Turtle)
+			[28272] = "success", -- Rank 1 (Pig)
 			
 			-- Purges
 			[528] = "purge",		-- Dispel Magic (Priest)
@@ -257,6 +322,21 @@
 			[24133] = "wyvernSting", -- Rank 3
 			[27068] = "wyvernSting", -- Rank 4
 			[19503] = "scatterShot",
+
+			-- Mage (Cast Success)
+			[475] = "removeLesserCurse",
+			[1953] = "blink",
+			[2139] = "counterspell",
+			[45438] = "iceBlock",
+			[122] = "frostNova", -- Rank 1
+			[865] = "frostNova", -- Rank 2
+			[6131] = "frostNova", -- Rank 3
+			[10230] = "frostNova", -- Rank 4
+			[27088] = "frostNova", -- Rank 5
+			[66] = "invisibility",
+			[30449] = "spellsteal",
+			[11113] = "blastWave",
+			[11958] = "coldSnap",
 
 
 

@@ -20,3 +20,9 @@ General
 
 Druid
 * Completed spell library update.
+
+Hunter
+* Completed spell library update.
+
+Mage
+* Completed spell library update.
