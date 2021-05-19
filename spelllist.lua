@@ -5,6 +5,7 @@
 
 			-- General (Aura Applied)
 			[34709] = "shadowSight",
+			[5530] = "maceStun", -- lmao
 			-- Drinking
 			[104270] = "drinking",
 			[167152] = "drinking",
@@ -155,6 +156,43 @@
 			[31842] = "divineIllumination",
 			-- Check on friendly
 			[20170] = "justiceStun",
+
+			-- Priest (Aura Applied)
+			[2651] = "elunesGrace",
+			[6346] = "fearWard",
+			[13896] = "feedback", -- Rank 1
+			[19271] = "feedback", -- Rank 2
+			[19273] = "feedback", -- Rank 3
+			[19274] = "feedback", -- Rank 4
+			[19275] = "feedback", -- Rank 5
+			[25441] = "feedback", -- Rank 6
+			[33206] = "painSuppression",
+			[10060] = "powerInfusion",
+			[14751] = "innerFocus",
+			[15286] = "vampiricEmbrace",
+			[552] = "abolishDisease",
+
+			-- Rogue (Aura Applied)
+			[5277] = "evasion", -- Rank 1
+			[26669] = "evasion", -- Rank 2
+			[31224] = "cloakOfShadows",
+			[14177] = "coldBlood",
+			[13750] = "adrenalineRush",
+			-- Check on friendly
+			[1833] = "cheapShot",
+			[6770] = "sap", -- Rank 1
+			[2070] = "sap", -- Rank 2
+			[11297] = "sap", -- Rank 3
+			[26839] = "garrote", -- Rank 7 (7+ silence)
+			[26884] = "garrote", -- Rank 8
+
+
+			-- Shaman (Aura Applied)
+			[16166] = "elementalMastery",
+			[30823] = "shamanisticRage",
+			[16188] = "naturesSwiftness",
+
+
 		},
 		auraRemoved = {					-- aura removed [spellid] = ".mp3 file name",
 			-- Druid (Aura Removed)
@@ -182,6 +220,29 @@
 			[27147] = "blessingOfSacrificeDown", -- Rank 3
 			[27148] = "blessingOfSacrificeDown", -- Rank 4
 			[20216] = "divineFavorDown",
+
+			-- Priest (Aura Removed)
+			[2651] = "elunesGraceDown",
+			[6346] = "fearWardDown",
+			[13896] = "feedbackDown", -- Rank 1
+			[19271] = "feedbackDown", -- Rank 2
+			[19273] = "feedbackDown", -- Rank 3
+			[19274] = "feedbackDown", -- Rank 4
+			[19275] = "feedbackDown", -- Rank 5
+			[25441] = "feedbackDown", -- Rank 6
+			[15286] = "vampiricEmbraceDown",
+			[33206] = "painSuppressionDown",
+			[10060] = "powerInfusionDown",
+			[14751] = "innerFocusDown",
+
+			-- Rogue (Aura Removed)
+			[5277] = "evasionDown", -- Rank 1
+			[26669] = "evasionDown", -- Rank 2
+			[31224] = "cloakOfShadowsDown",
+
+			-- Shaman (Aura Removed)
+			[30823] = "shamanisticRageDown",
+
 		},
 		castStart = {					-- cast start [spellid] = ".mp3 file name",
 		
@@ -247,11 +308,31 @@
 			[12826] = "polymorph", -- Rank 4 (Sheep)
 			[28271] = "polymorph", -- Rank 1 (Turtle)
 			[28272] = "polymorph", -- Rank 1 (Pig)
-			[31687] = "waterElemental",
 			[12051] = "evocation",
 
 			-- Paladin (Spell Casting)
 			[10326] = "turnEvil",
+
+			-- This is when the drinking started so maybe double check later when I'm sober  vvvvv
+
+			-- Priest (Spell Casting)
+			[605] = "mindControl", -- Rank 1
+			[10911] = "mindControl", -- Rank 2
+			[10912] = "mindControl", -- Rank 3
+			[8129] = "manaBurn", -- Rank 1
+			[8131] = "manaBurn", -- Rank 2
+			[10874] = "manaBurn", -- Rank 3
+			[10875] = "manaBurn", -- Rank 4
+			[10876] = "manaBurn", -- Rank 5
+			[25379] = "manaBurn", -- Rank 6
+			[25380] = "manaBurn", -- Rank 7
+			[32375] = "massDispel",
+
+			-- Rogue (Spell Casting)
+			-- lol
+
+			-- Shaman (Spell Casting)
+			-- ...also lol apparently
 
 		},
 		castSuccess = {					--cast success [spellid] = ".mp3 file name",
@@ -289,12 +370,25 @@
 			[14326] = "success", -- Scare Beast Rank 2
 			[14327] = "success", -- Scare Beast Rank 3
 			-- MAGE
-			[118] = "success", -- Rank 1 (Sheep)
-			[12824] = "success", -- Rank 2 (Sheep)
-			[12825] = "success", -- Rank 3 (Sheep)
-			[12826] = "success", -- Rank 4 (Sheep)
-			[28271] = "success", -- Rank 1 (Turtle)
-			[28272] = "success", -- Rank 1 (Pig)
+			[118] = "success", -- Polymorph Rank 1 (Sheep)
+			[12824] = "success", -- Polymorph Rank 2 (Sheep)
+			[12825] = "success", -- Polymorph Rank 3 (Sheep)
+			[12826] = "success", -- Polymorph Rank 4 (Sheep)
+			[28271] = "success", -- Polymorph Rank 1 (Turtle)
+			[28272] = "success", -- Polymorph Rank 1 (Pig)
+			-- PRIEST
+			[605] = "success", -- Mind Control Rank 1
+			[10911] = "success", -- Mind Control Rank 2
+			[10912] = "success", -- Mind Control Rank 3
+
+			-- CastSuccess (Major non-CC spells that connect)
+			[8129] = "connected", -- Mana Burn Rank 1
+			[8131] = "connected", -- Mana Burn Rank 2
+			[10874] = "connected", -- Mana Burn Rank 3
+			[10875] = "connected", -- Mana Burn Rank 4
+			[10876] = "connected", -- Mana Burn Rank 5
+			[25379] = "connected", -- Mana Burn Rank 6
+			[25380] = "connected", -- Mana Burn Rank 7
 			
 			-- Purges
 			[528] = "purge",		-- Dispel Magic (Priest)
@@ -304,15 +398,6 @@
 			[19801] = "purge",		-- Tranquilizing Shot (Hunter)
 		
 			--GENERAL
-			[2825] = "bloodLust",
-			[32182] = "bloodLust",
-			[80353] = "bloodLust",
-			[90355] = "bloodLust",
-			[160452] = "bloodLust",
-			[178207] = "bloodLust",
-			[204361] = "bloodLust",
-			[272678] = "bloodLust",	--Primal Rage (Hunter)
-			[204362] = "bloodLust",
 			[107079] = "quakingPalm",
 			[20549] = "warStomp",
 			[28730] = "arcaneTorrent",
@@ -391,6 +476,10 @@
 			[24133] = "wyvernSting", -- Rank 3
 			[27068] = "wyvernSting", -- Rank 4
 			[19503] = "scatterShot",
+			[14285] = "arcaneShot", -- Rank 6 (this rank and higher purges)
+			[14286] = "arcaneShot", -- Rank 7
+			[14287] = "arcaneShot", -- Rank 8
+			[27019] = "arcaneShot", -- Rank 9
 
 			-- Mage (Cast Success)
 			[475] = "removeLesserCurse",
@@ -406,6 +495,7 @@
 			[30449] = "spellsteal",
 			[11113] = "blastWave",
 			[11958] = "coldSnap",
+			[31687] = "waterElemental",
 
 			-- Paladin (Cast Success)
 			[20271] = "judgement", -- blizzard can't spell
@@ -425,6 +515,86 @@
 			[27174] = "holyShock", -- Rank 4
 			[33072] = "holyShock", -- Rank 5
 			[20066] = "repentance",
+
+			-- Priest (Cast Success)
+			[32548] = "symbolOfHope",
+			[528] = "cureDisease",
+			[527] = "dispelMagic", -- Rank 1 (Purge)
+			[988] = "dispelMagic", -- Rank 2 (Purge)
+			[8122] = "psychicScream", -- Rank 1
+			[8124] = "psychicScream", -- Rank 2
+			[10888] = "psychicScream", -- Rank 3
+			[10890] = "psychicScream", -- Rank 4
+			[34433] = "shadowfiend",
+			[2944] = "devouringPlague", -- Rank 1
+			[19276] = "devouringPlague", -- Rank 2
+			[19277] = "devouringPlague", -- Rank 3
+			[19278] = "devouringPlague", -- Rank 4
+			[19279] = "devouringPlague", -- Rank 5
+			[19280] = "devouringPlague", -- Rank 6
+			[25467] = "devouringPlague", -- Rank 7
+			[44041] = "chastise", -- Rank 1
+			[44043] = "chastise", -- Rank 2
+			[44044] = "chastise", -- Rank 3
+			[44045] = "chastise", -- Rank 4
+			[44046] = "chastise", -- Rank 5
+			[44047] = "chastise", -- Rank 6
+			[32379] = "shadowWordDeath", -- Rank 1
+			[32996] = "shadowWordDeath", -- Rank 2
+			[15487] = "silence",
+
+			-- Rogue (Cast Success)
+			[2094] = "blind",
+			[408] = "kidney", -- Rank 1
+			[8643] = "kidney", -- Rank 2
+			[2983] = "sprint", -- Rank 1
+			[8696] = "sprint", -- Rank 2
+			[11305] = "sprint", -- Rank 3
+			[1784] = "stealth", -- Rank 1
+			[1785] = "stealth", -- Rank 2
+			[1786] = "stealth", -- Rank 3
+			[1787] = "stealth", -- Rank 4
+			[1856] = "vanish", -- Rank 1
+			[1857] = "vanish", -- Rank 2
+			[26889] = "vanish", -- Rank 3
+			[1776] = "gouge", -- Rank 1
+			[1777] = "gouge", -- Rank 2
+			[8629] = "gouge", -- Rank 3
+			[11285] = "gouge", -- Rank 4
+			[11286] = "gouge", -- Rank 5
+			[38764] = "gouge", -- Rank 6
+			[1766] = "kick", -- Rank 1
+			[1767] = "kick", -- Rank 2
+			[1768] = "kick", -- Rank 3
+			[1769] = "kick", -- Rank 4
+			[38768] = "kick", -- Rank 5
+			[14278] = "ghostlyStrike",
+			[14185] = "preparation",
+			[36554] = "shadowstep",
+
+			-- Shaman (Cast Success)
+			[2484] = "earthbindTotem",
+			[526] = "curePoison",
+			[8143] = "tremorTotem",
+			[2870] = "cureDisease",
+			[8166] = "poisonCleansingTotem",
+			[8177] = "groundingTotem",
+			[370] = "purge", -- Rank 1
+			[8012] = "purge", -- Rank 2
+			[8042] = "earthShock", -- Rank 1
+			[8044] = "earthShock", -- Rank 2
+			[8045] = "earthShock", -- Rank 3
+			[8046] = "earthShock", -- Rank 4
+			[10412] = "earthShock", -- Rank 5
+			[10413] = "earthShock", -- Rank 6
+			[10414] = "earthShock", -- Rank 7
+			[25454] = "earthShock", -- Rank 8
+			[8170] = "diseaseCleansingTotem",
+			[2062] = "earthElementalTotem",
+			[2894] = "fireElementalTotem",
+			[2825] = "bloodlust",
+			[32182] = "bloodlust", -- Heroism
+			[16190] = "manaTideTotem",
 
 		},
 		friendlyInterrupt = {			--friendly interrupt [spellid] = ".mp3 file name",

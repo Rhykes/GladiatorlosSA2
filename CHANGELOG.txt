@@ -15,7 +15,25 @@ Please stop asking. I will not help you.
 ===========================================
 - version TBC-B2 (2.5.1)
 
+General
+* Added Mace Stun to Aura Applied.
+
+Hunter
+* Added Arcane Shot ranks 6+ (it purges) to Cast Success.
+
+Mage
+* Moved Summon Water Elemental from Cast Start to Cast Success.
+
 Paladin
+* Completed spell library update.
+
+Priest
+* Completed spell library update.
+
+Rogue
+* Completed spell library update.
+
+Shaman
 * Completed spell library update.
 ===========================================
 - version TBC-B1 (2.5.1)

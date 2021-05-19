@@ -244,6 +244,9 @@
 		or spellID == 19577 -- Intimidation
 		or spellID == 12355 -- Impact (Fire Mage RNG stun talent)
 		or spellID == 20170 -- Seal of Justice Stun
+		or spellID == 1833 -- Cheap Shot
+		or spellID == 6770 or spellID == 2070 or spellID == 11297 -- Sap
+		or spellID == 5530 -- Mace Stun
 	then
 		return true
 	end
