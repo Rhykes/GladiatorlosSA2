@@ -469,13 +469,13 @@ function GSA:OnOptionCreate()
 								order = 30,					      		
 								args = listOption({195901,214027,34709,345231},"auraApplied"),
 							},
-							covenants = { -- AuraApplied
+--[[							covenants = { -- AuraApplied
 								type = 'group',
 								inline = true,
 								name = L["CovenantAbilities"],
 								order = 32,
 								args = listOption({310143,327676,323095,323524,330752}, "auraApplied"),
-							},
+							},]]
 							dispelkickback = { -- AuraApplied
 								type = 'group',
 								inline = true,
@@ -483,26 +483,26 @@ function GSA:OnOptionCreate()
 								order = 40,
 								args = listOption({87204,196364},"auraApplied"),
 							},
-							dk	= {	-- AuraApplied
+--[[							dk	= {	-- AuraApplied
 								type = 'group',
 								inline = true,
 								name = L["|cffC41F3BDeath Knight|r"],
 								order = 50,
 								args = listOption({48792,55233,51271,48707,152279,219809,194679,194844,207319,212332,212337,91800,91797,116888,49039,288977,315443,311648,287254},"auraApplied"),
-							},
-							demonhunter = {	-- AuraApplied
+							},]]
+--[[							demonhunter = {	-- AuraApplied
 								type = 'group',
 								inline = true,
 								name = L["|cffA330C9Demon Hunter|r"],
 								order = 60,
 								args = listOption({198589,212800,209426,162264,187827,188501,196555},"auraApplied"),
-							},
+							},]]
 							druid = { -- AuraApplied
 								type = 'group',
 								inline = true,
 								name = L["|cffFF7D0ADruid|r"],
 								order = 70,
-								args = listOption({102560,102543,102558,33891,61336,22812,252216,1850,69369,102342,102351,155835,29166,194223,236696,305497,163505,106951,108291,108292.108293,108294,323546,22842},"auraApplied"),
+								args = listOption({5229,2893,29166,22812,9846,26999,27009,27006,17116},"auraApplied"),
 							},
 							hunter = { -- AuraApplied
 								type = 'group',
@@ -518,13 +518,13 @@ function GSA:OnOptionCreate()
 								order = 90,
 								args = listOption({45438,12042,12472,198111,198144,86949,87024,190319,110909,342246,324220},"auraApplied"),
 							},
-							monk = { -- AuraApplied
+--[[							monk = { -- AuraApplied
 								type = 'group',
 								inline = true,
 								name = L["|cFF00FF96Monk|r"],
 								order = 100,
 								args = listOption({243435,201318,115203,122278,122783,115176,201325,116849,152173,197908,209584,202335,310454},"auraApplied"),
-							},
+							},]]
 							paladin = { -- AuraApplied
 								type = 'group',
 								inline = true,
@@ -596,33 +596,12 @@ function GSA:OnOptionCreate()
 								order = 30,
 								args = listOption({34709,345231},"auraRemoved"),
 							},
-							covenants = { -- AuraRemoved
-								type = 'group',
-								inline = true,
-								name = L["CovenantAbilities"],
-								order = 32,
-								args = listOption({323095,323524,330752}, "auraRemoved"),
-							},
-							dk = { -- AuraRemoved
-								type = 'group',
-								inline = true,
-								name = L["|cffC41F3BDeath Knight|r"],
-								order = 40,
-								args = listOption({48792,48707,219809,207319,152279,49039,288977,315443},"auraRemoved"),
-							},
-							demonhunter = { -- AuraRemoved
-								type = 'group',
-								inline = true,
-								name = L["|cffA330C9Demon Hunter|r"],
-								order = 50,
-								args = listOption({198589,212800,209426,162264,187827,188501,196555},"auraRemoved"),
-							},
 							druid = { -- AuraRemoved
 								type = 'group',
 								inline = true,
 								name = L["|cffFF7D0ADruid|r"],
 								order = 60,
-								args = listOption({102560,102543,102558,33891,117679,236696,29166,108291,108292.108293,108294},"auraRemoved"),
+								args = listOption({29166},"auraRemoved"),
 							},
 							hunter = { -- AuraRemoved
 								type = 'group',
@@ -637,13 +616,6 @@ function GSA:OnOptionCreate()
 								name = L["|cff69CCF0Mage|r"],
 								order = 80,
 								args = listOption({45438,198111,198144,190319,12042,12472,110909,342246},"auraRemoved"),
-							},
-							monk = { -- AuraRemoved
-								type = 'group',
-								inline = true,
-								name = L["|cFF00FF96Monk|r"],
-								order = 90,
-								args = listOption({243435,201318,115203,115176,122470,116849,209584},"auraRemoved"),
 							},
 							paladin = { -- AuraRemoved
 								type = 'group',
@@ -714,33 +686,12 @@ function GSA:OnOptionCreate()
 								desc = L["BigHeal_Desc"],
 								order = 30,
 							},
-							covenants = { -- CastStart
-								type = 'group',
-								inline = true,
-								name = L["CovenantAbilities"],
-								order = 32,
-								args = listOption({300728}, "castStart"),
-							},
-							--dk = { -- CastStart
-							--	type = 'group',
-							--	inline = true,
-							--	name = L["|cffC41F3BDeath Knight|r"],
-							--	order = 40,
-							--	args = listOption({},"castStart"),
-							--},	
-							demonhunter = { -- CastStart
-								type = 'group',
-								inline = true,
-								name = L["|cffA330C9Demon Hunter|r"],
-								order = 50,
-								args = listOption({323639},"castStart"),
-							},
 							druid = { -- CastStart
 								type = 'group',
 								inline = true,
 								name = L["|cffFF7D0ADruid|r"],
 								order = 60,
-								args = listOption({274281,274282,274283,2637,33786,339},"castStart"),
+								args = listOption({2637,18658,26989,33786},"castStart"),
 							},
 							hunter = { -- CastStart
 								type = 'group',
@@ -755,13 +706,6 @@ function GSA:OnOptionCreate()
 								name = L["|cff69CCF0Mage|r"],
 								order = 80,
 								args = listOption({28271,28272,61305,61721,61025,61780,161372,161355,161353,161354,126819,118,31687,203286,199786,113724,257537,314793,307443},"castStart"),
-							},
-							monk = { -- CastStart
-								type = 'group',
-								inline = true,
-								name = L["|cFF00FF96Monk|r"],
-								order = 90,
-								args = listOption({198898},"castStart"),
 							},
 							paladin = { -- CastStart
 								type = 'group',
@@ -866,13 +810,6 @@ function GSA:OnOptionCreate()
 								order = 30,
 								args = listOption({178207,2825,272678,80353,90355,160452,32182,204361,204362,28730,232633,25046,50613,69179,155145,129597,202719,80483,107079,20549,58984,20594,7744,59752,287712,295707,42292,214027,195710,208683,23034,23035,213664,6262,265221,256948,257040,255654},"castSuccess"),
 							},
-							covenants = { -- CastSuccess
-								type = 'group',
-								inline = true,
-								name = L["CovenantAbilities"],
-								order = 32,
-								args = listOption({324631,323436}, "castSuccess"),
-							},
 							enemyInterrupts = { -- CastSuccess
 								type = 'group',
 								inline = true,
@@ -880,26 +817,12 @@ function GSA:OnOptionCreate()
 								order = 35,
 								args = listOption({47528,183752,78675,106839,147362,187707,2139,116705,96231,1766,57994,19647,132409,119910,251523,251922,288047,171140,171138,115781,212619,119910,6552},"castSuccess"),
 							},
-							dk	= { -- CastSuccess
-								type = 'group',
-								inline = true,
-								name = L["|cffC41F3BDeath Knight|r"],
-								order = 40,
-								args = listOption({47476,207127,47568,207289,207349,49206,77606,108194,108199,152280,207167,204160,305392,190778,275699,49576,212468,212552,49028,48265,203173,48743,46584,51052,46585,327574,288853,343294,279302,324128,312202},"castSuccess"),
-							},
-							demonhunter = { -- CastSuccess
-								type = 'group',
-								inline = true,
-								name = L["|cffA330C9Demon Hunter|r"],
-								order = 50,
-								args = listOption({202138,202140,207684,207682,202137,179057,206649,205604,205629,205630,211881,203704,221527,217832,196718,198013,235903,317009,306830,329554},"castSuccess"),
-							},
 							druid = { -- CastSuccess
 								type = 'group',
 								inline = true,
 								name = L["|cffFF7D0ADruid|r"],
 								order = 70,
-								args = listOption({740,108238,99,5211,102359,102417,102383,49376,16979,102416,102401,203651,201664,61391,132469,5215,236026,22570,209749,2908,202246,102793,197721,325727,327071,327022,327037,323764},"castSuccess"),
+								args = listOption({8946,2782,8983,9913,33357,26993,33831,26983,18562},"castSuccess"),
 							},
 							hunter = { -- CastSuccess
 								type = 'group',
@@ -914,13 +837,6 @@ function GSA:OnOptionCreate()
 								name = L["|cff69CCF0Mage|r"],
 								order = 90,
 								args = listOption({66,12051,30449,110959,153561,198158,205021,235219,235450,235313,11426,205025,108839,31661,55342,122,314791},"castSuccess"),
-							},
-							monk = { -- CastSuccess
-								type = 'group',
-								inline = true,
-								name = L["|cFF00FF96Monk|r"],
-								order = 100,
-								args = listOption({116841,119381,123904,115078,119996,137639,115310,132578,115080,233759,122470,116844,233759,202370,325197,322118,325216,327104,326860},"castSuccess"),
 							},
 							paladin = { -- CastSuccess
 								type = 'group',
@@ -962,7 +878,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cff9482C9Warlock|r"],
 								order = 150,
-								args = listOption({6789,48018,48020,111859,111895,111896,111897,111898,1122,205180,201996,199954,199892,199890,80240,5484,312321,205179,344566,234153},"castSuccess"),
+								args = listOption({26865,26866},"castSuccess"),
 							},
 							warrior	= { -- CastSuccess
 								type = 'group',

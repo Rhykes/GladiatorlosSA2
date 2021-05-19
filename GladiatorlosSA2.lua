@@ -240,21 +240,9 @@
 
  -- Because arrays are for nerds
  function GSA:CheckFriendlyDebuffs(spellID)
-	if spellID == 87204 or			-- Vampiric Touch Horrify
-		spellID == 196364 or 		-- Unstable Affliction Silence
-		spellID == 1330 or 			-- Garrote Silence
-		spellID == 1833 or 			-- Cheap Shot
-		spellID == 6770 or 			-- Sap
-		spellID == 3355 or 			-- Freezing Trap
-		spellID == 212332 or 		-- Smash (DK Abomination)
-		spellID == 212337 or 		-- Powerful Smash (DK Abomination)
-		spellID == 91800 or 		-- Gnaw (DK Ghoul)
-		spellID == 91797 or 		-- Monstrous Claw (DK Ghoul)
-		spellID == 163505 or 		-- Rake Stun
-		spellID == 199086 or 		-- Warpath Stun
-		spellID == 202335 or 		-- Double Barrel Stun
-		spellID == 215652 or 		-- Shield of Virtue silence
-		spellID == 287254 then		-- Remorseless Winter
+	if spellID == 9005 or spellID == 9823 or spellID == 9827 or spellID == 27006 -- Pounce
+
+	then
 		return true
 	end
 end
@@ -308,7 +296,7 @@ end
  function GladiatorlosSA:COMBAT_LOG_EVENT_UNFILTERED(event , ...)
 	 -- Checks if alerts should occur here.
 	 local isSanctuary = GetZonePVPInfo()
-	 if (isSanctuary == "sanctuary") then return end	-- Checks for Sanctuary
+	 --if (isSanctuary == "sanctuary") then return end	-- Checks for Sanctuary
 	 if (not canSpeakHere) then return end				-- Checks result for everywhere else
 
 	 -- Area check passed, fetch combat event payload.
