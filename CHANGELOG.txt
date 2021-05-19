@@ -15,5 +15,8 @@ Please stop asking. I will not help you.
 ===========================================
 - version TBC-B1 (2.5.1)
 
+General
+* Updated version info.
+
 Druid
 * Completed spell library update.

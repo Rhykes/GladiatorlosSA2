@@ -48,10 +48,24 @@
 			[27006] = "pounce", -- Rank 4
 
 
+			-- Hunter (Aura Applied)
+			[3045] = "rapidFire",
+			[19577] = "intimidation",
+			[19263] = "deterrence",
+			[19574] = "bestialWrath",
+			-- Check on friendly
+			[1499] = "trapped", -- Freezing Trap Rank 1
+			[14310] = "trapped", -- Freezing Trap Rank 2
+			[14311] = "trapped", -- Freezing Trap Rank 3
+
+
 		},
 		auraRemoved = {					-- aura removed [spellid] = ".mp3 file name",
 			-- Druid (Aura Removed)
 			[29166] = "innervateDown",
+
+			-- Hunter (Aura Removed)
+			[19263] = "deterrenceDown",
 		},
 		castStart = {					-- cast start [spellid] = ".mp3 file name",
 		
@@ -97,6 +111,20 @@
 			[26989] = "entanglingRoots", -- Rank 6
 			[33786] = "cyclone",
 
+			-- Hunter (Spell Casting)
+			[19434] = "aimedShot", -- Rank 1
+			[20900] = "aimedShot", -- Rank 2
+			[20901] = "aimedShot", -- Rank 3
+			[20902] = "aimedShot", -- Rank 4
+			[20903] = "aimedShot", -- Rank 5
+			[20904] = "aimedShot", -- Rank 6
+			[27065] = "aimedShot", -- Rank 7
+			[982] = "revivePet",
+			[1513] = "scareBeast", -- Rank 1
+			[14326] = "scareBeast", -- Rank 2
+			[14327] = "scareBeast", -- Rank 3
+
+
 		},
 		castSuccess = {					--cast success [spellid] = ".mp3 file name",
 			-- Cure (DPS Dispel)
@@ -128,6 +156,10 @@
 			[18657] = "success", -- Hibernate Rank 2
 			[18658] = "success", -- Hibernate Rank 3
 			[33786] = "success", -- Cyclone
+			-- HUNTER
+			[1513] = "success", -- Scare Beast Rank 1
+			[14326] = "success", -- Scare Beast Rank 2
+			[14327] = "success", -- Scare Beast Rank 3
 
 			
 			-- Purges
@@ -207,6 +239,26 @@
 			[9863] = "tranquility", -- Rank 4
 			[26983] = "tranquility", -- Rank 5
 			[18562] = "swiftmend",
+
+			-- Hunter (Cast Success)
+			[5116] = "concussiveShot",
+			[1543] = "flare",
+			[1130] = "huntersMark", -- Rank 1
+			[14323] = "huntersMark", -- Rank 2
+			[14324] = "huntersMark", -- Rank 3
+			[14325] = "huntersMark", -- Rank 4
+			[1499] = "freezingTrap", -- Rank 1
+			[14310] = "freezingTrap", -- Rank 2
+			[14311] = "freezingTrap", -- Rank 3
+			[34490] = "silencingShot",
+			[23989] = "readiness",
+			[19386] = "wyvernSting", -- Rank 1
+			[24132] = "wyvernSting", -- Rank 2
+			[24133] = "wyvernSting", -- Rank 3
+			[27068] = "wyvernSting", -- Rank 4
+			[19503] = "scatterShot",
+
+
 
 		},
 		friendlyInterrupt = {			--friendly interrupt [spellid] = ".mp3 file name",
