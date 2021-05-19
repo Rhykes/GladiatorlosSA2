@@ -13,6 +13,11 @@ I am currently working on support for Burning Crusade Classic.
 I will never support older versions for Private Servers.
 Please stop asking. I will not help you.
 ===========================================
+- version TBC-B2 (2.5.1)
+
+Paladin
+* Completed spell library update.
+===========================================
 - version TBC-B1 (2.5.1)
 
 !! This is an early work-in-progress version of GSA2 for Burning Crusade Classic. !!

@@ -243,6 +243,7 @@
 	if spellID == 9005 or spellID == 9823 or spellID == 9827 or spellID == 27006 -- Pounce
 		or spellID == 19577 -- Intimidation
 		or spellID == 12355 -- Impact (Fire Mage RNG stun talent)
+		or spellID == 20170 -- Seal of Justice Stun
 	then
 		return true
 	end

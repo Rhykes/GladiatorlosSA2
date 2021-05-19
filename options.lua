@@ -497,7 +497,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cffF58CBAPaladin|r"],
 								order = 110,
-								args = listOption({},"auraApplied"),
+								args = listOption({1044,5573,10278,31895,1020,27158,31892,31801,27155,27166,27160,31884,27148,20216,20375,20170,31842},"auraApplied"),
 							},
 							priest	= { -- AuraApplied
 								type = 'group',
@@ -582,7 +582,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cffF58CBAPaladin|r"],
 								order = 100,
-								args = listOption({},"auraRemoved"),
+								args = listOption({25771,5573,10278,1020,27148,20216},"auraRemoved"),
 							},
 							priest	= { -- AuraRemoved
 								type = 'group',
@@ -672,7 +672,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cffF58CBAPaladin|r"],
 								order = 100,
-								args = listOption({},"castStart"),
+								args = listOption({10326},"castStart"),
 							},
 							priest	= { -- CastStart
 								type = 'group',
@@ -803,7 +803,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cffF58CBAPaladin|r"],
 								order = 110,
-								args = listOption({},"castSuccess"),
+								args = listOption({20271,1152,4987,10308,27154,33072,20066},"castSuccess"),
 							},
 							priest	= { -- CastSuccess
 								type = 'group',

@@ -104,7 +104,57 @@
 			-- Check on friendly
 			[12355] = "impact", -- Actual debuff
 
-
+			-- Paladin (Aura Applied)
+			[1044] = "blessingOfFreedom",
+			[498] = "divineProtection", -- Rank 1
+			[5573] = "divineProtection", -- Rank 2
+			[1022] = "blessingOfProtection", -- Rank 1
+			[5599] = "blessingOfProtection", -- Rank 2
+			[10278] = "blessingOfProtection", -- Rank 3
+			[20164] = "sealOfJustice", -- Rank 1
+			[31895] = "sealOfJustice", -- Rank 2
+			[642] = "divineShield", -- Rank 1
+			[1020] = "divineShield", -- Rank 2
+			[21082] = "sealOfCrusader", -- Rank 1
+			[20162] = "sealOfCrusader", -- Rank 2
+			[20305] = "sealOfCrusader", -- Rank 3
+			[20306] = "sealOfCrusader", -- Rank 4
+			[20307] = "sealOfCrusader", -- Rank 5
+			[20308] = "sealOfCrusader", -- Rank 6
+			[27158] = "sealOfCrusader", -- Rank 7
+			[31892] = "sealOfBlood",
+			[348700] = "sealOfBlood", -- Seal of the Martyr
+			[31801] = "sealOfVengeance",
+			[348704] = "sealOfVengeance", -- Seal of Corruption
+			[20154] = "sealOfRighteousness", -- Rank 1
+			[21084] = "sealOfRighteousness", -- Rank 1 again?
+			[20287] = "sealOfRighteousness", -- Rank 2
+			[20288] = "sealOfRighteousness", -- Rank 3
+			[20289] = "sealOfRighteousness", -- Rank 4
+			[20290] = "sealOfRighteousness", -- Rank 5
+			[20291] = "sealOfRighteousness", -- Rank 6
+			[20292] = "sealOfRighteousness", -- Rank 7
+			[20293] = "sealOfRighteousness", -- Rank 8
+			[27155] = "sealOfRighteousness", -- Rank 9
+			[20166] = "sealOfWisdom", -- Rank 1
+			[20356] = "sealOfWisdom", -- Rank 2
+			[20357] = "sealOfWisdom", -- Rank 3
+			[27166] = "sealOfWisdom", -- Rank 4
+			[20165] = "sealOfLight", -- Rank 1
+			[20347] = "sealOfLight", -- Rank 2
+			[20348] = "sealOfLight", -- Rank 3
+			[20349] = "sealOfLight", -- Rank 4
+			[27160] = "sealOfLight", -- Rank 5
+			[31884] = "avengingWrath",
+			[6940] = "blessingOfSacrifice", -- Rank 1
+			[20729] = "blessingOfSacrifice", -- Rank 2
+			[27147] = "blessingOfSacrifice", -- Rank 3
+			[27148] = "blessingOfSacrifice", -- Rank 4
+			[20216] = "divineFavor",
+			[20375] = "sealOfCommand",
+			[31842] = "divineIllumination",
+			-- Check on friendly
+			[20170] = "justiceStun",
 		},
 		auraRemoved = {					-- aura removed [spellid] = ".mp3 file name",
 			-- Druid (Aura Removed)
@@ -117,6 +167,21 @@
 			[12042] = "arcanePowerDown",
 			[11129] = "combustionDown",
 			[12472] = "icyVeinsDown",
+
+			-- Paladin (Aura Removed)
+			[25771] = "forbearanceDown",
+			[498] = "divineProtectionDown", -- Rank 1
+			[5573] = "divineProtectionDown", -- Rank 2
+			[1022] = "blessingOfProtectionDown", -- Rank 1
+			[5599] = "blessingOfProtectionDown", -- Rank 2
+			[10278] = "blessingOfProtectionDown", -- Rank 3
+			[642] = "divineShieldDown", -- Rank 1
+			[1020] = "divineShieldDown", -- Rank 2
+			[6940] = "blessingOfSacrificeDown", -- Rank 1
+			[20729] = "blessingOfSacrificeDown", -- Rank 2
+			[27147] = "blessingOfSacrificeDown", -- Rank 3
+			[27148] = "blessingOfSacrificeDown", -- Rank 4
+			[20216] = "divineFavorDown",
 		},
 		castStart = {					-- cast start [spellid] = ".mp3 file name",
 		
@@ -184,6 +249,10 @@
 			[28272] = "polymorph", -- Rank 1 (Pig)
 			[31687] = "waterElemental",
 			[12051] = "evocation",
+
+			-- Paladin (Spell Casting)
+			[10326] = "turnEvil",
+
 		},
 		castSuccess = {					--cast success [spellid] = ".mp3 file name",
 			-- Cure (DPS Dispel)
@@ -338,7 +407,24 @@
 			[11113] = "blastWave",
 			[11958] = "coldSnap",
 
-
+			-- Paladin (Cast Success)
+			[20271] = "judgement", -- blizzard can't spell
+			[1152] = "purify",
+			[4987] = "cleanse",
+			[853] = "hammerOfJustice", -- Rank 1
+			[5588] = "hammerOfJustice", -- Rank 2
+			[5589] = "hammerOfJustice", -- Rank 3
+			[10308] = "hammerOfJustice", -- Rank 4
+			[633] = "layOnHands", -- Rank 1
+			[2800] = "layOnHands", -- Rank 2
+			[10310] = "layOnHands", -- Rank 3
+			[27154] = "layOnHands", -- Rank 4
+			[20473] = "holyShock", -- Rank 1
+			[20929] = "holyShock", -- Rank 2
+			[20930] = "holyShock", -- Rank 3
+			[27174] = "holyShock", -- Rank 4
+			[33072] = "holyShock", -- Rank 5
+			[20066] = "repentance",
 
 		},
 		friendlyInterrupt = {			--friendly interrupt [spellid] = ".mp3 file name",
