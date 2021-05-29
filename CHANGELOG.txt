@@ -7,16 +7,21 @@ Y - Increments with any significant code rewrite that includes major bug fixes o
 Z - Increments with any update that does not follow the above, such as minor bug fixes, new spells using sounds already in the library, etc.
 If you maintain forks or translations of GSA2, any X or Y increment may require your attention.
 
-Note: I do NOT support ANY version of GSA2 outside of the latest Retail Live and BETA/PTR versions of the addon.
-I do not currently support Classic or Burning Crusade Classic.
-I will never support older versions for Private Servers.
-Please stop asking. I will not help you.
+Note: I do NOT support ANY version of GSA2 outside of the latest Retail/BCC Live or PTR/Beta versions.
+Please do not ask me for help with Vanilla Classic or private server versions. I will not help you.
 ===========================================
-- version 3.7.2 (9.0.5)
+- version 3.8 (9.0.5)
 
 General
 * Added info regarding GSA2's version numbering system and my stance on supporting other versions of the addon to top of the Changelog file.
 * Fixed tooltips not providing all relevant spell info (still have no idea how to fix the weird floating issue but it doesn't really matter).
+
+Druid
+* Added Nature's Swiftness to Aura Applied/Down.
+* Added Swiftmend to Cast Success.
+
+Hunter
+* Added Explosive Shot to Cast Success.
 
 ===========================================
 - version 3.7.1 (9.0.5)
