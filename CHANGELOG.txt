@@ -10,6 +10,12 @@ If you maintain forks or translations of GSA2, any X or Y increment may require 
 Note: I do NOT support ANY version of GSA2 outside of the latest Retail/BCC Live or PTR/Beta versions.
 Please do not ask me for help with Vanilla Classic or private server versions. I will not help you.
 ===========================================
+- version 3.8.1 (9.0.5)
+
+Monk
+* Added missing option for Transcendance.
+
+===========================================
 - version 3.8 (9.0.5)
 
 General
