@@ -6,7 +6,7 @@
  local LSM = LibStub("LibSharedMedia-3.0")
  local self, GSA, PlaySoundFile = GladiatorlosSA, GladiatorlosSA, PlaySoundFile
  local GSA_TEXT = "|cff69CCF0GladiatorlosSA2|r (|cffFFF569/gsa|r)"
- local GSA_VERSION = "|cffFF7D0A TBC-B2 |r(|cff4DFF4D2.5.1 Burning Crusade (Classic)|r)"
+ local GSA_VERSION = "|cffFF7D0A TBC-1.0 |r(|cff4DFF4D2.5.1 Burning Crusade (Classic)|r)"
  local GSA_TEST_BRANCH = ""
  local GSA_AUTHOR = " "
  local gsadb
@@ -241,6 +241,7 @@
  -- Because arrays are for nerds
  function GSA:CheckFriendlyDebuffs(spellID)
 	if spellID == 9005 or spellID == 9823 or spellID == 9827 or spellID == 27006 -- Pounce
+		or spellID == 26839 or spellID == 26884 -- Garrote Silence
 		or spellID == 19577 -- Intimidation
 		or spellID == 12355 -- Impact (Fire Mage RNG stun talent)
 		or spellID == 20170 -- Seal of Justice Stun

@@ -461,7 +461,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["General Abilities"],
 								order = 30,					      		
-								args = listOption({5530,195901,214027,34709,345231},"auraApplied"),
+								args = listOption({5530,195901,214027,34709,44055},"auraApplied"),
 							},
 
 							dispelkickback = { -- AuraApplied
@@ -554,7 +554,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["General Abilities"],
 								order = 30,
-								args = listOption({},"auraRemoved"),
+								args = listOption({44055},"auraRemoved"),
 							},
 							druid = { -- AuraRemoved
 								type = 'group',
@@ -640,12 +640,12 @@ function GSA:OnOptionCreate()
 								desc = L["Resurrection_Desc"],
 								order = 20,
 							},
-							bigHeal = { -- CastStart
+--[[							bigHeal = { -- CastStart
 								type = 'toggle',
 								name = L["BigHeal"],
 								desc = L["BigHeal_Desc"],
 								order = 30,
-							},
+							},]]
 							druid = { -- CastStart
 								type = 'group',
 								inline = true,
@@ -745,38 +745,38 @@ function GSA:OnOptionCreate()
 								--disabled = function() return gsadb.castStart end,
 								order = 17,
 							},
-							cure = { -- CastSuccess
+--[[							cure = { -- CastSuccess
 								type = 'toggle',
 								name = L["DPSDispel"],
 								desc = L["DPSDispel_Desc"],
 								order = 20,
-							},
-							dispel = { -- CastSuccess
+							},]]
+--[[							dispel = { -- CastSuccess
 								type = 'toggle',
 								name = L["HealerDispel"],
 								desc = L["HealerDispel_Desc"],
 								order = 24,
-							},
-							purge = { -- CastSuccess
+							},]]
+--[[							purge = { -- CastSuccess
 								type = 'toggle',
 								name = L["Purge"],
 								desc = L["PurgeDesc"],
 								order = 26,
-							},
-							general = { -- CastSuccess
+							},]]
+--[[							general = { -- CastSuccess
 								type = 'group',
 								inline = true,
 								name = L["General Abilities"],
 								order = 30,
 								args = listOption({},"castSuccess"),
-							},
-							enemyInterrupts = { -- CastSuccess
+							},]]
+--[[							enemyInterrupts = { -- CastSuccess
 								type = 'group',
 								inline = true,
 								name = L["EnemyInterrupts"],
 								order = 35,
 								args = listOption({},"castSuccess"),
-							},
+							},]]
 							druid = { -- CastSuccess
 								type = 'group',
 								inline = true,

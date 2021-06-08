@@ -13,6 +13,19 @@ I am currently working on support for Burning Crusade Classic.
 I will never support older versions for Private Servers.
 Please stop asking. I will not help you.
 ===========================================
+- version TBC-1.0 (2.5.1)
+
+NOTE: GSA2 for TBC is designed with Spell Ranks in mind. ALL spell ranks are included on most spells, excluding
+lower ranks specific abilities that don't get an alert-worthy secondary effect (like CC) until the later ranks.
+
+If you are observant enough to notice a spell that might be missing a few ranks, please let me know.
+
+General
+* Added and corrected sound alerts for all intended spells.
+* Tweaked option tooltips to more appropriately reflect classes represented in TBC.
+* Removed options unused in the TBC version of GSA2.
+
+===========================================
 - version TBC-B2 (2.5.1)
 
 General
