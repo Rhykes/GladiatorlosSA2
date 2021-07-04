@@ -10,6 +10,53 @@ If you maintain forks or translations of GSA2, any X or Y increment may require 
 Note: I do NOT support ANY version of GSA2 outside of the latest Retail/BCC Live or PTR/Beta versions.
 Please do not ask me for help with Vanilla Classic or private server versions. I will not help you.
 ===========================================
+- version 3.9 (9.1)
+
+Death Knight
+* Unholy Assault now has its own alert separate from Rune Weapons.
+
+Druid
+* Added Emerald Slumber to Cast Start.
+* Added Grove Protection to Cast Success.
+
+Hunter
+* Added Consecutive Concussion's stun to a friendly check in Buff Applied.
+* Added Bestial Wrath to Cast Success.
+* Added Chimaeral Sting to Cast Success.
+* Added Mend Pet to Cast Success.
+* Added Wild Kingdom to Cast Success.
+* Moved Spider Sting alert from Cast Success to a friendly check in Buff Applied.
+
+Mage
+* Added Arcanosphere to Cast Start.
+* Added Ice Wall to Cast Start.
+* Added Ring of Fire to Cast Start.
+
+Monk
+* Added Dematerialize to Buff Applied.
+
+Priest
+* Added Power Infusion (Down) to Buff Down.
+
+Rogue
+* Added Shiv to Cast Success.
+* Added Veil of Midnight (+Down) to Buff Applied/Down.
+* Removed Plunder Armor (no longer exists).
+
+Shaman
+* Added Doom Winds (+Down) to Buff Applied/Down.
+* Added Unleash Shield: Water to Cast Success.
+* Added Unleash Shield: Earth to Cast Success
+* Added Static Field Totem to Cast Success.
+
+Warlock
+* Added Amplify Curse to Cast Success.
+* Added Fel Obelisk to Cast Success.
+* Added Shadow Rift to Cast Success.
+* Added Bonds of Fel to Cast Start.
+* Added Soul Fire to Cast Start.
+
+===========================================
 - version 3.8.1 (9.0.5)
 
 Monk
