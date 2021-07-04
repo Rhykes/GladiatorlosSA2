@@ -657,7 +657,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cffFFFFFFPriest|r"],
 								order = 110,
-								args = listOption({33206,47585,109964,197268,193223,194249,218413,15286,213610,215769,213602,10060},"auraRemoved"),
+								args = listOption({33206,47585,109964,197268,194249,218413,15286,213610,215769,213602,10060},"auraRemoved"),
 							},
 							rogue = { -- AuraRemoved
 								type = 'group',
@@ -955,7 +955,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["|cff0070daShaman (Totems)|r"],
 								order = 141,
-								args = listOption({204330,204331,98008,51485,108280,192058,192077,192222,207399,198838,204336,8143,16191,324386,8512,5438},"castSuccess"),
+								args = listOption({204330,204331,98008,51485,108280,192058,192077,192222,207399,198838,204336,8143,16191,324386,8512,5438,355580},"castSuccess"),
 							},
 							warlock = { -- CastSuccess
 								type = 'group',

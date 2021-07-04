@@ -301,8 +301,8 @@
 			[184662] = "vengeanceShieldDown",	--Vengeance Shield
 			[213610] = "wardDown",				--Holy Ward
 			[197268] = "hopeDown",				--Ray of Hope
-			[193223] = "madnessDown",			--Surrender to Madness
-			[319952] = "madnessDown",			-- It's baaaack
+			--[193223] = "madnessDown",			--Surrender to Madness
+			--[319952] = "madnessDown",			-- It's baaaack
 			[210918] = "etherealDown",			--Ethereal Form
 			[212295] = "netherWardDown",		--Nether Ward
 			[86659] = "kingsDown",				--Guardian of Ancient Kings
@@ -948,7 +948,7 @@
 			[8143] = "TremorTotem", -- Tremor Totem!
 			[16191] = "manaTideTotem",
 			[324386] = "vesperTotem",
-			[355630] = "staticFieldTotem",
+			[355580] = "staticFieldTotem",
 			
 			-- Warlock (Cast Success)
 			[6789] = "mortalCoil",

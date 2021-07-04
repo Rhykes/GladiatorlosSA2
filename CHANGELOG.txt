@@ -10,6 +10,17 @@ If you maintain forks or translations of GSA2, any X or Y increment may require 
 Note: I do NOT support ANY version of GSA2 outside of the latest Retail/BCC Live or PTR/Beta versions.
 Please do not ask me for help with Vanilla Classic or private server versions. I will not help you.
 ===========================================
+- version 3.9.1 (9.1)
+
+Priest
+* Removed Surrender to Madness Down. RIP the RIP sound.
+
+Shaman
+* Fixed Static Field Totem's missing spell option.
+* Fixed Static Field Totem's incorrect spell ID.
+* Don't drink and code, kids.
+
+===========================================
 - version 3.9 (9.1)
 
 Death Knight
