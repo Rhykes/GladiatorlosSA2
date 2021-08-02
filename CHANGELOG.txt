@@ -10,6 +10,25 @@ If you maintain forks or translations of GSA2, any X or Y increment may require 
 Note: I do NOT support ANY version of GSA2 outside of the latest Retail/BCC Live or PTR/Beta versions.
 Please do not ask me for help with Vanilla Classic or private server versions. I will not help you.
 ===========================================
+- version 3.9.2 (9.1)
+
+General
+* Added Gladiator's Shackles ("Mally") to Cast Success.
+Blizzard if you are reading this, please for the love of god remove this thing.
+
+Hunter
+* Fixed Mend Pet's missing spell option.
+
+Mage
+* Moved Arcanosphere to Aura Applied from Spell Casting (because combat log is weird)
+
+Priest
+* Added back Surrender to Madness Down in Buff Down, with a proper alert now.
+
+Rogue
+* Fixed Veil of Midnight to properly alert its falloff.
+
+===========================================
 - version 3.9.1 (9.1)
 
 Priest
