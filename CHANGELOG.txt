@@ -10,6 +10,21 @@ If you maintain forks or translations of GSA2, any X or Y increment may require 
 Note: I do NOT support ANY version of GSA2 outside of the latest Retail/BCC Live or PTR/Beta versions.
 Please do not ask me for help with Vanilla Classic or private server versions. I will not help you.
 ===========================================
+- version 3.10 (9.1)
+
+General
+* Crowd Control "Success!" alerts now only fire if the target is actually affected by the CC. The option has been moved from Cast Success to Buff Applied.
+* I'm really not sure why I didn't do this sooner.
+
+Druid
+* Entangling Roots has been added to the "Success" alert.
+
+Mage
+* Ring of Frost now has a separate alert when it successfully freezes a player (Frozen). This is found in the Buff Applied section.
+* Ring of Frost continues to announce "Sucess" when the spell is finished casting, if CC Success option is enabled.
+* Ring of Fire now has a separate alert when an ally triggers its effect (Burns).
+
+===========================================
 - version 3.9.2 (9.1)
 
 General
