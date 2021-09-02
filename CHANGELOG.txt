@@ -10,6 +10,12 @@ If you maintain forks or translations of GSA2, any X or Y increment may require 
 Note: I do NOT support ANY version of GSA2 outside of the latest Retail/BCC Live or PTR/Beta versions.
 Please do not ask me for help with Vanilla Classic or private server versions. I will not help you.
 ===========================================
+- version 3.10.1 (9.1)
+
+Demon Hunter
+* Added "Connected" alert for a successful cast of The Hunt.
+
+===========================================
 - version 3.10 (9.1)
 
 General
