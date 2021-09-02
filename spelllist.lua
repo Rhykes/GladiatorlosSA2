@@ -502,7 +502,7 @@
 			[208683] = "trinket", -- Gladiator's Medallion Legion
 			[195710] = "trinket", -- Honorable Medallion Legion
 			[336126] = "trinket", -- Gladiator's Medallion Shadowlands
-			[42292] = "trinket", -- Inherited Insignias (Heirloom PvP Trinkets)
+			--[42292] = "trinket", -- Inherited Insignias (Heirloom PvP Trinkets)
 			[23035] = "battleStandard",
 			[23034] = "battleStandard",
 			[213664] = "NimbleBrew", -- Nimble Brew consumable

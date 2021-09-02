@@ -13,6 +13,12 @@ I am currently working on support for Burning Crusade Classic.
 I will never support older versions for Private Servers.
 Please stop asking. I will not help you.
 ===========================================
+- version TBC-1.1 (2.5.2)
+
+General
+* Alerts no longer play in sanctuaries.
+
+===========================================
 - version TBC-1.0 (2.5.1)
 
 NOTE: GSA2 for TBC is designed with Spell Ranks in mind. ALL spell ranks are included on most spells, excluding
