@@ -10,6 +10,23 @@ If you maintain forks or translations of GSA2, any X or Y increment may require 
 Note: I do NOT support ANY version of GSA2 outside of the latest Retail/BCC Live or PTR/Beta versions.
 Please do not ask me for help with Vanilla Classic or private server versions. I will not help you.
 ===========================================
+- version 3.10.2 (9.1)
+
+Covenants
+* [Nadjia] Added Euphoria (+Down) to Aura Applied/Removed.
+* [Mikanikos] Added Sparkling Driftglobe Core to Cast Success.
+* [Emeni] Added Sulfuric Emission to Cast Success.
+* [Nadjia] Added Nimble Steps to Cast Success.
+* Hey Blizz maybe don't make game-changing auto-proc CC passives as soulbinds? Just a thought.
+
+Rogue
+* Fixed Smoke Bomb for Subtlety rogues.
+
+Warlock
+* Fixed "Success" alert for Fear.
+(Was yet another case of having a million spellIDs for the exact same thing. Blizz likes doing this for warlocks.)
+
+===========================================
 - version 3.10.1 (9.1)
 
 Demon Hunter
