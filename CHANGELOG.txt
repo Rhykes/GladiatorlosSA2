@@ -1,14 +1,36 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 https://github.com/Rhykes/GladiatorlosSA2
 ===========================================
-GSA uses the following version number scheme: X.Y.Z (ex: 3.7.2)
-X - Increments following significant code rewrites or major spell library updates. This usually happens with a new expansion.
-Y - Increments with any significant code rewrite that includes major bug fixes or features, or any update that adds new sound files.
-Z - Increments with any update that does not follow the above, such as minor bug fixes, new spells using sounds already in the library, etc.
-If you maintain forks or translations of GSA2, any X or Y increment may require your attention.
+- version 3.11 (SL 9.1.5 / TBC 2.5.2)
 
-Note: I do NOT support ANY version of GSA2 outside of the latest Retail/BCC Live or PTR/Beta versions.
-Please do not ask me for help with Vanilla Classic or private server versions. I will not help you.
+I have begun a bit of a code rewrite for GSA2 to begin cleaning up legacy code and merge TBC and Retail into a single
+codebase and sound library. If the APIs deviate again to where this is no longer possible, I will fork GSA2 again.
+For now, maintaining two separate versions seemed unnecessary.
+
+Going forward, both the TBC and Retail versions of GSA2 should be interchangeable with one another. Simply moving the
+addon to the other version's folder should work as expected. However, because neither Curse nor WoW seem to support
+multiple client version TOCs, updates of the addon will continue to be uploaded as separate files but they are
+completely identical aside from TOC version numbers.
+
+Note that this task is still a work-in-progress, and has only been tested on Retail. I make no promises for TBC
+reliability currently.
+
+General
+* Fixed a possible bug with World alerts for very old users of GSA2 that may not have ever cleared their settings.
+* I don't know if this actually happened but I was tidying up code and suspect it might have.
+
+Covenants
+* Removed soulbind procs added in 3.10.2 because they don't work.
+
+Death Knight
+* Added Dark Transformation to Cast Success.
+
+Druid
+* Added Feral Frenzy to Cast Success.
+
+Monk
+* Added Fists of Fury to Cast Success
+
 ===========================================
 - version 3.10.2 (9.1)
 
@@ -17,14 +39,12 @@ Covenants
 * [Mikanikos] Added Sparkling Driftglobe Core to Cast Success.
 * [Emeni] Added Sulfuric Emission to Cast Success.
 * [Nadjia] Added Nimble Steps to Cast Success.
-* Hey Blizz maybe don't make game-changing auto-proc CC passives as soulbinds? Just a thought.
 
 Rogue
 * Fixed Smoke Bomb for Subtlety rogues.
 
 Warlock
 * Fixed "Success" alert for Fear.
-(Was yet another case of having a million spellIDs for the exact same thing. Blizz likes doing this for warlocks.)
 
 ===========================================
 - version 3.10.1 (9.1)
@@ -52,7 +72,6 @@ Mage
 
 General
 * Added Gladiator's Shackles ("Mally") to Cast Success.
-Blizzard if you are reading this, please for the love of god remove this thing.
 
 Hunter
 * Fixed Mend Pet's missing spell option.
