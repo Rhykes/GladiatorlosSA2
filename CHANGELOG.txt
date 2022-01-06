@@ -1,6 +1,15 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 https://github.com/Rhykes/GladiatorlosSA2
 ===========================================
+- version 3.12 (SL 9.1.5 / TBC 2.5.2)
+
+Rogue
+* Fixed Stealth for Subtlety Rogues.
+
+Warlock
+* Added Axe Toss (Felguard) to Cast Success.
+
+===========================================
 - version 3.11 (SL 9.1.5 / TBC 2.5.2)
 
 I have begun a bit of a code rewrite for GSA2 to begin cleaning up legacy code and merge TBC and Retail into a single
