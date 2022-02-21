@@ -1,7 +1,7 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 https://github.com/Rhykes/GladiatorlosSA2
 ===========================================
-- version 3.12.1 (SL 9.1.5 / TBC 2.5.2)
+- version 3.13 (SL 9.1.5 / TBC 2.5.2)
 
 I am still marking this as compatible with TBC but am not bumping up to the latest patch because further testing needs
 to be done. Please continue to use the last version released specifically for TBC if you run into any problems, but
