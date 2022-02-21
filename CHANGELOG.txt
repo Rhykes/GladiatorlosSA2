@@ -11,6 +11,7 @@ Warlock
 * Fixed missing sound file for Axe Toss, whoops lol
 
 Warrior
+* Fixed missing option for Conqueror's Banner.
 * Fixed missing option for Spell Reflect falloff.
 
 ===========================================
