@@ -103,6 +103,7 @@ L["Hunter"] = "Охотник"
 L["Monk"] = "Монах"
 L["DemonHunter"] = "Охотник на демонов"
 L["Warlock"] = "Чернокнижник"
+L["Evoker"] = true
 L["Buff Down"] = "Снятие баффа"
 L["Spell Casting"] = "Применение заклинания"
 L["BigHeal"] = "Большое исцеление"

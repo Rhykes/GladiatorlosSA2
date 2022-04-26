@@ -1,6 +1,13 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 https://github.com/Rhykes/GladiatorlosSA2
 ===========================================
+- version 3.14.1 (SL 9.2 / TBC 2.5.2)
+
+Items
+* Gladiator's Echoing Resolve and Gladiator's Fastidious Resolve are no longer separate alerts (didn't work anyway oops).
+* Gladiator's Resolve is now alerted on Aura Applied and Removed when triggered from either source.
+
+===========================================
 - version 3.14 (SL 9.2 / TBC 2.5.2)
 
 General
