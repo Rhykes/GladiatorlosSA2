@@ -105,6 +105,7 @@ L["DeathKnight"] = "|cffC41F3BChevalier de la mort|r"
 L["Hunter"] = "|cffABD473Chasseur|r"
 L["Monk"] = "|cFF00FF96Moine|r"
 L["DemonHunter"] = "|cffA330C9?|r"
+L["Evoker"] = true
 L["Buff Down"] = "Fin de buffs"
 L["Spell Casting"] = "Lancement d'un sort"
 L["BigHeal"] = "Gros soin"

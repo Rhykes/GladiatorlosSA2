@@ -1,6 +1,40 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 https://github.com/Rhykes/GladiatorlosSA2
 ===========================================
+- version 3.14.1 (SL 9.2 / TBC 2.5.2)
+
+Items
+* Gladiator's Echoing Resolve and Gladiator's Fastidious Resolve are no longer separate alerts (didn't work anyway oops).
+* Gladiator's Resolve is now alerted on Aura Applied and Removed when triggered from either source.
+
+===========================================
+- version 3.14 (SL 9.2 / TBC 2.5.2)
+
+General
+* Fixed version number, oops 
+
+Items
+* Added alert for Gladiator's Echoing Resolve (+Down). I am so sorry.
+* Added alert for Gladiator's Fastidious Resolve (+Down).
+* Added alert for Gladiator's Resonator.
+
+Warlock
+* Changed alert for Unending Resolve to "Lock Wall" and "Lock Wall Down" to cut down on syllables and to avoid confusion with new trinkets.
+===========================================
+- version 3.13 (SL 9.2 / TBC 2.5.2)
+
+I am still marking this as compatible with TBC but am not bumping up to the latest patch because further testing needs
+to be done. Please continue to use the last version released specifically for TBC if you run into any problems, but
+also please let me know if this does (or doesn't) work in TBC.
+
+Warlock
+* Fixed missing sound file for Axe Toss, whoops lol
+
+Warrior
+* Fixed missing option for Conqueror's Banner.
+* Fixed missing option for Spell Reflect falloff.
+
+===========================================
 - version 3.12 (SL 9.1.5 / TBC 2.5.2)
 
 Rogue

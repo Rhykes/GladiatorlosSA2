@@ -21,6 +21,9 @@
 			[279739] = "drinking",
 			--Was I drunk when I did this??
 			[345231] = "battlemaster",
+			--[363121] = "echo",
+			--[363117] = "resolve",
+			[362699] = "resolve",
 
 			-- Crowd Controls
 			--Polymorph (Mage)
@@ -127,7 +130,7 @@
 			[29166] = "innervate",
 			--[200851] = "rageOfSleeper",
 			--[203727] = "thorns", -- (Resto)
-			[236696] = "thorns", -- (Feral/Balance)
+			--[236696] = "thorns", -- (Feral/Balance)
 			[305497] = "thorns", -- Resto/Feral/Balance 8.2
 			[163505] = "rakeStun",
 			--[323557] = "ravenousFrenzy", -- Venthyr
@@ -138,6 +141,9 @@
 			[323546] = "ravenousfrenzy", -- Venthyr
 			[22842] = "FrenziedRegen",
 			[132158] = "naturesSwiftness",
+
+			-- Evoker (Aura Applied)
+			-- placeholder
 
 			-- Hunter (Aura Applied)
 			[19263] = "deterrence",
@@ -272,7 +278,7 @@
 			
 			-- Warlock (Aura Applied)
 			[108416] = "darkPact",
-			[104773] = "unendingResolve",
+			[104773] = "unendingResolve2",
 			--[196098] = "darkSoul", -- Soul Harvest (Legion's Version)
 			[113860] = "darkSoul", -- Dark Soul: Misery (Affliction)
 			[113858] = "darkSoul", -- Dark Soul: Instability (Destruction)
@@ -306,6 +312,32 @@
 			--[206891] = "tankTauntsON", -- Tank Taunts On
 		},
 		auraRemoved = {					-- aura removed [spellid] = ".ogg file name",
+			-- Death Knight (Aura Removed)
+
+			-- Demon Hunter (Aura Removed)
+
+			-- Druid (Aura Removed)
+
+			-- Evoker (Aura Removed)
+			-- placeholder
+
+			-- Hunter (Aura Removed)
+			
+			-- Mage (Aura Removed)
+
+			-- Monk (Aura Removed)
+
+			-- Paladin (Aura Removed)
+
+			-- Priest (Aura Removed)
+
+			-- Rogue (Aura Removed)
+
+			-- Shaman (Aura Removed)
+
+			-- Warlock (Aura Removed)
+
+			-- Warrior (Aura Removed)
 			[642] = "bubbleDown",				--Divine Shield
 			[47585] = "dispersionDown",			--Dispersion
 			[1022] = "protectionDown",			--Blessing of Protection
@@ -369,7 +401,7 @@
 			[218413] = "voidFormDown",			--Voidform
 			[15286] = "vampiricEmbraceDown",	--Vampiric Embrace
 			--[203727] = "thornsDown",			--Thorns (Resto)
-			[236696] = "thornsDown",			--Thorns (Feral)
+			--[236696] = "thornsDown",			--Thorns (Feral)
 			[305497] = "thornsDown",			--Thorns 8.2
 			[209584] = "zenFocusTeaDown",		--Zen Focus Tea
 			--[216890] = "SpellreflectionDown", 		-- Arms/Fury
@@ -389,7 +421,7 @@
 			[212704] = "BeastWithinDown",	-- The Beast Within; Beastial Wrath Fear/Horror Immunity Honor Talent
 			[1966] = "FeintDown",			-- Feint
 			[210294] = "DivineFavorDown", -- Divine Favor
-			[104773] = "UnendingResolveDown", -- Unending Resolve
+			[104773] = "UnendingResolve2Down", -- Unending Resolve
 			[190319] = "combustionDown", -- Combustion
 			[12042] = "APDown", -- Arcane Power
 			[12472] = "icyVeinsDown", -- Icy Veins
@@ -420,6 +452,9 @@
 			[10060] = "infusionDown", -- Power Infusion
 			[335903] = "doomwindsDown",
 			[199027] = "veilOfMidnightDown",
+			--[363121] = "echoDown",
+			--[363117] = "resolveDown",
+			[362699] = "resolveDown",
 
 			-- COVENANTS
 			[310143] = "soulshapeDown", -- Nightfae Signature
@@ -427,6 +462,7 @@
 			--[324867] = "fleshcraftDown", -- Necrolord Signature
 		--TANK TAUNTS
 			--[206891] = "tankTauntsOFF", 			-- Tank Taunts Down
+	
 			},
 		castStart = {					-- cast start [spellid] = ".ogg file name",
 		
@@ -481,6 +517,9 @@
 			[274283] = "fullMoon",
 			[2637] = "hibernate", -- Hibernate
 			[329042] = "emeraldSlumber",
+
+			-- Evoker (Spell Casting)
+			-- placeholder
 			
 			-- Hunter (Spell Casting)
 			[982] = "revivePet",
@@ -665,6 +704,7 @@
 			[257040] = "SpatialRift2", -- Spatial Rift Teleport (Spatial Warp) (Void Elf)
 			[255654] = "BullRush", -- Bull Rush (Highmountain Racial)
 			[356567] = "maledict",
+			[363481] = "resonator",
 
 			-- Covenant (Cast Success)
 			[324631] = "fleshcraft", -- Necrolord signature
@@ -774,6 +814,9 @@
 			[18562] = "swiftmend",
 			[354654] = "groveProtection",
 			[274837] = "FeralFrenzy",
+
+			-- Evoker (Cast Success)
+			-- placeholder
 			
 			-- Hunter (Cast Success)
 			[147362] = "counterShot",
@@ -922,7 +965,7 @@
 			[207777] = "dismantle",
 			[200806] = "exsanguinate",
 			[408] = "kidney",
-			[199804] = "kidney",
+			--[199804] = "kidney",
 			--[185767] = "cannonballBarrage",
 			[193316] = "diceRoll",
 			--[192759] = "kingsbane",
@@ -978,7 +1021,6 @@
 			[6789] = "mortalCoil",
 			[5484] = "terrorHowl",
 			[19647] = "spellLock",
-			[119910] = "spellLock",
 			[171140] = "spellLock",
 			[171138] = "spellLock",
 			[212619] = "spellLock",
@@ -988,7 +1030,6 @@
 			[251523] = "spellLock",
 			[251922] = "spellLock",
 			[288047] = "spellLock",
-			[119898] = "spellLock",
 			[119898] = "spellLock",
 			[48018] = "DemonicCircle",
 			[48020] = "demonicCircleTeleport",
@@ -1042,7 +1083,6 @@
 		},
 		friendlyInterrupt = {
 			[19647] = "lockout", -- Spell Locks begin
-			[119910] = "lockout",
 			[171140] = "lockout",
 			[171138] = "lockout",
 			[212619] = "lockout",

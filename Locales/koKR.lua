@@ -103,6 +103,7 @@ L["Hunter"] = "|cffABD473사냥꾼|r"
 L["Monk"] = "|cFF00FF96수도사|r"
 L["DemonHunter"] = "|cffA330C9악마사냥꾼|r"
 L["Warlock"] = "|cff9482C9흑마법사|r"
+L["Evoker"] = true
 L["Buff Down"] = "버프 사라짐"
 L["Spell Casting"] = "주문 시전"
 L["BigHeal"] = "상급 치유"
