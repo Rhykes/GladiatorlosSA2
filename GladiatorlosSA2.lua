@@ -6,10 +6,8 @@
  local LSM = LibStub("LibSharedMedia-3.0")
  local self, GSA, PlaySoundFile = GladiatorlosSA, GladiatorlosSA, PlaySoundFile
  local GSA_VERSION = GetAddOnMetadata("GladiatorlosSA2", "Version")
- local GSA_VERSION = GetAddOnMetadata("GladiatorlosSA2", "WLKPatch")
- --local GSA_GAME_VERSION = "10.0.2"
+ local GSA_GAME_VERSION = "10.0.0"
  local GSA_EXPANSION = ""
- local GSA_EXPAC_ID = 0
  local gsadb
  local soundz,sourcetype,sourceuid,desttype,destuid = {},{},{},{},{}
  local CombatLogGetCurrentEventInfo = CombatLogGetCurrentEventInfo
