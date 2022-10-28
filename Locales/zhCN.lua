@@ -194,6 +194,9 @@ L["BalanceDR"] = "平衡"
 L["RestorationDR"] = "恢复"
 L["GuardianDR"] = "守护"
 
+L["DevastationEV"] = "湮灭" 
+L["PreservationEV"] = "恩护" 
+
 L["MarksmanshipHN"] = "射击"
 L["SurvivalHN"] = "生存"
 L["BeastMasteryHN"] = "兽王"
@@ -245,3 +248,4 @@ L["EXPAC_SL"] = "暗影国度"
 L["GladiatorlosSA2"] = true
 
 L["GSA_EXPERIMENTAL_BUILD"] = "这是 GladiatorlosSA2 的测试版本，尚未在 TBC 上进行测试。 尽管我相信一切正常，但如果您遇到问题，请联系我们，并在必要时降级到 GSA2_TBC1.1版本.该消息将不再显示。" 
+L["RacialAbilities"] = "种族技能"
