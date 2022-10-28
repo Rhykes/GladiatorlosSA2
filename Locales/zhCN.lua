@@ -104,7 +104,7 @@ L["Mage"] = "|cff69CCF0法师|r"
 L["DeathKnight"] = "|cffC41F3B死亡骑士|r"
 L["Hunter"] = "|cffABD473猎人|r"
 L["Monk"] = "|cFF558A84武僧|r"
-L["Evoker"] = true
+L["Evoker"] = "|cff33937F唤魔师|r"
 L["DemonHunter"] = "|cffA330C9恶魔猎手|r"
 L["Warlock"] = "|cff9482C9术士|r"
 
