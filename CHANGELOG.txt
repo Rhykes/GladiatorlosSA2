@@ -1,6 +1,134 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 https://github.com/Rhykes/GladiatorlosSA2
 ===========================================
+- version 4.0 (Dragonflight)
+
+GladiatorlosSA2
+* Addon options should now load automatically.
+* (Probably) fixed a bug where the options menu cannot be opened if you have custom spell alerts.
+I have no idea if custom spell alerts even work, I have never used them or looked at its code. Sorry if it's broken.
+* Removed deleted spell IDs the addon was complaining about.
+
+General
+* Added Precognition to Aura Applied/Removed.
+* Removed Gladiator's Resolve.
+
+Death Knight
+* Fixed talent version of the expiration of Abomination's Limb.
+
+Demon Hunter
+* Added Glimpse to Aura Applied.
+* Added Immolation Aura to Cast Success.
+* Added Rain from Above to Aura Applied.
+* Fixed talent version of Elysian Decree.
+* Fixed talent version of Fodder to the Flame and moved it to Aura Applied/
+* Fixed talent version of The Hunt.
+
+Druid 
+* Added Invigorate to Cast Success.
+* Added Nature's Vigil to Aura Applied/Removed.
+* Added Nourish to Big Heal.
+* Added Rage of the Sleeper to Aura Applied/Removed.
+* Added Well-Honed Instincts to Aura Applied/Removed. (Removed alerts that it is ready to proc.)
+* Fixed talent version of Adaptive Swarm.
+* Fixed talent version of Celestial Alignment.
+* Fixed talent version of Convoke the Spirits.
+* Fixed talent version Heart of the Wild.
+
+Hunter 
+* Added Call of the Wild to Cast Success.
+* Added Fury of the Eagle to Cast Success.
+* Added Sentinel Owl to Cast Success.
+* Added Sniper Shot to Cast Start and Connected.
+* Added Spearhead to Aura Applied/Removed.
+* Added Steel Trap to Cast Success.
+* Added Survival of the Fittest to Aura Applied/Removed. 
+* Fixed talent version of Death Chakram.
+* Fixed talent version of Coordinated Assault and it now has its own alert.
+* Aspect of the Wild now has its own alert.
+
+Mage
+* Added Arcane Surge to Cast Start.
+* Added Displacement to Cast Success.
+* Added Mass Polymorph to Polymorph alert and Success alert. Might give it a different one later.
+* Added Polymorph: Duck.
+* Added Snowdrift to Cast Start and Success alert.
+* Added Snowdrift Stun to Aura Applied alert.
+* Added Touch of the Magi to Cast Success.
+* Fixed talent version of Radiant Spark.
+* Fixed talent version of Shifting Power.
+
+Monk 
+* Added Clash to Cast Success.
+* Added Exploding Keg to Cast Success.
+* Added Restoral to Cast Success.
+* Added Strike of the Wind Lord to Cast Success.
+* Fixed talent version of Bonedust Brew. 
+* Fixed talent version of Faeline Stomp. 
+* Fixed talent version of Weapons of Order.
+
+Paladin 
+* Added Bastion of Light to Aura Applied/Removed.
+* Added Exorcism to Cast Success.
+* Added Moment of Glory to Aura Applied/Removed.
+* Added Tyr's Deliverance to Cast Start.
+* Fixed talent version of Blessing of Summer (etc).
+* Fixed talent version of Divine Toll.
+
+Priest
+* Added Damnation to Cast Success.
+* Added Divine Ascension to Aura Applied.
+* Added Divine Word (and its respective buffs) to Aura Applied.
+* Added Empyreal Blaze to Aura Applied.
+* Added Light's Wrath to Cast Start and Connected alerts.
+* Added Power Word: Life to Cast Success.
+* Added Restitution to Aura Applied.
+* Added Schism to Cast Start.
+* Added Shadow Covenant to Cast Success.
+* Added Void Tendrils to Cast Success.
+* Fixed talent version of Mindgames.
+* Fixed talent version of Voidform.
+
+Rogue
+* Added Blade Flurry to Aura Applied/Removed.
+* Added Kingsbane to Cast Success.
+* Added Shadow Step to Cast Success.
+* Added Thistle Tea to Cast Success.
+* Fixed talent version of Echoing Reprimand.
+* Fixed talent version of Flagellation.
+* Fixed talent version of Sepsis.
+* Fixed talent version of Serrated Bone Spikes.
+* Deathmark now uses the Vendetta alert.
+
+Shaman 
+* Added Feral Spirit to Cast Success.
+* Added Greater Purge to Purge alerts.
+* Added Nature's Swiftness to Aura Applied/Removed.
+* Added Totemic Recall to Cast Success.
+* Fixed talent version of Doom Winds.
+* Fixed talent version of Primordial Wave.
+* Fixed Resto talent version of Stormkeeper.
+
+Warlock 
+* Added Casting Circle to Cast Success.
+* Added Nether Portal to Cast Start.
+* Added Soul Swap to Cast Success.
+* Fixed talent version of Soul Rot.
+
+Warrior
+* Added Berserker Shout to Cast Success.
+* Added Bitter Immunity to Cast Success.
+* Added Bodyguard to Aura Applied/Removed.
+* Added Shield Charge to Cast Success.
+* Added Spell Block to Aura Applied/Removed.
+* Added Thunderous Roar (Dragon Roar) to Cast Success.
+* Added Odyn's Fury to Cast Success.
+* Fixed talent versions of Berserker Stance and Defensive Stance.
+* Fixed talent version of Second Wind.
+* Fixed talent version of Spear of Bastion.
+
+
+===========================================
 - version DFB1 (Dragonflight)
 
 First Dragonflight update.
