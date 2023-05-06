@@ -229,7 +229,7 @@ function GSA:OnOptionCreate()
 	options_created = true -- ***** @
 	self.options = {
 		type = "group",
-		name = GetAddOnMetadata("GladiatorlosSA", "Title"),
+		name = GetAddOnMetadata("GladiatorlosSA2", "Title"),
 		args = {
 			general = {
 				type = 'group',
