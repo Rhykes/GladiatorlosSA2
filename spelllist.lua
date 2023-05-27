@@ -69,6 +69,7 @@
 			[235963] = "success", -- Entangling Roots Feral Talent
 			[360806] = "success", -- Sleepwalk (Evoker)
 			[389794] = "success", -- Snowdrift Cast
+			[410126] = "success", -- Searing Glare (Paladin)
 
 			-- Backlash (Aura Applied)
 			[87204] = "backlashFear", -- Vampiric Touch Dispel (Priest)
@@ -154,7 +155,7 @@
 			--[0] = "timeOfNeed",
 			[370562] = "stasisReady",
 			[359816] = "dreamFlight",
-			[378464] = "nullificationShroud",
+			[378464] = "nullifyingshroud",
 
 			-- Hunter (Aura Applied)
 			[19263] = "deterrence",
@@ -382,7 +383,7 @@
 			[357170] = "timeDialationDown",
 			[370562] = "stasisDown",
 			[359816] = "dreamFlightDown",
-			[378464] = "nullificationShroudDown",
+			[378464] = "nullifyingshroudDown",
 
 			-- Hunter (Aura Removed)
 			[19263] = "deterrenceDown", 		--Deterrence
@@ -617,6 +618,7 @@
 			[20066] = "repentance",
 			[10326] = "turnEvil",
 			[200652] = "tyrsDeliverance",
+			[410126] = "SearingGlare",
 			
 			-- Priest (Spell Casting)
 			[9484] = "shackleUndead", 
@@ -814,6 +816,7 @@
 			[324128] = "deathdue", -- Night Fae
 			[312202] = "shackletheunworthy", -- Kyrian
 			[63560] = "DarkTransformation",
+			[210128] = "Reanimation",
 			
 			-- Demon Hunter (Cast Success)
 			[183752] = "disrupt",
@@ -935,6 +938,7 @@
 			[388045] = "sentinelOwl",
 			[162488] = "steelTrap",
 			[359844] = "callOfTheWild",
+			[407028] = "StickyTarBomb",
 			
 			-- Mage (Cast Success)
 			[2139] = "counterspell", 
@@ -959,6 +963,7 @@
 			[382440] = "shiftingPower", -- talent
 			[389713] = "displacement",
 			[321507] = "touchOfTheMagi",
+			[198100] = "Kleptomania",
 			
 			-- Monk (Cast Success)
 			[116841] = "tigersLust",
@@ -1021,6 +1026,7 @@
 			[375576] = "divinetoll", -- talent, holy 
 			[328204] = "vanquisherhammer", -- Necrolord
 			[383185] = "exorcism",
+			
 			
 			-- Priest (Cast Success)
 			[8122] = "fear4", 		-- Psychic Scream
@@ -1090,6 +1096,7 @@
 			[5938] = "shiv",
 			[381623] = "thistleTea",
 			[36554] = "shadowStep",
+			[280719] = "SecretTechnique",
 
 			-- Shaman (Cast Success)
 			[108281] = "ancestralGuidance",
@@ -1108,6 +1115,7 @@
 			[356738] = "unleashEarth", -- Unleash Shield (Earth)
 			[108285] = "totemicRecall",
 			[51533] = "feralSpirits", 
+			[409293] = "burrow",
 			
 			-- Shaman (Totems)
 			[98008] = "spiritLinkTotem",
@@ -1172,6 +1180,7 @@
 			[89766] = "AxeToss",
 			[386951] = "soulSwap",
 			[221703] = "castingCircle",
+			[410598] = "SoulRip",
 
 			-- Warrior (Cast Success)
 			[97462] = "commandingShout",

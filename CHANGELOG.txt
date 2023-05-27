@@ -1,6 +1,30 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 https://github.com/Rhykes/GladiatorlosSA2
 ===========================================
+- version 4.2 (Dragonflight)
+
+General
+- Fixed options menu.
+
+Death Knight
+- Added Reanimation to Cast Success.
+
+Hunter
+- Added Sticky Tar Bomb to Cast Success.
+
+Paladin 
+- Added Searing Glare to Cast Start and Success alerts.
+
+Rogue 
+- Added Secret Technique to Cast Success.
+
+Shaman 
+- Added Burrow to Cast Success.
+
+Warlock 
+- Added Soul Rip to Cast Success.
+
+===========================================
 - version 4.1 (Dragonflight)
 
 Evoker

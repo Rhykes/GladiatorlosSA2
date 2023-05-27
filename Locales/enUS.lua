@@ -18,6 +18,22 @@ local Colors = {
     Warrior = "|cffC79C6E",
 }
 
+local Classes = {
+    DeathKnight = Colors.DeathKnight .. "Death Knight|r",
+    DemonHunter = Colors.DemonHunter .. "Demon Hunter|r",
+    Druid = Colors.Druid .. "Druid|r",
+    Evoker = Colors.Evoker .. "Evoker|r",
+    Hunter = Colors.Hunter .. "Hunter|r",
+    Mage = Colors.Mage .. "Mage|r",
+    Monk = Colors.Monk .. "Monk|r",
+    Paladin = Colors.Paladin .. "Paladin|r",
+    Priest = Colors.Priest .. "Priest|r",
+    Rogue = Colors.Rogue .. "Rogue|r",
+    Shaman = Colors.Shaman .. "Shaman|r",
+    Warlock = Colors.Warlock .. "Warlock|r",
+    Warrior = Colors.Warrior .. "Warrior|r",
+}
+
 L["Spell_CastSuccess"] = "On Successful Cast"
 L["Spell_CastStart"] = "On Beginning of Spell Cast"
 L["Spell_AuraApplied"] = "On Buff/Debuff Application"
@@ -107,24 +123,24 @@ L["In arena, alert when enemy is drinking"] = "In arena, alert when enemy is dri
 L["PvP Trinketed Class"] = true
 L["Also announce class name with trinket alert when hostile targets use PvP trinket in arena"] = "In arenas, announces the class that used their Gladiator Medallion. (2 Minute Trinket)|r"
 L["General Abilities"] = true
-L["Druid"] = Colors.Druid .. "Druid" .. "|r"
-L["Paladin"] = Colors.Paladin .. "Paladin" .. "|r"
-L["Rogue"] = Colors.Rogue .. "Rogue" .. "|r"
-L["Warrior"] = Colors.Warrior .. "Warrior" .. "|r"
-L["Priest"] = Colors.Priest .. "Priest" .. "|r"
-L["Shaman"] = Colors.Shaman .. "Shaman" .. "|r"
+L["Druid"] = Classes.Druid
+L["Paladin"] = Classes.Paladin
+L["Rogue"] = Classes.Rogue
+L["Warrior"] = Classes.Warrior
+L["Priest"] = Classes.Priest
+L["Shaman"] = Classes.Shaman
 L["ShamanTotems"] = Colors.ShamanTotems .. "Shaman (Totems)" .. "|r"
-L["Mage"] = Colors.Mage .. "Mage" .. "|r"
-L["DeathKnight"] = Colors.DeathKnight .. "Death Knight" .. "|r"
-L["Hunter"] = Colors.Hunter .. "Hunter" .. "|r"
-L["Monk"] = Colors.Monk .. "Monk" .. "|r"
-L["DemonHunter"] = Colors.DemonHunter .. "Demon Hunter" .. "|r"
-L["Warlock"] = Colors.Warlock .. "Warlock" .. "|r"
-L["Evoker"] = Colors.Evoker .. "Evoker" .. "|r"
+L["Mage"] = Classes.Mage
+L["DeathKnight"] = Classes.DeathKnight
+L["Hunter"] = Classes.Hunter
+L["Monk"] = Classes.Monk
+L["DemonHunter"] = Classes.DemonHunter
+L["Warlock"] = Classes.Warlock
+L["Evoker"] = Classes.Evoker
 L["Buff Down"] = true
 L["Spell Casting"] = true
 L["BigHeal"] = "Big Heals"
-L["BigHeal_Desc"] = "Nourish (Druid)|nHeal (Priest)|nPower Word: Radiance (Priest)|nHoly Light (Paladin)|nHealing Wave (Shaman)|nSurging Mist |cFF00FF96(Monk)|r"
+L["BigHeal_Desc"] = "Nourish (" .. Classes.Druid .. ")|nHeal (" .. Classes.Priest .. ")|nPower Word: Radiance (" .. Classes.Priest .. ")|nHoly Light (" .. Classes.Paladin .. ")|nHealing Wave (" .. Classes.Shaman .. ")|nSurging Mist |cFF00FF96(" .. Classes.Monk ..")|r"
 L["Resurrection"] = true
 L["Resurrection_Desc"] = "All out-of-combat resurrection abilities."
 L["Special Abilities"] = "Cast Success/Instants"
@@ -165,16 +181,15 @@ L["Music"] = true
 L["Dialog"] = true
 
 L["DPSDispel"] = "Non-Magic Dispels"
-L["DPSDispel_Desc"] = "Generic alert for hybrid class dispels that do not remove Magic effects.|n|nRemove Corruption (" .. Colors.Druid .. "Druid|r)|nRemove Curse (" .. Colors.Mage .. "Mage|r)|nDetox (" .. Colors.Monk .. "Monk|r)|nCleanse Toxins (" .. Colors.Paladin .. "Paladin|r)|nPurify Disease (" .. Colors.Priest .. "Priest|r)|nCleanse Spirit (" .. Colors.Shaman .. "Shaman|r)"
+L["DPSDispel_Desc"] = "Generic alert for hybrid class dispels that do not remove Magic effects.|n|nRemove Corruption (" .. Classes.Druid .. ")|nRemove Curse (" .. Classes.Mage ..")|nDetox (" .. Classes.Monk .. ")|nCleanse Toxins (" .. Classes.Paladin .. ")|nPurify Disease (" .. Classes.Priest ..")|nCleanse Spirit (" .. Classes.Shaman .. ")"
 L["HealerDispel"] = "Magic Dispels"
-L["HealerDispel_Desc"] = "Generic alert for healing class (and warlocks) dispels that remove Magic effects.|n|nNature's Cure (Druid)|nDetox (Monk)|nCleanse (Paladin)|nPurify (Priest)|nPurify Spirit (Shaman)|nSinge Magic (Warlock)"
+L["HealerDispel_Desc"] = "Generic alert for healing class (and warlocks) dispels that remove Magic effects.|n|nNature's Cure (" .. Classes.Druid .. ")|nDetox (" .. Classes.Monk .. ")|nCleanse (" .. Classes.Paladin .. ")|nPurify (" .. Classes.Priest .. ")|nPurify Spirit (" .. Classes.Shaman .. ")|nSinge Magic (" .. Classes.Warlock .. ")"
 L["CastingSuccess"] = "CC Cast Success"
-L["CastingSuccess_Desc"] = "Enables generic 'success' alert when a major enemy cast-time Crowd Control ability is applied to an ally.|n|n|cffC41F3BWARNING: ALL of the abilities below will announce their success if this is enabled, even if you have some of them disabled in Spell Casting.|r|n|nCyclone (Druid)|nEntangling Roots (Druid)|nHibernate (Druid)|nMass Polymorph (Mage)|nSleepwalk (Evoker)|nScare Beast (Hunter)|nPolymorph (Mage)|nRing of Frost (Mage)|nRepentance (Paladin)|nMind Control (Priest)|nHex (Shaman)|nFear (Warlock)"
-
+L["CastingSuccess_Desc"] = "Enables generic 'success' alert when a major enemy cast-time Crowd Control ability is applied to an ally.|n|n|cffC41F3BWARNING: ALL of the abilities below will announce their success if this is enabled, even if you have some of them disabled in Spell Casting.|r|n|nCyclone (" .. Classes.Druid .. ")|nEntangling Roots (" .. Classes.Druid .. ")|nHibernate (" .. Classes.Druid .. ")|nMass Polymorph (" .. Classes.Mage .. ")|nSleepwalk (" .. Classes.Evoker .. ")|nScare Beast (" .. Classes.Hunter .. ")|nPolymorph (" .. Classes.Mage .. ")|nRing of Frost (" .. Classes.Mage .. ")|nRepentance (" .. Classes.Paladin .. ")|nSearing Glare (" ..Classes.Paladin .. ")|nMind Control (" .. Classes.Priest .. ")|nHex (" .. Classes.Shaman .. ")|nFear (" .. Classes.Warlock .. ")"
 L["DispelKickback"] = "Dispel Penalties"
 
 L["Purge"] = "Purges"
-L["PurgeDesc"] = "Generic alert for purges that remove magic effects from your team, excluding Arcane Torrent.|n|nConsume Magic (DemonHunter)|nTranquilizing Shot (Hunter)|nDispel Magic (Priest)|nGreater Purge (Shaman)|nPurge (Shaman)|nDevour Magic (Warlock)"
+L["PurgeDesc"] = "Generic alert for purges that remove magic effects from your team, excluding Arcane Torrent.|n|nConsume Magic (" .. Classes.DemonHunter .. ")|nTranquilizing Shot (" .. Classes.Hunter ..")|nDispel Magic (" .. Classes.Priest ..")|nGreater Purge (" .. Classes.Shaman .. ")|nPurge (" .. Classes.Shaman .. ")|nDevour Magic (" .. Classes.Warlock .. ")"
 
 L["FriendlyInterrupted"] = "Ally Lockout Alert"
 L["FriendlyInterruptedDesc"] = "Disable the alert that occurs when an enemy successfully interrupts you or an ally which locks them out of casting.|n|n(Plays the Blizzard 'Quest Failed' sound effect.)"
@@ -191,7 +206,7 @@ L["TankTauntsON"] = "Intimidation"
 L["TankTauntsON_Desc"] = "Alerts the application of Intimidation: a damage amplifcation effect originating from tank specializations."
 
 L["Connected"] = "Connected Alerts"
-L["Connected_Desc"] = "Plays a simple 'Connected' alert when certain very powerful cast-time abilities successfully complete their cast.|n|nThe Hunt (DemonHunter)|nSniper Shot (Hunter)|nGreater Pyroblast (Mage)|nLight's Wrath (Priest)|nMind Games (Priest)|nChaos Bolt (Warlock)"
+L["Connected_Desc"] = "Plays a simple 'Connected' alert when certain very powerful cast-time abilities successfully complete their cast.|n|nThe Hunt (" .. Classes.DemonHunter ..")|nSniper Shot (" .. Classes.Hunter .. ")|nGreater Pyroblast (" .. Classes.Mage .. ")|nLight's Wrath (" .. Classes.Priest .. ")|nMind Games (" .. Classes.Priest ..")|nChaos Bolt (" ..Classes.Warlock ..")"
 
 L["CovenantAbilities"] = "Covenant Abilities"
 
@@ -209,6 +224,7 @@ L["GuardianDR"] = "Guardian"
 
 L["DevastationEV"] = "Devastation" 
 L["PreservationEV"] = "Preservation" 
+L["AugmentationEV"] = "Augmentation"
 
 L["MarksmanshipHN"] = "Marksmanship"
 L["SurvivalHN"] = "Survival"
