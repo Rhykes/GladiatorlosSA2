@@ -512,7 +512,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["Evoker"],
 								order = 75,
-								args = listOption({363916,370553,374348,375087,357170,370562,359816},"auraApplied"),
+								args = listOption({363916,370553,374348,375087,357170,370562,359816,378464},"auraApplied"),
 							},
 							hunter = { -- AuraApplied
 								type = 'group',
@@ -632,7 +632,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["Evoker"],
 								order = 65,
-								args = listOption({363916,374348,375087,357170,370562,359816},"auraRemoved"),
+								args = listOption({363916,374348,375087,357170,370562,359816,378464},"auraRemoved"),
 							},
 							hunter = { -- AuraRemoved
 								type = 'group',
@@ -951,7 +951,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["ShamanTotems"],
 								order = 141,
-								args = listOption({204330,204331,98008,51485,108280,192058,192077,192222,207399,198838,204336,8143,16191,324386,8512,5438,355580,383013},"castSuccess"),
+								args = listOption({204330,204331,98008,51485,108280,192058,192077,192222,207399,198838,204336,8143,16191,8512,5438,355580,383013},"castSuccess"),
 							},
 							warlock = { -- CastSuccess
 								type = 'group',

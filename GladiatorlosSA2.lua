@@ -6,7 +6,7 @@
  local LSM = LibStub("LibSharedMedia-3.0")
  local self, GSA, PlaySoundFile = GladiatorlosSA, GladiatorlosSA, PlaySoundFile
  local GSA_VERSION = GetAddOnMetadata("GladiatorlosSA2", "Version")
- local GSA_GAME_VERSION = "10.0.2"
+ local GSA_GAME_VERSION = "10.0.7"
  local GSA_EXPANSION = ""
  local gsadb
  local soundz,sourcetype,sourceuid,desttype,destuid = {},{},{},{},{}
@@ -107,6 +107,8 @@
 	 126819, -- Porcupine
 	 277787, -- Direhorn
 	 277792, -- Bumblebee
+	 391631, -- Duck
+	 383121, -- Mass Poly
 
 	 --Hex (Shaman)
 	 51514, -- Frog
@@ -131,7 +133,9 @@
 	 1513, -- Scare Beast (Hunter)
 
 	 339, -- Entangling Roots
-	 235963 -- Entangling Roots PvP Talent
+	 235963, -- Entangling Roots PvP Talent
+	 360806, -- Sleepwalk
+	 389794, -- Snowdrift
  }
 
  local EpicBGs = {

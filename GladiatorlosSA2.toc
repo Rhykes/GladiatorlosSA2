@@ -3,7 +3,7 @@
 ## Notes: PvP Sound Alerter
 ## Author: xGrit
 ## SavedVariables: GladiatorlosSADB
-## Version: 4.0
+## Version: 4.1
 
 embeds.xml
 Locales\locales.xml

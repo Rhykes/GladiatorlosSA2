@@ -1,6 +1,21 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 https://github.com/Rhykes/GladiatorlosSA2
 ===========================================
+- version 4.1 (Dragonflight)
+
+Evoker
+- Added Nullifying Shroud to Aura Applied/Removed.
+- Fixed Success alert for Sleep Walk.
+
+Mage
+- Fixed Success alert for Snowdrift.
+- Fixed Success alert for Mass Polymorph.
+- Fixed Success alert for Polymorph (Duck).
+
+Shaman 
+- Removed Vesper Totem. 
+
+===========================================
 - version 4.0 (Dragonflight)
 
 GladiatorlosSA2
@@ -21,7 +36,7 @@ Demon Hunter
 * Added Immolation Aura to Cast Success.
 * Added Rain from Above to Aura Applied.
 * Fixed talent version of Elysian Decree.
-* Fixed talent version of Fodder to the Flame and moved it to Aura Applied/
+* Fixed talent version of Fodder to the Flame and moved it to Aura Applied.
 * Fixed talent version of The Hunt.
 
 Druid 

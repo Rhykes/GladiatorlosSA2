@@ -154,6 +154,7 @@
 			--[0] = "timeOfNeed",
 			[370562] = "stasisReady",
 			[359816] = "dreamFlight",
+			[378464] = "nullificationShroud",
 
 			-- Hunter (Aura Applied)
 			[19263] = "deterrence",
@@ -381,6 +382,7 @@
 			[357170] = "timeDialationDown",
 			[370562] = "stasisDown",
 			[359816] = "dreamFlightDown",
+			[378464] = "nullificationShroudDown",
 
 			-- Hunter (Aura Removed)
 			[19263] = "deterrenceDown", 		--Deterrence
@@ -592,6 +594,7 @@
 			[126819] = "polymorph", -- Porcupine
 			[277787] = "polymorph", -- Direhorn
 			[277792] = "polymorph", -- Bumblebee
+			[391631] = "polymorph", -- Duck
 			[391631] = "polymorph", -- Duck
 			[383121] = "polymorph", -- Mass Poly
 			[31687] = "waterElemental",
@@ -1124,7 +1127,7 @@
 			[204336] = "grounding", -- Updated for Legion
 			[8143] = "TremorTotem", -- Tremor Totem!
 			[16191] = "manaTideTotem",
-			[324386] = "vesperTotem",
+			--[324386] = "vesperTotem",
 			[355580] = "staticFieldTotem",
 			[383013] = "poisonCleansingTotem",
 			
