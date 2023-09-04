@@ -6,7 +6,7 @@
  local LSM = LibStub("LibSharedMedia-3.0")
  local self, GSA, PlaySoundFile = GladiatorlosSA, GladiatorlosSA, PlaySoundFile
  local GSA_VERSION = GetAddOnMetadata("GladiatorlosSA2", "Version")
- local GSA_GAME_VERSION = "10.0.7"
+ local GSA_GAME_VERSION = "10.1.5"
  local GSA_EXPANSION = ""
  local gsadb
  local soundz,sourcetype,sourceuid,desttype,destuid = {},{},{},{},{}
@@ -136,6 +136,7 @@
 	 235963, -- Entangling Roots PvP Talent
 	 360806, -- Sleepwalk
 	 389794, -- Snowdrift
+	 117526, -- Binding Shot (Stun)
  }
 
  local EpicBGs = {
@@ -145,6 +146,18 @@
 	1280,	-- Southshore vs Tarren Mill
 	1191,	-- Ashran
 	2197	-- Korrak's Revenge
+ }
+
+ local alwaysExcludedMaps = {
+	-- Time Rifts
+	2586,	-- Azmerloth
+	2587,	-- A.Z.E.R.O.T.H.
+	2593,	-- Azq'roth
+	2594,	-- Argus apparently
+	2595,	-- Azewrath
+	2634,	-- The Warlands
+	2635,	-- Ulderoth
+	2639	-- Azmourne
  }
 
  local dbDefaults = {
@@ -341,6 +354,15 @@ function GSA:CheckForEpicBG(instanceMapID)
 	end
 end
 
+-- List of areas we know are permanently excluded.
+function GSA:IsExcludedMap(instanceMapID)
+	for k in pairs(alwaysExcludedMaps) do
+		if (alwaysExcludedMaps[k] == instanceMapID) then
+			return true
+		end
+	end
+end
+
 -- Checks settings and world location to determine if alerts should occur.
  		-- I can probably use this to fix the weird problem with PvP flag checking that seemed blizzard-sided
  		-- but I am lazy and that will come later.
@@ -352,6 +374,12 @@ function GSA:CanTalkHere()
 	--local isPvP = UnitIsWarModeDesired("player")
 	playerCurrentZone = currentZoneType
 	duelingOn = false; -- Failsafe for when dueling events are skipped under unusual circumstances.
+
+	-- If we are in an excluded map ID.
+	if (self:IsExcludedMap(instanceMapID)) then
+		canSpeakHere = false
+		return
+	end
 
 	if (not ((currentZoneType == "none" and gsadb.field) or -- and not gsadb.onlyFlagged) or 						-- World
 		--(currentZoneType == "none" and gsadb.field and (gsadb.onlyFlagged and UnitIsWarModeDesired("player"))) or
@@ -379,8 +407,11 @@ end
  function GladiatorlosSA:COMBAT_LOG_EVENT_UNFILTERED(event , ...)
 	 -- Checks if alerts should occur here.
 	 local isSanctuary = GetZonePVPInfo()
+	 local _,currentZoneType = IsInInstance()
 	 if (isSanctuary == "sanctuary") then return end	-- Checks for Sanctuary
 	 if (not canSpeakHere) then return end				-- Checks result for everywhere else
+
+	 if (currentZoneType == "none") and not (UnitIsPVP("player") or duelingOn)  then return end -- Checks if you are PvP Flagged.
 
 	 -- Area check passed, fetch combat event payload.
 	 local timestamp,event,hideCaster,sourceGUID,sourceName,sourceFlags,sourceFlags2,destGUID,destName,destFlags,destFlags2,spellID = CombatLogGetCurrentEventInfo()

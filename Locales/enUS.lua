@@ -152,7 +152,7 @@ L["DisablePvPWorldQuests"] = "NYI"
 L["DisablePvPWorldQuestsDesc"] = "Disable all alerts in PvP World Quests"
 L["OperationMurlocFreedom"] = true
 
-L["EnemyInterrupts"] = "Interrupts (And Solar Beam, because it interrupts AND silences!)"
+L["EnemyInterrupts"] = "Interrupts"
 L["EnemyInterruptsDesc"] = "Enables or disables alerts for ALL enemy Interrupt and Silence abilities."
 
 L["Default / Female voice"] = "Default Voice"

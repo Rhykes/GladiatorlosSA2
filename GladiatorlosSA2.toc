@@ -1,9 +1,10 @@
-﻿## Interface: 100100
+﻿## Interface: 100105
 ## Title: GladiatorlosSA
 ## Notes: PvP Sound Alerter
 ## Author: xGrit
+## IconTexture: interface\icons\spell_misc_emotionangry.blp
 ## SavedVariables: GladiatorlosSADB
-## Version: 4.2
+## Version: 4.3
 
 embeds.xml
 Locales\locales.xml

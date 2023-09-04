@@ -19,6 +19,8 @@ function GSA:ShowConfig2() -- ***** @
 			self:OnOptionCreate()
 		elseif (GSA_EXPANSION == L["EXPAC_TBC"]) then
 			self:OnOptionCreate_TBC()
+		elseif (GSA_EXPANSION == L["EXPAC_WLK"]) then
+			self:OnOptionCreate_WLK()
 		end
 	end
 	AceConfigDialog:Open("GladiatorlosSA2")
@@ -64,7 +66,6 @@ local function spellOption(order, spellID, ...)
 				GameTooltip:Show()
 				--print(GetSpellInfo((spellID)))
 			end, -- https://i.imgur.com/ChzUb.jpg
-			-- why are you reading this disaster, go away this is embarrassing
 			descStyle = "custom",
 			order = order,
 		}

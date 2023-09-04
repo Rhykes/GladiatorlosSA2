@@ -1,6 +1,126 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 https://github.com/Rhykes/GladiatorlosSA2
 ===========================================
+- version 4.3 (Dragonflight)
+
+IMPORTANT NOTICE
+While I still am supporting GSA2, my time (and desire) to do so has been greatly diminishing over recent months. I can no longer commit to supporting Classic variants of this
+addon, and will only do so in the form of quick code fixes that I am also making no attempt to test or validate. I only officially support Retail.
+
+GSA2 is built upon a codebase that was not originally mine, and iterated on before I had a solid grasp of programming and lua scripting concepts over 6 or so years. While I have come a long way,
+maintaining this spaghetti-code filled addon is not a trivial amount of work especially given how many different places I need to manually update simple data changes.
+
+Long-term I have a hope that I can sit down and rewrite GSA from the ground up with more features, a more cohesive spell library, and just fewer bugs. Whether I will ever
+actually do that remains to be seen, but is honestly quite unlikely unless I suddenly get really into writing WoW addons. There are simply other, bigger, more exciting projects
+I would rather spend programming time on than maintaining a troublesome addon for free - especially one that fulfills its purpose just fine even if there are some rough edges.
+
+Thank you all for your understanding. To reiterate: Retail is still supported, updates are just slower.
+
+
+Addon
+- Posting an update for 10.1.5 one day before 10.1.7. What could go wrong?
+- Disabled alerts in Time Rifts.
+- Lazy spaghetti attempt to disable alerts out in the world if you are not personally PvP flagged. If this causes problems, delete line 414 in GladiatorlosSA.lua.
+
+General 
+- Removed numerous spells and abilities that are no longer applicable in Dragonflight. See the bottom of the changelog for a full list.
+It is very likely I missed some spells, but at least now it's a little tidier.
+
+
+Demon Hunter
+- Fixed Sigil of Misery alert when talented into Precise Sigils.
+
+Evoker
+- Added Upheavel to Cast Start.
+- Added Defy Fate to Aura Applied.
+- Added Spatial Paradox to Aura Applied.
+- Added Prescience to Aura Applied.
+- Added Time Skip to Cast Start.
+- Added Dream Projection to Cast Start.
+- Added Blistering Scales to Aura Applied.
+- Moved Quell to the interrupt section.
+
+Hunter
+- New "Bound" alert when Binding Shot triggers on an ally.
+
+Mage
+- Added Kleptomania to Cast Success.
+
+Paladin
+- Added Denounce to Cast Start.
+
+Priest
+- Removed Divine Word variants because I misunderstood what the ability was doing.
+
+Rogue
+- Deathmark's alert no longer says "Vendetta".
+
+
+
+
+REMOVED ABILITIES
+
+General Abilities
+- Gladiator's Maledict
+- Gladiator's Resonator
+
+Death Knight
+- Death's Due
+- Raise Abomination
+- Shackle the Unworthy
+- Swarming Mist
+
+Demon Hunter
+- Mana Break
+- Mana Rift
+- Sinful Brand
+
+Druid
+- Kindred Focus
+- Kindred Empowerment
+- Kindred Protection
+- Ravenous Frenzy
+
+Hunter
+- Double Tap
+- Flayed Shot
+- Resonating Arrow
+- Wild Spirits
+
+Mage
+- Deathborne
+- Mirrors of Torment
+
+Monk
+- Fallen Order
+
+Paladin
+- Ashen Hollow
+- Seraphim
+- Vanquisher's Hammer
+
+Priest
+- Boon of the Ascended
+- Fae Guardians
+- Unholy Nova
+
+Shaman
+- Chain Harvest
+- Echoing Shock
+- Ethereal Form
+- Fae Transfusion
+
+Warlock
+- Death Bolt
+- Decimating Bolt
+- Scouring Tithe
+
+Warrior
+- Ancient Aftershock
+- Conqueror's Banner
+
+
+===========================================
 - version 4.2 (Dragonflight)
 
 General
