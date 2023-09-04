@@ -1,3 +1,5 @@
 # IntelliJ files
 *.idea
 *.iml
+*.vs/
+*vs/
