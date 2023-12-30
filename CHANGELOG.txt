@@ -1,6 +1,21 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 https://github.com/Rhykes/GladiatorlosSA2
 ===========================================
+- version 4.4 (Dragonflight)
+
+Quick update per someone's comment. As a note, it is SUPER helpful if you want something updated in the addon to provide 
+spell names and/or Spell IDs that are not functioning as expected. If you can save me from having to do homework on class 
+changes, I will try to push out updates to the spell library. Thanks!
+
+Mage
+- Fixed incorrect spell ID for Polymorph: Duck.
+
+Priest
+- Added Ultimate Penitence to Cast Start.
+- Added Penance to Cast Start (off by default).
+- Removed Light's Wrath.
+
+===========================================
 - version 4.3 (Dragonflight)
 
 IMPORTANT NOTICE

@@ -44,6 +44,7 @@
 			[277787] = "success", -- Direhorn
 			[277792] = "success", -- Bumblebee
 			[391631] = "success", -- Duck
+			[391622] = "success", -- Duck 2
 			[383121] = "success", -- Mass
 
 			--Hex (Shaman)
@@ -606,7 +607,7 @@
 			[277787] = "polymorph", -- Direhorn
 			[277792] = "polymorph", -- Bumblebee
 			[391631] = "polymorph", -- Duck
-			[391631] = "polymorph", -- Duck
+			[391622] = "polymorph", -- Duck
 			[383121] = "polymorph", -- Mass Poly
 			[31687] = "waterElemental",
 			[203286] = "greaterPyro",
@@ -640,7 +641,9 @@
 			--[325013] = "boonOfTheAscended",
 			[375901] = "mindgames", -- Talent version
 			[214621] = "schism",
-			[373178] = "lightsWrath",
+			--[373178] = "lightsWrath",
+			[421453] = "ultimatePenitence",
+			[47540] = "penance",
 
 			-- Rogue (Spell Casting)
 				--None! :D

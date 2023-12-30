@@ -190,6 +190,7 @@
 		connected = false,
 		interruptedfriendly = true,
 		ShatteringThrowSuccess = false,
+		penance = false,
 		
 		custom = {},
 	}	
