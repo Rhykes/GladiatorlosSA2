@@ -1,4 +1,4 @@
-﻿-- Mini Dragon(projecteurs@gmail.com)&枫圣御雷
+﻿-- Mini Dragon(projecteurs@gmail.com)&nanjuekaien1
 -- Last update: Dec 28, 2023
 
 local L = LibStub("AceLocale-3.0"):NewLocale("GladiatorlosSA", "zhCN")
@@ -183,15 +183,15 @@ L["Ambience"] = "环境音"
 L["Music"] = "音乐"
 L["Dialog"] = "对话"
 
-L["DPSDispel"] = "驱散：非魔法类"
+L["DPSDispel"] = "DPS驱散"
 L["DPSDispel_Desc"] = "不是驱散魔法效果的混合职业驱散技能警报|n|n清除腐蚀 (" .. Classes.Druid .. ")|n解除诅咒 (" .. Classes.Mage ..")|n清创生血 (" .. Classes.Monk .. ")|n清毒术 (" .. Classes.Paladin .. ")|n净化疾病 (" .. Classes.Priest ..")|n净化灵魂 (" .. Classes.Shaman .. ")"
-L["HealerDispel"] = "驱散：魔法类"
+L["HealerDispel"] = "治疗驱散"
 L["HealerDispel_Desc"] = "治疗职业(包含" .. Classes.Warlock .. ") 的通用驱散技能(驱散魔法效果)警报|n|n自然之愈 (" .. Classes.Druid .. ")|n清创生血 (" .. Classes.Monk .. ")|n清洁术 (" .. Classes.Paladin .. ")|n纯净术 (" .. Classes.Priest .. ")|n净化灵魂 (" .. Classes.Shaman .. ")|n烧灼驱魔 (" .. Classes.Warlock .. ")"
-L["CastingSuccess"] = "控制类技能"
+L["CastingSuccess"] = "控制类技能（预读）"
 L["CastingSuccess_Desc"] = "当敌人施放群体控制技能作用于你及你的队友时，启用通用 \"成功\"警报。|n|n|cffC41F3B警告: 如果启用了此功能，即使在技能列表中禁用了某些技能，下面的所有技能也会通报成功。|r|n|n旋风 (" .. Classes.Druid .. ")|n纠缠根须 (" .. Classes.Druid .. ")|n休眠 (" .. Classes.Druid .. ")|n群体变形 (" .. Classes.Mage .. ")|n梦游 (" .. Classes.Evoker .. ")|n恐吓野兽 (" .. Classes.Hunter .. ")|n变形术 (" .. Classes.Mage .. ")|n冰霜之环 (" .. Classes.Mage .. ")|n忏悔 (" .. Classes.Paladin .. ")|n灼热凝视 (" ..Classes.Paladin .. ")|n精神控制 (" .. Classes.Priest .. ")|n妖术 (" .. Classes.Shaman .. ")|n恐惧 (" .. Classes.Warlock .. ")"
 L["DispelKickback"] = "驱散后惩罚"
 
-L["Purge"] = "驱散：目标"
+L["Purge"] = "进攻驱散"
 L["PurgeDesc"] = "驱散目标身上的魔法效果的通用警报，不包括奥术洪流。|n|n吞噬魔法 (" .. Classes.DemonHunter .. ")|n宁神射击 (" .. Classes.Hunter ..")|n驱散魔法 (" .. Classes.Priest ..")|n强效净化术 (" .. Classes.Shaman .. ")|n净化术 (" .. Classes.Shaman .. ")|n吞噬魔法 (" .. Classes.Warlock .. ")"
 
 L["FriendlyInterrupted"] = "友方被打断及锁定"
