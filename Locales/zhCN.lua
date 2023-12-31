@@ -1,5 +1,5 @@
 ﻿-- Mini Dragon(projecteurs@gmail.com)&nanjuekaien1
--- Last update: Dec 28, 2023
+-- Last update: Dec 31, 2023
 
 local L = LibStub("AceLocale-3.0"):NewLocale("GladiatorlosSA", "zhCN")
 if not L then return end
@@ -150,10 +150,10 @@ L["Special Abilities"] = "敌方特殊技能"
 L["Friendly Interrupt"] = "敌方打断技能"
 L["Profiles"] = "配置文件"
 
-L["PvPWorldQuests"] = "PVP世界任务"
-L["DisablePvPWorldQuests"] = "禁用PVP世界任务"
-L["DisablePvPWorldQuestsDesc"] = "勾选此项将禁用PVP世界任务的通报"
---L["OperationMurlocFreedom"] = true
+-- L["PvPWorldQuests"] = "PVP世界任务"
+-- L["DisablePvPWorldQuests"] = "禁用PVP世界任务"
+-- L["DisablePvPWorldQuestsDesc"] = "勾选此项将禁用PVP世界任务的通报"
+-- L["OperationMurlocFreedom"] = true
 
 L["EnemyInterrupts"] = "打断技能"
 L["EnemyInterruptsDesc"] = "启用或禁用所有敌方的打断和沉默技能的警报。"
@@ -172,7 +172,7 @@ L["Select the menu voice pack alert"] = "选择列表中的语音包"
 
 L["English(male)"] = "英语(男)"
 L["No sound selected for the Custom alert : |cffC41F4B"] = "没有为自定义警报选择声音：|cffC41F4B"
-L["Master Volume"] = "主声道" 
+L["Master Volume"] = "主声道" -- changed from L["Volume"] = true
 L["Change Output"] = "改变声道"
 L["Unlock the output options"] = "解锁声道输出选项"
 L["Output"] = "声道"
@@ -188,25 +188,25 @@ L["DPSDispel_Desc"] = "不是驱散魔法效果的混合职业驱散技能警报
 L["HealerDispel"] = "治疗驱散"
 L["HealerDispel_Desc"] = "治疗职业(包含" .. Classes.Warlock .. ") 的通用驱散技能(驱散魔法效果)警报|n|n自然之愈 (" .. Classes.Druid .. ")|n清创生血 (" .. Classes.Monk .. ")|n清洁术 (" .. Classes.Paladin .. ")|n纯净术 (" .. Classes.Priest .. ")|n净化灵魂 (" .. Classes.Shaman .. ")|n烧灼驱魔 (" .. Classes.Warlock .. ")"
 L["CastingSuccess"] = "控制类技能（预读）"
-L["CastingSuccess_Desc"] = "当敌人施放群体控制技能作用于你及你的队友时，启用通用 \"成功\"警报。|n|n|cffC41F3B警告: 如果启用了此功能，即使在技能列表中禁用了某些技能，下面的所有技能也会通报成功。|r|n|n旋风 (" .. Classes.Druid .. ")|n纠缠根须 (" .. Classes.Druid .. ")|n休眠 (" .. Classes.Druid .. ")|n群体变形 (" .. Classes.Mage .. ")|n梦游 (" .. Classes.Evoker .. ")|n恐吓野兽 (" .. Classes.Hunter .. ")|n变形术 (" .. Classes.Mage .. ")|n冰霜之环 (" .. Classes.Mage .. ")|n忏悔 (" .. Classes.Paladin .. ")|n灼热凝视 (" ..Classes.Paladin .. ")|n精神控制 (" .. Classes.Priest .. ")|n妖术 (" .. Classes.Shaman .. ")|n恐惧 (" .. Classes.Warlock .. ")"
+L["CastingSuccess_Desc"] = "当敌人预读施放控制技能作用于你及你的队友时，启用通用 \"成功\”警报。|n|n|cffC41F3B警告: 如果启用了此功能，即使在技能列表中禁用了某些技能，下面的所有技能也会通报成功。|r|n|n旋风 (" .. Classes.Druid .. ")|n纠缠根须 (" .. Classes.Druid .. ")|n休眠 (" .. Classes.Druid .. ")|n群体变形 (" .. Classes.Mage .. ")|n梦游 (" .. Classes.Evoker .. ")|n恐吓野兽 (" .. Classes.Hunter .. ")|n变形术 (" .. Classes.Mage .. ")|n冰霜之环 (" .. Classes.Mage .. ")|n忏悔 (" .. Classes.Paladin .. ")|n灼热凝视 (" ..Classes.Paladin .. ")|n精神控制 (" .. Classes.Priest .. ")|n妖术 (" .. Classes.Shaman .. ")|n恐惧 (" .. Classes.Warlock .. ")"
 L["DispelKickback"] = "驱散后惩罚"
 
 L["Purge"] = "进攻驱散"
 L["PurgeDesc"] = "驱散目标身上的魔法效果的通用警报，不包括奥术洪流。|n|n吞噬魔法 (" .. Classes.DemonHunter .. ")|n宁神射击 (" .. Classes.Hunter ..")|n驱散魔法 (" .. Classes.Priest ..")|n强效净化术 (" .. Classes.Shaman .. ")|n净化术 (" .. Classes.Shaman .. ")|n吞噬魔法 (" .. Classes.Warlock .. ")"
 
-L["FriendlyInterrupted"] = "友方被打断及锁定"
-L["FriendlyInterruptedDesc"] = "禁用当敌人成功打断您或队友将他们锁定在施法距离之外时发生的警报。|n|n(播放暴雪自带 '任务失败' 音效。)"
+L["FriendlyInterrupted"] = "友方被打断及被反制"
+L["FriendlyInterruptedDesc"] = "当敌人成功打断您或队友被他们反制在施法失败时发生的警报。|n|n(播放暴雪自带 '任务失败' 音效。)"
 
 L["epicbattleground"] = "史诗战场"
 L["epicbattlegroundDesc"] = "在史诗战场警报|n|n别客气。"
 
-L["OnlyIfPvPFlagged"] = "仅在PvP"
-L["OnlyIfPvPFlaggedDesc"] = "如果启用，除非您被标记为 PvP，否则警报将不再起作用；例如在战争模式或 PvP 场景中。即使启用了该选项，这些区域仍然需要启用 GSA 才能运行。|n|n|cffC41F3B警告: 这也会在决斗时禁用警报，因此请记得将其切换为关闭！|r"
+-- L["OnlyIfPvPFlagged"] = "仅在PvP"
+-- L["OnlyIfPvPFlaggedDesc"] = "如果启用，除非您被标记为 PvP，否则警报将不再起作用；例如在战争模式或 PvP 场景中。即使启用了该选项，这些区域仍然需要启用 GSA 才能运行。|n|n|cffC41F3B警告: 这也会在决斗时禁用警报，因此请记得将其切换为关闭！|r"
 
-L["TankTauntsOFF"] = "专注打击(结束)"
-L["TankTauntsOFF_Desc"] = "警报专注打击结束：源自坦克强化目标后的伤害放大效果。"
-L["TankTauntsON"] = "专注打击(施放)"
-L["TankTauntsON_Desc"] = "警报专注打击施放：源自坦克强化目标后的伤害放大效果。"
+-- L["TankTauntsOFF"] = "专注打击(结束)"
+-- L["TankTauntsOFF_Desc"] = "警报专注打击结束：源自坦克强化目标后的伤害放大效果。"
+-- L["TankTauntsON"] = "专注打击(施放)"
+-- L["TankTauntsON_Desc"] = "警报专注打击施放：源自坦克强化目标后的伤害放大效果。"
 
 L["Connected"] = "专属技能"
 L["Connected_Desc"] = "当某些非常强大的需要施法时间技能成功完成施法时，会播放一个简单的连接提示。|n|n恶魔追击 (" .. Classes.DemonHunter ..")|n狙击 (" .. Classes.Hunter .. ")|n强效炎爆术 (" .. Classes.Mage .. ")|n圣光之怒 (" .. Classes.Priest .. ")|n控心术 (" .. Classes.Priest ..")|n混乱之箭 (" ..Classes.Warlock ..")"
@@ -282,4 +282,4 @@ L["GladiatorlosSA2"] = "GladiatorlosSA2"
 
 L["GSA_EXPERIMENTAL_BUILD"] = Colors.DeathKnight .. "这是 GladiatorlosSA2 的实验版本，尚未在 TBC 上进行测试。虽然我确信一切运行正常，但如果遇到问题，请联系我，必要时可降级至 GSA2_TBC1.1。此消息将不会再显示。" .. "|r"
 
-L["RacialAbilities"] = "种族技能" 
+L["RacialAbilities"] = "种族技能"
