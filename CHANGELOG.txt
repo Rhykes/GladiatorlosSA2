@@ -1,6 +1,12 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 https://github.com/Rhykes/GladiatorlosSA2
 ===========================================
+- version 4.5 (Dragonflight)
+
+Priest
+- Added Phase Shift to Aura Applied ("Greater Fade")
+
+===========================================
 - version 4.4 (Dragonflight)
 
 Quick update per someone's comment. As a note, it is SUPER helpful if you want something updated in the addon to provide 

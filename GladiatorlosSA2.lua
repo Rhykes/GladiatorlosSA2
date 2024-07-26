@@ -6,7 +6,7 @@
  local LSM = LibStub("LibSharedMedia-3.0")
  local self, GSA, PlaySoundFile = GladiatorlosSA, GladiatorlosSA, PlaySoundFile
  local GSA_VERSION = GetAddOnMetadata("GladiatorlosSA2", "Version")
- local GSA_GAME_VERSION = "10.1.5"
+ local GSA_GAME_VERSION = "11.0"
  local GSA_EXPANSION = ""
  local gsadb
  local soundz,sourcetype,sourceuid,desttype,destuid = {},{},{},{},{}
@@ -228,9 +228,10 @@
 	
 	self.db1 = LibStub("AceDB-3.0"):New("GladiatorlosSADB",dbDefaults, "Default");
 	DEFAULT_CHAT_FRAME:AddMessage("|cff69CCF0 " .. L["GladiatorlosSA2"] .. "|r (|cffFFF569/gsa|r)" ..  "|cffFF7D0A " .. GSA_VERSION .." |r(|cff9482C9" .. GSA_GAME_VERSION .. " "  .. GSA_EXPANSION .. "|r)");
-	self:RegisterChatCommand("GladiatorlosSA", "ShowConfig")
-	self:RegisterChatCommand("gsa", "ShowConfig")
-	self:RegisterChatCommand("gsa2", "ShowConfig")
+	-- Temporarily disabling chat commands because they're broken and I am too stupid and time-constrained to fix it right now.
+	--self:RegisterChatCommand("GladiatorlosSA", "ShowConfig")
+	--self:RegisterChatCommand("gsa", "ShowConfig")
+	--self:RegisterChatCommand("gsa2", "ShowConfig")
 	self.db1.RegisterCallback(self, "OnProfileChanged", "ChangeProfile")
 	self.db1.RegisterCallback(self, "OnProfileCopied", "ChangeProfile")
 	self.db1.RegisterCallback(self, "OnProfileReset", "ChangeProfile")
@@ -612,6 +613,12 @@ function GladiatorlosSA:DUEL_REQUESTED(event, playerName)
 			self.spellList = self:GetSpellList_SL()
 		elseif (interfaceNumber >= 100000 and interfaceNumber <= 109999) then
 			GSA_EXPANSION = L["EXPAC_DF"]
+			self.spellList = self:GetSpellList()	-- TODO: Move this to DF options
+		elseif (interfaceNumber >= 110000 and interfaceNumber <= 119999) then
+			GSA_EXPANSION = L["EXPAC_TWW"]
+			self.spellList = self:GetSpellList()
+		else
+			GSA_EXPANSION = L["EXPAC_UnknownExpac"]
 			self.spellList = self:GetSpellList()
 		end
 	end

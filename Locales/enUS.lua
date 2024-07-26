@@ -75,7 +75,7 @@ L["Custom unit name"] = "Custom Unit Name"
 L["Dest unit"] = "Destination Unit"
 L["Dest type"] = "Destination Type"
 
-L["GladiatorlosSACredits"] = "Customizable PvP Announcer addon for vocalizing many important spells cast by your enemies.|n|n|cffFFF569Created by|r |cff9482C9Abatorlos|r |cffFFF569of Spinebreaker|r|r|n|n|cffFFF569Special Thanks|r|n|cffA330C9superk521|r (Past Project Manager)|n|cffA330C9DuskAshes|r (Chinese Support)|n|cffA330C9N30Ex|r (Mists of Pandaria Support; Shadowlands voice recordings)|n|cffA330C9zuhligan|r (Warlords of Draenor & French Support)|n|cffA330C9jungwan2|r (Korean Support)|n|cffA330C9Mini_Dragon|r (Chinese support for WoD & Legion)|n|cffA330C9LordKuper|r (Russian support for Legion)|n|cffA330C9Tzanee - Wyrmrest Accord|r (Placeholder Voice Lines)|n|cffA330C9Gnulkion - Illidan|r (Alert only from opponent in duels feature)|n|nAll feedback, questions, suggestions, and bug reports are welcome at the addon's page on Curse:|nhttps://wow.curseforge.com/projects/gladiatorlossa2|nOR GitHub:|nhttps://github.com/Rhykes/GladiatorlosSA2"
+L["GladiatorlosSACredits"] = "Customizable PvP Announcer addon for vocalizing many important spells cast by your enemies.|n|n|cffFFF569Created by|r |cff9482C9Abatorlos|r |cffFFF569of Spinebreaker (past)|r|r|n|n|cffFFF569Special Thanks|r|n|cffA330C9superk521|r (Past Project Manager)|n|cffA330C9DuskAshes|r (Chinese Support)|n|cffA330C9N30Ex|r (Mists of Pandaria Support; Shadowlands voice recordings)|n|cffA330C9zuhligan|r (Warlords of Draenor & French Support)|n|cffA330C9jungwan2|r (Korean Support)|n|cffA330C9Mini_Dragon|r (Chinese support for WoD & Legion)|n|cffA330C9LordKuper|r (Russian support for Legion)|n|cffA330C9Tzanee - Wyrmrest Accord|r (Placeholder Voice Lines)|n|cffA330C9Gnulkion - Illidan|r (Alert only from opponent in duels feature)|n|nAll feedback, questions, suggestions, and bug reports are welcome at the addon's page on Curse:|nhttps://wow.curseforge.com/projects/gladiatorlossa2|nOR GitHub:|nhttps://github.com/Rhykes/GladiatorlosSA2"
 L["PVP Voice Alert"] = true
 L["Load Configuration"] = "<-- Load GSA2 Menus"
 L["Load Configuration Options"] = true
@@ -262,7 +262,7 @@ L["ArmsWR"] = "Arms"
 L["FuryWR"] = "Fury"
 L["ProtectionWR"] = "Protection"
 
-L["EXPAC_UnknownExpac"] = "Unknown/unsupported game version."
+L["EXPAC_UnknownExpac"] = "Unknown Expansion"
 L["EXPAC_Classic"] = "Classic"
 L["EXPAC_TBC"] = "The Burning Crusade"
 L["EXPAC_WotLK"] = "Wrath of the Lich King"
@@ -273,6 +273,7 @@ L["EXPAC_Legion"] = "Legion"
 L["EXPAC_BfA"] = "Battle for Azeroth"
 L["EXPAC_SL"] = "Shadowlands"
 L["EXPAC_DF"] = "Dragonflight"
+L["EXPAC_TWW"] = "The War Within"
 
 
 L["GladiatorlosSA2"] = true

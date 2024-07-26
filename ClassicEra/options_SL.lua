@@ -8,10 +8,12 @@ local options_created = false -- ***** @
 
 local GSA_OUTPUT = {["MASTER"] = L["Master"],["SFX"] = L["SFX"],["AMBIENCE"] = L["Ambience"],["MUSIC"] = L["Music"],["DIALOG"] = L["Dialog"]}
 
+--[[
 function GSA:ShowConfig()
 	for i=1,2 do InterfaceOptionsFrame_OpenToCategory(GetAddOnMetadata("GladiatorlosSA2", "Title")) end -- ugly fix
 
 end
+]]
 
 function GSA:ShowConfig2() -- ***** @
 	if options_created == false then
@@ -19,6 +21,8 @@ function GSA:ShowConfig2() -- ***** @
 			self:OnOptionCreate()
 		elseif (GSA_EXPANSION == L["EXPAC_TBC"]) then
 			self:OnOptionCreate_TBC()
+		else
+			self:OnOptionCreate()
 		end
 	end
 	AceConfigDialog:Open("GladiatorlosSA2")

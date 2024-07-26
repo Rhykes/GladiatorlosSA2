@@ -267,6 +267,7 @@
 			[228260] = "voidForm",
 			[15286] = "vampiricEmbrace",
 			--[213602] = "greaterFade",
+			[408557] = "greaterFade", -- phase shift
 			--[196762] = "innerFocus",
 			[328530] = "divineAscension",
 			[372616] = "empyrealBlaze",
@@ -1157,6 +1158,8 @@
 			
 			-- Warlock (Cast Success)
 			[6789] = "mortalCoil",
+			[108396] = "mortalCoil",
+			[295458] = "mortalCoil",
 			[5484] = "terrorHowl",
 			[19647] = "spellLock",
 			[171140] = "spellLock",

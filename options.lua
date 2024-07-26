@@ -21,6 +21,8 @@ function GSA:ShowConfig2() -- ***** @
 			self:OnOptionCreate_TBC()
 		elseif (GSA_EXPANSION == L["EXPAC_WLK"]) then
 			self:OnOptionCreate_WLK()
+		else
+			self:OnOptionCreate()
 		end
 	end
 	AceConfigDialog:Open("GladiatorlosSA2")
@@ -61,7 +63,7 @@ local function spellOption(order, spellID, ...)
 			name = "\124T" .. icon .. ":24\124t" .. spellname,			
 			desc = function ()
 				GameTooltip:SetOwner(UIParent, "ANCHOR_CURSOR")
-				GameTooltip:SetHyperlink(GetSpellLink(spellID))
+				GameTooltip:SetHyperlink(C_Spell.GetSpellLink(spellID))
 				--GameTooltip:SetSpellByID(spellID)
 				GameTooltip:Show()
 				--print(GetSpellInfo((spellID)))
@@ -549,7 +551,7 @@ function GSA:OnOptionCreate()
 								inline = true,
 								name = L["Priest"],
 								order = 120,
-								args = listOption({33206,47585,47788,197862,197871,200183,197268,109964,47536,228260,15286,213610,10060,328530,372616,372760,372791,372761,372783,211319},"auraApplied"),
+								args = listOption({33206,47585,47788,197862,197871,200183,197268,109964,47536,228260,15286,213610,10060,328530,372616,372760,372791,372761,372783,211319,408557},"auraApplied"),
 							},
 							rogue = { -- AuraApplied
 								type = 'group',
