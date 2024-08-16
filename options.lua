@@ -7,9 +7,21 @@ local LSM = LibStub("LibSharedMedia-3.0")
 local options_created = false -- ***** @
 
 local GSA_OUTPUT = {["MASTER"] = L["Master"],["SFX"] = L["SFX"],["AMBIENCE"] = L["Ambience"],["MUSIC"] = L["Music"],["DIALOG"] = L["Dialog"]}
+local GetSpellInfo = GetSpellInfo or function(spellID)
+	if not spellID then
+	  return nil;
+	end
+  
+	local spellInfo = C_Spell.GetSpellInfo(spellID);
+	if spellInfo then
+	  return spellInfo.name, nil, spellInfo.iconID, spellInfo.castTime, spellInfo.minRange, spellInfo.maxRange, spellInfo.spellID, spellInfo.originalIconID;
+	end
+  end
+  
+local GetSpellLink = C_Spell and C_Spell.GetSpellLink or GetSpellLink
 
 function GSA:ShowConfig()
-	for i=1,2 do InterfaceOptionsFrame_OpenToCategory(GetAddOnMetadata("GladiatorlosSA2", "Title")) end -- ugly fix
+	for i=1,2 do InterfaceOptionsFrame_OpenToCategory(C_AddOns.GetAddOnMetadata("GladiatorlosSA2", "Title")) end -- ugly fix
 
 end
 
@@ -63,7 +75,7 @@ local function spellOption(order, spellID, ...)
 			name = "\124T" .. icon .. ":24\124t" .. spellname,			
 			desc = function ()
 				GameTooltip:SetOwner(UIParent, "ANCHOR_CURSOR")
-				GameTooltip:SetHyperlink(C_Spell.GetSpellLink(spellID))
+				GameTooltip:SetHyperlink(GetSpellLink(spellID))
 				--GameTooltip:SetSpellByID(spellID)
 				GameTooltip:Show()
 				--print(GetSpellInfo((spellID)))
@@ -233,7 +245,7 @@ function GSA:OnOptionCreate()
 	options_created = true -- ***** @
 	self.options = {
 		type = "group",
-		name = GetAddOnMetadata("GladiatorlosSA2", "Title"),
+		name = C_AddOns.GetAddOnMetadata("GladiatorlosSA2", "Title"),
 		args = {
 			general = {
 				type = 'group',
