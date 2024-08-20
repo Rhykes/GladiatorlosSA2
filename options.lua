@@ -9,7 +9,7 @@ local options_created = false -- ***** @
 local GSA_OUTPUT = {["MASTER"] = L["Master"],["SFX"] = L["SFX"],["AMBIENCE"] = L["Ambience"],["MUSIC"] = L["Music"],["DIALOG"] = L["Dialog"]}
 
 function GSA:ShowConfig()
-	for i=1,2 do InterfaceOptionsFrame_OpenToCategory(GetAddOnMetadata("GladiatorlosSA2", "Title")) end -- ugly fix
+	for i=1,2 do InterfaceOptionsFrame_OpenToCategory(C_AddOns.GetAddOnMetadata("GladiatorlosSA2", "Title")) end -- ugly fix
 
 end
 
@@ -56,17 +56,17 @@ local function getOption(info)
 end
 
 local function spellOption(order, spellID, ...)
-	local spellname, _, icon = GetSpellInfo(spellID)	
-	if (spellname ~= nil) then
+	local spellinfo = C_Spell.GetSpellInfo(spellID)	
+	if (spellinfo ~= nil) then
 		return {
 			type = 'toggle',
-			name = "\124T" .. icon .. ":24\124t" .. spellname,			
+			name = "\124T" .. spellinfo.iconID .. ":24\124t" .. spellinfo.name,			
 			desc = function ()
 				GameTooltip:SetOwner(UIParent, "ANCHOR_CURSOR")
 				GameTooltip:SetHyperlink(C_Spell.GetSpellLink(spellID))
 				--GameTooltip:SetSpellByID(spellID)
 				GameTooltip:Show()
-				--print(GetSpellInfo((spellID)))
+				--print(C_Spell.GetSpellInfo((spellID)))
 			end, -- https://i.imgur.com/ChzUb.jpg
 			descStyle = "custom",
 					order = order,
@@ -233,7 +233,7 @@ function GSA:OnOptionCreate()
 	options_created = true -- ***** @
 	self.options = {
 		type = "group",
-		name = GetAddOnMetadata("GladiatorlosSA2", "Title"),
+		name = C_AddOns.GetAddOnMetadata("GladiatorlosSA2", "Title"),
 		args = {
 			general = {
 				type = 'group',
