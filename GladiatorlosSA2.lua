@@ -1,11 +1,11 @@
-﻿ GladiatorlosSA = LibStub("AceAddon-3.0"):NewAddon("GladiatorlosSA", "AceEvent-3.0","AceConsole-3.0","AceTimer-3.0")
+ GladiatorlosSA = LibStub("AceAddon-3.0"):NewAddon("GladiatorlosSA", "AceEvent-3.0","AceConsole-3.0","AceTimer-3.0")
 
  local AceConfigDialog = LibStub("AceConfigDialog-3.0")
  local AceConfig = LibStub("AceConfig-3.0")
  local L = LibStub("AceLocale-3.0"):GetLocale("GladiatorlosSA")
  local LSM = LibStub("LibSharedMedia-3.0")
  local self, GSA, PlaySoundFile = GladiatorlosSA, GladiatorlosSA, PlaySoundFile
- local GSA_VERSION = GetAddOnMetadata("GladiatorlosSA2", "Version")
+ local GSA_VERSION = C_AddOns.GetAddOnMetadata("GladiatorlosSA2", "Version")
  local GSA_GAME_VERSION = "11.0"
  local GSA_EXPANSION = ""
  local gsadb
