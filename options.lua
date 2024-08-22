@@ -9,7 +9,7 @@ local options_created = false -- ***** @
 local GSA_OUTPUT = {["MASTER"] = L["Master"],["SFX"] = L["SFX"],["AMBIENCE"] = L["Ambience"],["MUSIC"] = L["Music"],["DIALOG"] = L["Dialog"]}
 
 function GSA:ShowConfig()
-	for i=1,2 do InterfaceOptionsFrame_OpenToCategory(GetAddOnMetadata("GladiatorlosSA2", "Title")) end -- ugly fix
+	for i=1,2 do InterfaceOptionsFrame_OpenToCategory(C_AddOns.GetAddOnMetadata("GladiatorlosSA2", "Title")) end -- ugly fix
 
 end
 
@@ -56,7 +56,10 @@ local function getOption(info)
 end
 
 local function spellOption(order, spellID, ...)
-	local spellname, _, icon = GetSpellInfo(spellID)	
+	
+	local spellname = C_Spell.GetSpellName(spellID)
+	local icon = C_Spell.GetSpellTexture(spellID)
+	--local icon = C_Spell.GetSpellIconID(spellID)
 	if (spellname ~= nil) then
 		return {
 			type = 'toggle',
@@ -233,7 +236,7 @@ function GSA:OnOptionCreate()
 	options_created = true -- ***** @
 	self.options = {
 		type = "group",
-		name = GetAddOnMetadata("GladiatorlosSA2", "Title"),
+		name = C_AddOns.GetAddOnMetadata("GladiatorlosSA2", "Title"),
 		args = {
 			general = {
 				type = 'group',
