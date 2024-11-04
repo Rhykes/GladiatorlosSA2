@@ -6,7 +6,7 @@
  local LSM = LibStub("LibSharedMedia-3.0")
  local self, GSA, PlaySoundFile = GladiatorlosSA, GladiatorlosSA, PlaySoundFile
  local GSA_VERSION = C_AddOns.GetAddOnMetadata("GladiatorlosSA2", "Version")
- local GSA_GAME_VERSION = "11.0.2"
+ local GSA_GAME_VERSION = "11.0.5"
  local GSA_EXPANSION = ""
  local gsadb
  local soundz,sourcetype,sourceuid,desttype,destuid = {},{},{},{},{}
@@ -39,6 +39,8 @@
 	SPELL_AURA_REMOVED = L["Spell_AuraRemoved"],
 	SPELL_INTERRUPT = L["Spell_Interrupt"],
 	SPELL_SUMMON = L["Spell_Summon"],
+	SPELL_EMPOWER_START = L["Spell_EmpowerStart"],
+	UNIT_DIED = L["Unit_Died"],
 	--UNIT_AURA = "Unit aura changed",
  }
  self.GSA_EVENT = GSA_EVENT
@@ -191,6 +193,8 @@
 		interruptedfriendly = true,
 		ShatteringThrowSuccess = false,
 		penance = false,
+		groveGuardians = false,
+		totemOfWrath = false,
 		
 		custom = {},
 	}	
@@ -227,7 +231,8 @@
 	end
 	
 	self.db1 = LibStub("AceDB-3.0"):New("GladiatorlosSADB",dbDefaults, "Default");
-	DEFAULT_CHAT_FRAME:AddMessage("|cff69CCF0 " .. L["GladiatorlosSA2"] .. "|r (|cffFFF569/gsa|r)" ..  "|cffFF7D0A " .. GSA_VERSION .." |r(|cff9482C9" .. GSA_GAME_VERSION .. " "  .. GSA_EXPANSION .. "|r)");
+	DEFAULT_CHAT_FRAME:AddMessage("|cff69CCF0 " .. L["GladiatorlosSA2"] ..  "|cffFF7D0A " .. GSA_VERSION .." |r(|cff9482C9" .. GSA_GAME_VERSION .. " "  .. GSA_EXPANSION .. "|r)");
+	--DEFAULT_CHAT_FRAME:AddMessage("|cff69CCF0 " .. L["GladiatorlosSA2"] .. "|r (|cffFFF569/gsa|r)" ..  "|cffFF7D0A " .. GSA_VERSION .." |r(|cff9482C9" .. GSA_GAME_VERSION .. " "  .. GSA_EXPANSION .. "|r)");
 	-- Temporarily disabling chat commands because they're broken and I am too stupid and time-constrained to fix it right now.
 	--self:RegisterChatCommand("GladiatorlosSA", "ShowConfig")
 	--self:RegisterChatCommand("gsa", "ShowConfig")
@@ -288,9 +293,9 @@
 	GladiatorlosSA:RegisterEvent("PLAYER_ENTERING_WORLD")
 	GladiatorlosSA:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 	GladiatorlosSA:RegisterEvent("UNIT_AURA")
-	GladiatorlosSA:RegisterEvent("DUEL_REQUESTED")
-	GladiatorlosSA:RegisterEvent("DUEL_FINISHED")
-	GladiatorlosSA:RegisterEvent("CHAT_MSG_SYSTEM")
+	--GladiatorlosSA:RegisterEvent("DUEL_REQUESTED")
+	--GladiatorlosSA:RegisterEvent("DUEL_FINISHED")
+	--GladiatorlosSA:RegisterEvent("CHAT_MSG_SYSTEM")
 	if not GSA_LANGUAGE[gsadb.path] then gsadb.path = GSA_LOCALEPATH[GetLocale()] end
 	self.throttled = {}
 	self.smarter = 0
@@ -407,22 +412,25 @@ end
 	
 
  function GladiatorlosSA:COMBAT_LOG_EVENT_UNFILTERED(event , ...)
+
+	--print(event)
 	 -- Checks if alerts should occur here.
 	 local isSanctuary = GetZonePVPInfo()
 	 local _,currentZoneType = IsInInstance()
 	 if (isSanctuary == "sanctuary") then return end	-- Checks for Sanctuary
 	 if (not canSpeakHere) then return end				-- Checks result for everywhere else
 
-	 if (currentZoneType == "none") and not (UnitIsPVP("player") or duelingOn)  then return end -- Checks if you are PvP Flagged.
+	 --if (currentZoneType == "none") and not (UnitIsPVP("player") or duelingOn)  then return end -- Checks if you are PvP Flagged.
 
 	 -- Area check passed, fetch combat event payload.
 	 local timestamp,event,hideCaster,sourceGUID,sourceName,sourceFlags,sourceFlags2,destGUID,destName,destFlags,destFlags2,spellID = CombatLogGetCurrentEventInfo()
 	 if not GSA_EVENT[event] then return end
 
 	 -- Checks if actively engaged in a duel, and
-	 if (duelingOn and not string.find(sourceName, opponentName)) then
+	 --[[
+	 if (sourceName and duelingOn and not string.find(sourceName, opponentName)) then
 		 return
-	 end
+	 end]]
 
 	 if (destFlags) then
 		 for k in pairs(GSA_TYPE) do
@@ -484,10 +492,10 @@ end
 	 elseif (event == "SPELL_AURA_REMOVED" and desttype[COMBATLOG_FILTER_HOSTILE_PLAYERS] and (not gsadb.ronlyTF or destuid.target or destuid.focus) and not gsadb.aruaRemoved) then
 		 self:PlaySpell("auraRemoved", spellID, sourceGUID, destGUID)
 		 return
-	 elseif (event == "SPELL_CAST_START" and sourcetype[COMBATLOG_FILTER_HOSTILE_PLAYERS] and (not gsadb.conlyTF or sourceuid.target or sourceuid.focus) and not gsadb.castStart) then
+	 elseif ((event == "SPELL_CAST_START" or event == "SPELL_EMPOWER_START") and sourcetype[COMBATLOG_FILTER_HOSTILE_PLAYERS] and (not gsadb.conlyTF or sourceuid.target or sourceuid.focus) and not gsadb.castStart) then
 		 self:PlaySpell("castStart", spellID, sourceGUID, destGUID)
 		 return
-	 elseif (event == "SPELL_CAST_SUCCESS" and sourcetype[COMBATLOG_FILTER_HOSTILE_PLAYERS] and (not gsadb.sonlyTF or sourceuid.target or sourceuid.focus) and not gsadb.castSuccess) then
+	 elseif ((event == "SPELL_CAST_SUCCESS" or event == "SPELL_SUMMON") and sourcetype[COMBATLOG_FILTER_HOSTILE_PLAYERS] and (not gsadb.sonlyTF or sourceuid.target or sourceuid.focus) and not gsadb.castSuccess) then
 		 if self:Throttle(tostring(spellID).."default", 0.05) then return end
 		 if gsadb.class and playerCurrentZone == "arena" then
 			 if spellID == 42292 or spellID == 208683 or spellID == 195710 or spellID == 336126 then
@@ -510,6 +518,8 @@ end
 	 elseif (event == "SPELL_INTERRUPT" and (desttype[COMBATLOG_FILTER_FRIENDLY_UNITS] or desttype[COMBATLOG_FILTER_ME]) and not gsadb.interruptedfriendly) then
 		 self:PlaySpell ("friendlyInterrupted", spellID, sourceGUID, destGUID)
 		 return
+	 elseif (event == "UNIT_DIED") then
+		-- Maybe I'll do something with this someday
 	 end
 
 
@@ -577,6 +587,7 @@ end
  end
 
  -- A player has requested to duel me
+ --[[
 function GladiatorlosSA:DUEL_REQUESTED(event, playerName)
 	opponentName = playerName
 	duelingOn = true
@@ -597,6 +608,7 @@ function GladiatorlosSA:DUEL_REQUESTED(event, playerName)
 	opponentName = ""
 	duelingOn = false
   end
+  ]]
 
  function GladiatorlosSA:SetExpansion()
 	 local _,_,_,interfaceNumber = GetBuildInfo()
