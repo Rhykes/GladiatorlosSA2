@@ -1,5 +1,5 @@
 ﻿-- Mini Dragon(projecteurs@gmail.com)
--- Last update: Jan 25, 2022
+-- Last update: Nov 4, 2024
 
 local L = LibStub("AceLocale-3.0"):NewLocale("GladiatorlosSA", "zhCN")
 if not L then return end
@@ -10,8 +10,8 @@ L["Spell_AuraApplied"] = "获得增益/减益"
 L["Spell_AuraRemoved"] = "增益/减益消失"
 L["Spell_Interrupt"] = "打断技能"
 L["Spell_Summon"] = "召唤法术"
-L["Spell_EmpowerStart"] = true
-L["Unit_Died"] = true
+L["Spell_EmpowerStart"] = "开始增强"
+L["Unit_Died"] = "单位死亡"
 L["Any"] = "任意"
 L["Player"] = "玩家"
 L["Focus"] = "焦点"
