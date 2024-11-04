@@ -233,7 +233,7 @@ L["ArmsWR"] = "武器"
 L["FuryWR"] = "狂暴"
 L["ProtectionWR"] = "防御"
 
-L["EXPAC_UnknownExpac"] = "未知游戏版本。"
+L["EXPAC_UnknownExpac"] = "未知资料片。"
 L["EXPAC_Classic"] = "经典"
 L["EXPAC_TBC"] = "燃烧的远征"
 L["EXPAC_WotLK"] = "巫妖王之怒"
