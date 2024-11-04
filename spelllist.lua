@@ -70,7 +70,7 @@
 			[339] = "success", -- Entangling Roots
 			[235963] = "success", -- Entangling Roots Feral Talent
 			[360806] = "success", -- Sleepwalk (Evoker)
-			[389794] = "success", -- Snowdrift Cast
+			--[389794] = "success", -- Snowdrift Cast
 			[410126] = "success", -- Searing Glare (Paladin)
 
 			-- Backlash (Aura Applied)
@@ -82,6 +82,7 @@
 			[55233] = "vampiricBlood",
 			[51271] = "pillarofFrost",
 			[48707] = "antiMagicShell",
+			[410358] = "antiMagicShell", -- Spellwarden PvP Talent
 			[152279] = "BreathOfSindragosa",
 			[219809] = "tombstone",
 			[194679] = "runetap",
@@ -157,11 +158,12 @@
 			--[0] = "timeOfNeed",
 			[370562] = "stasisReady",
 			[359816] = "dreamFlight",
-			[378464] = "nullifyingshroud",
+			[378464] = "nullifyingshroudApplied",
 			[404195] = "defyFate",
 			[406732] = "spatialParadox",
 			[409311] = "prescience",
 			[360827] = "blisteringScales",
+			[370960] = "emeraldCommunion",
 
 			-- Hunter (Aura Applied)
 			[19263] = "deterrence",
@@ -202,6 +204,7 @@
 			[353128] = "arcanosphere",
 			[82691] = "frozen", -- Ring of Froze Debuff
 			[353084] = "burns", -- Ring of Fire Debuff
+			[389794] = "snowdrift", -- Snowdrift Cast
 			[389831] = "snowdriftWinter", -- Snowdrift Stun
 
 			-- Monk (Aura Applied)
@@ -215,7 +218,7 @@
 			[116849] = "lifeCocoon",
 			--[122470] = "touchOfKarma",
 			--[125174] = "touchOfKarma", --Test
-			[152173] = "Serenity",
+			--[152173] = "Serenity",
 			--[216113] = "fistweaving", --Way of the Crane
 			[197908] = "manaTea",
 			[209584] = "zenFocusTea",
@@ -267,7 +270,9 @@
 			[228260] = "voidForm",
 			[15286] = "vampiricEmbrace",
 			--[213602] = "greaterFade",
-			[408557] = "greaterFade", -- phase shift
+			--[408557] = "greaterFade", -- phase shift
+			--[408558] = "greaterFade", -- phase shift
+			[408558] = "fade", -- phase shift
 			--[196762] = "innerFocus",
 			[328530] = "divineAscension",
 			[372616] = "empyrealBlaze",
@@ -294,7 +299,7 @@
 			[6770] = "sap",
 			[207736] = "shadowyDuel",
 			[1966] = "Feint", -- Feint
-			[199027] = "veilOfMidnight",
+			--[199027] = "veilOfMidnight",
 			[13877] = "bladeFlurry",
 			
 			-- Shaman (Aura Applied)
@@ -309,6 +314,7 @@
 			--[204293] = "spiritLink",
 			[384352] = "doomWinds",
 			[378081] = "naturesSwiftness",
+			[443454] = "naturesSwiftness", -- Ancestral Swiftness
 
 			
 			-- Warlock (Aura Applied)
@@ -353,6 +359,7 @@
 			-- Death Knight (Aura Removed)
 			[48792] = "iceboundFortitudeDown",	--Icebound Fortitude
 			[48707] = "AntiMagicShellDown",		--Anti-Magic Shell
+			[410358] = "AntiMagicShellDown", -- Spellwarden PvP Talent
 			[219809] = "tombstoneDown",			--Tombstone
 			--[206977] = "mirrorDown",			--Blood Mirror
 			[207319] = "corpseDown",			--Corpse Shield
@@ -392,6 +399,7 @@
 			[370562] = "stasisDown",
 			[359816] = "dreamFlightDown",
 			[378464] = "nullifyingshroudDown",
+			[370960] = "emeraldCommunionDown",
 
 			-- Hunter (Aura Removed)
 			[19263] = "deterrenceDown", 		--Deterrence
@@ -403,6 +411,7 @@
 			[264735] = "survivalOfTheFittestDown", 
 			[360966] = "spearheadDown",
 			[360952] = "coordinatedAssaultDown",
+			[53480] = "roarOfSacrificeDown", -- Pet Skill
 			
 			-- Mage (Aura Removed)
 			[45438] = "iceBlockDown", 			--Ice Block
@@ -550,6 +559,7 @@
 			[212036] = "resurrection", -- Mass Resurrection (Priest Mass Rez)
 			[212056] = "resurrection", -- Absolution (Paladin Mass Rez)
 			[212048] = "resurrection", -- Ancestral Vision (Shaman Mass Rez)
+			[361178] = "resurrection", -- Mass Return (Evoker Mass Rez)
 			
 			-- Death Knight (Spell Casting)
 				--None! :D
@@ -579,10 +589,11 @@
 			[382266] = "fireBreath",
 			[382614] = "dreamBreath",
 			[382731] = "spiritBloom",
-			[370960] = "emeraldCommunion",
 			[396286] = "upheavel",
 			[404977] = "timeSkip",
 			[377509] = "dreamProjection",
+			[378464] = "nullifyingshroud",
+			[361469] = "livingFlame",
 
 			-- Hunter (Spell Casting)
 			[982] = "revivePet",
@@ -621,10 +632,11 @@
 			[353082] = "ringOfFire", -- and it burns burns burns
 			--[353128] = "arcanosphere",
 			[352278] = "iceWall",
-			[389794] = "snowdrift",
+			--[389794] = "snowdrift",
 			
 			-- Monk (Spell Casting)
 			[198898] = "craneSong",
+			[399491] = "sheilunsGift",
 
 			-- Paladin (Spell Casting)
 			[20066] = "repentance",
@@ -645,6 +657,7 @@
 			--[373178] = "lightsWrath",
 			[421453] = "ultimatePenitence",
 			[47540] = "penance",
+			[8092] = "mindBlast",
 
 			-- Rogue (Spell Casting)
 				--None! :D
@@ -699,6 +712,7 @@
 			[6353] = "soulFire",
 			[353753] = "bondsOfFel",
 			[267217] = "netherPortal",
+			[48181] = "haunt",
 
 			-- Warrior (Spell Casting)
 			[64382] = "shatteringthrow",
@@ -832,6 +846,9 @@
 			--[312202] = "shackletheunworthy", -- Kyrian
 			[63560] = "DarkTransformation",
 			[210128] = "Reanimation",
+			[444347] = "deathCharge", -- Horsey
+			[439843] = "reapersMark", -- Reaper's Mark
+
 			
 			-- Demon Hunter (Cast Success)
 			[183752] = "disrupt",
@@ -856,9 +873,10 @@
 			--[235903] = "manaRift",
 			--[317009] = "sinfulBrand",	-- Venthyr
 			[306830] = "elysianDecree", -- Kyrian
-			[390163] = "elysianDecree", -- Talent
+			[390163] = "sigilOfSpite", -- Talent
 			--[329554] = "fodderoftheflame", -- Necrolord
 			[258920] = "immolationAura",
+			[258925] = "felBarrage",
 
 			-- Druid (Cast Success)
 			[740] = "tranquility",
@@ -901,6 +919,7 @@
 			[354654] = "groveProtection",
 			[274837] = "FeralFrenzy",
 			[392160] = "invigorate",
+			[102693] = "groveGuardians",
 
 			-- Evoker (Cast Success)
 			[351338] = "quell",
@@ -918,6 +937,8 @@
 			[363534] = "rewind",
 			[370537] = "stasis",
 			[403631] = "breathOfEons",
+			[356995] = "disintegrate",
+			[443328] = "engulf",
 			
 			-- Hunter (Cast Success)
 			[147362] = "counterShot",
@@ -956,6 +977,7 @@
 			[162488] = "steelTrap",
 			[359844] = "callOfTheWild",
 			[407028] = "StickyTarBomb",
+			[321530] = "bloodshed",
 			
 			-- Mage (Cast Success)
 			[2139] = "counterspell", 
@@ -981,6 +1003,7 @@
 			[389713] = "displacement",
 			[321507] = "touchOfTheMagi",
 			[198100] = "Kleptomania",
+			[157981] = "blastWave",
 			
 			-- Monk (Cast Success)
 			[116841] = "tigersLust",
@@ -1013,6 +1036,8 @@
 			--[326860] = "fallenorder", -- Venthyr
 			[113656] = "FistsOfFury",
 			[324312] = "clash",
+			[152175] = "whirlingDragonPunch",
+			[443028] = "celestialConduit",
 			
 			-- Paladin (Cast Success)
 			[96231] = "rebuke",
@@ -1043,6 +1068,8 @@
 			[375576] = "divinetoll", -- talent, holy 
 			--[328204] = "vanquisherhammer", -- Necrolord
 			[383185] = "exorcism",
+			[255937] = "wakeOfAshes",
+			[427453] = "hammerOfLight",
 			
 			
 			-- Priest (Cast Success)
@@ -1056,7 +1083,7 @@
 			[204263] = "shiningForce",
 			[2050] = "holySerenity",
 			[88625] = "chastise",
-			[205369] = "mindBomb",
+			--[205369] = "mindBomb",
 			[211522] = "psyfiend",
 			[108968] = "voidshift",
 			--[208065] = "lightOfTuure",
@@ -1078,6 +1105,9 @@
 			[108920] = "voidTendrils",
 			[314867] = "shadowCovenant",
 			[341374] = "damnation",
+			[450193] = "entropicRift",
+			[335467] = "devouringPlague",
+			[451235] = "shadowFiend",
 
 			-- Rogue (Cast Success)
 			[2094] = "blind",
@@ -1155,6 +1185,8 @@
 			--[324386] = "vesperTotem",
 			[355580] = "staticFieldTotem",
 			[383013] = "poisonCleansingTotem",
+			[204330] = "totemOfWrath",
+			[444995] = "surgingTotem",
 			
 			-- Warlock (Cast Success)
 			[6789] = "mortalCoil",
@@ -1200,6 +1232,7 @@
 			[386951] = "soulSwap",
 			[221703] = "castingCircle",
 			[410598] = "SoulRip",
+			[442726] = "malevolence",
 
 			-- Warrior (Cast Success)
 			[97462] = "commandingShout",
@@ -1209,7 +1242,7 @@
 			[46968] = "shockwave",
 			[384318] = "dragonRoar",
 			[107570] = "stormBolt",
-			[152277] = "Ravager", -- Arms
+			--[152277] = "Ravager", -- Arms
 			[228920] = "Ravager", -- Protection
 			[1160] = "demoShout",
 			[213915] = "massSpellReflection",
@@ -1229,6 +1262,7 @@
 			[383762] = "bitterImmunity",
 			[385059] = "odynsFury",
 			[385952] = "shieldCharge",
+			[436358] = "demolish",
 		},
 		friendlyInterrupt = {
 			[19647] = "lockout", -- Spell Locks begin

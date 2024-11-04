@@ -1,19 +1,61 @@
 https://www.curseforge.com/wow/addons/gladiatorlossa2
 https://github.com/Rhykes/GladiatorlosSA2
 ===========================================
-- version TWWB2 (The War Within)
-
-General 
-- blizz pls
-
-===========================================
-- version TWWB1 (The War Within)
-
-First The War Within update.
-
-NOTE: Spell database is not yet updated to reflect changes in 11.0 onward.
+- version 5.0 (The War Within)
 
 General
-- Fixed a bug that caused the addon to destroy itself when entering a new expansion. Haha oops.
-- Fixed lua errors that result from hovering over spells in the options panel.
-- (Hopefully) temporarily disabled chat shortcuts (/gsa and similar) to the options menu because it is broken and I don't know why.
+- Cast Start alerts now correctly activate for Empowerment abilities. A whole expansion late, but hey it's here now.
+- Cast Success alerts now support Summon combat log events.
+
+Demon Hunter
+- Added Fel Barrage to Cast Success
+- Updated sound for Sigil of Spite.
+
+Death Knight
+- Added Death Charge to Cast Success.
+- Added Reaper's Mark to Cast Success.
+- Fixed Anti-Magic Shell when talented into Spellwarden.
+
+Druid
+- Added Grove Guardians to Cast Success, off by default.
+
+Evoker
+- Added Disintegrate to Cast Success.
+- Added Engulf to Cast Success.
+- Added Living Flame to Cast Start.
+- Added a Cast Start alert for Nullifying Shroud.
+- Fixed Emerald Communion's never functional alert, by moving it to Aura Applied. It now also has an Aura Removed alert.
+
+Hunter
+- Added Bloodshed to Cast Success.
+- Added an Aura Removed alert for Roar of Sacrifice.
+
+Mage
+- Added Blast Wave to Cast Success.
+- Snowdrift moved to Cast Success.
+
+Monk
+- Added Celestial Conduit to Cast Success.
+- Added Sheilun's Gift to Cast Start.
+- Added Whirling Dragon Punch to Cast Success.
+
+Paladin
+- Added Wake of Ashes to Cast Success.
+
+Priest
+- Added Devouring Plague to Cast Success.
+- Added Entropic Rift to Cast Success.
+- Added Mind Blast to Cast Start.
+- Fixed Phase Shift alert, which simply says "Fade" due to its very short duration.
+- Fixed Shadowfiend alert when talented into Voidwraith.
+
+Shaman
+- Added Surging Totem to Cast Succes (Totems).
+- Added Totem of Wrath to Cast Success (Totems), off by default.
+- Fixed Ancestral Swiftness.
+
+Warlock
+- Added Haunt to Cast Start.
+
+Warrior
+- Added Demolish to Cast Success.
