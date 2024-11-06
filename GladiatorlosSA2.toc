@@ -1,4 +1,4 @@
-﻿## Interface: 110500
+## Interface: 110005
 ## Title: GladiatorlosSA
 ## Notes: PvP Sound Alerter
 ## Author: Mulvark
